@@ -1,0 +1,34 @@
+.styleguide {
+    &__btn-container {
+        text-align: center;
+
+        .red-bg {
+            background-color: $red-1;
+            text-align: center;
+        }
+
+        .teal-bg {
+            background-color: $teal-1;
+            text-align: center;
+        }
+
+        .blue-bg {
+            background-color: $blue-1;
+            text-align: center;
+        }
+
+        .yellow-bg {
+            background-color: $yellow-1;
+            text-align: center;
+        }
+
+        a {
+            @include margin(30px auto);
+            display: inline-block;
+        }
+    }
+
+    &__heading-container {
+        @include margin(40px null 80px);
+    }
+}

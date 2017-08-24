@@ -1,0 +1,135 @@
+@mixin button($color, $bg-color, $border-color) {
+    padding: 1.3em 2.6em 1.1em;
+    border-radius: $global-radius;
+    box-shadow: inset 0 0 0 1px $border-color;
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size-base;
+    text-decoration: none;
+    @include transition(all .3s ease);
+    @include font-proxima();
+
+    &:hover {
+        background-color: shade($bg-color, 10%);
+        box-shadow: inset 0 0 0 1px shade($border-color, 10%);
+    }
+}
+
+@mixin transparent-button($color, $bg-color, $border-color) {
+    padding: 1.3em 2.6em 1.1em;
+    border-radius: $global-radius;
+    box-shadow: inset 0 0 0 1px $border-color;
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size-base;
+    text-decoration: none;
+    @include transition(all .3s ease);
+    @include font-proxima();
+
+    &:hover {
+        color: shade($color, 10%);
+        box-shadow: inset 0 0 0 1px shade($color, 10%);
+    }
+}
+
+@mixin white-button($color, $bg-color, $hover-color) {
+    padding: 1.3em 2.6em 1.1em;
+    border-radius: $global-radius;
+    box-shadow: inset 0 0 0 1px $bg-color;
+    background-color: $bg-color;
+    color: $color;
+    font-size: $font-size-base;
+    text-decoration: none;
+    @include transition(all .3s ease);
+    @include font-proxima();
+
+    &:hover {
+        background-color: $hover-color;
+        box-shadow: inset 0 0 0 1px $hover-color;
+    }
+}
+
+@mixin dualtone-button($color, $hover-color) {
+    padding: 1.3em 2.6em 1.1em;
+    border-radius: $global-radius;
+    box-shadow: inset 0 0 0 1px $color;
+    background-color: transparent;
+    color: $color;
+    font-size: $font-size-base;
+    text-decoration: none;
+    @include transition(all .3s ease);
+    @include font-proxima();
+
+    &:hover {
+        color: $hover-color;
+        box-shadow: inset 0 0 0 1px $hover-color;
+    }
+}
+
+//primary buttons
+.btn__primary--red {
+    @include button($white, $red-1, $red-1);
+}
+
+.btn__primary--teal {
+    @include button($white, $teal-1, $teal-1);
+}
+
+.btn__primary--blue {
+    @include button($white, $blue-1, $blue-1);
+}
+
+.btn__primary--yellow {
+    @include button($white, $yellow-1, $yellow-1);
+}
+
+//secondary buttons
+.btn__secondary--red {
+    @include transparent-button($red-1, transparent, $red-1);
+}
+
+.btn__secondary--teal {
+    @include transparent-button($teal-1, transparent, $teal-1);
+}
+
+.btn__secondary--blue {
+    @include transparent-button($blue-1, transparent, $blue-1);
+}
+
+.btn__secondary--yellow {
+    @include transparent-button($yellow-1, transparent, $yellow-1);
+}
+
+//white buttons
+.btn__white--red {
+    @include white-button($red-1, $white, $red-2);
+}
+
+.btn__white--teal {
+    @include white-button($teal-1, $white, $teal-2);
+}
+
+.btn__white--blue {
+    @include white-button($blue-1, $white, $blue-2);
+}
+
+.btn__white--yellow {
+    @include white-button($yellow-1, $white, $yellow-2);
+}
+
+//dualtone buttons
+.btn__dualtone--red {
+    @include dualtone-button($white, $black-1);
+}
+
+.btn__dualtone--teal {
+    @include dualtone-button($white, $black-1);
+}
+
+.btn__dualtone--blue {
+    @include dualtone-button($white, $black-1);
+}
+
+.btn__dualtone--yellow {
+    @include dualtone-button($white, $black-1);
+}
