@@ -1,0 +1,13 @@
+.call-out {
+    background-color: $red-1;
+    min-height: 515px;
+    @include padding($section-dbl-padding 0);
+
+    .centered-heading * {
+        color: white;
+    }
+
+    a {
+        margin-top: 40px;
+    }
+}

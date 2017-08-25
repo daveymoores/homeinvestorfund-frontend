@@ -133,3 +133,9 @@
 .btn__dualtone--yellow {
     @include dualtone-button($white, $black-1);
 }
+
+
+.btn--centered {
+    display: table;
+    @include margin(40px auto 0px);
+}

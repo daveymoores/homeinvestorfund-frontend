@@ -16,9 +16,13 @@ $blue-2: #ddeaf7;
 $yellow-2: #faf3d2;
 
 $grey-1: #dfdfdf;
+$grey-2: #e5e9ee;
 
 
 $global-radius: 5px;
+$section-padding: 70px;
+$section-dbl-padding: 2 * $section-padding;
+
 
 $font-size-base:            18px;
 $font-size-small:           16px;
@@ -53,10 +57,6 @@ $lineheight-h4:             24px;
 $lineheight-h5:             22px;
 
 
-// $container-lrg-desktop:     1200px;
-// $container-desktop:         992px;
-// $container-tablet:          768px;
-// $lrg-mobile:                650px;
 $mobile-only:               580px;
 
 

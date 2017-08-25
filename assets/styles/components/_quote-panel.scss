@@ -1,0 +1,19 @@
+.quote-panel {
+    @extend .panel;
+
+    p {
+        font-style: italic;
+    }
+}
+
+.quote-panel--img-cont {
+    border-radius: 50%;
+    height: 185px;
+    width: 185px;
+    overflow: hidden;
+    @include margin(20px auto 40px);
+
+    img {
+        width: 100%;
+    }
+}

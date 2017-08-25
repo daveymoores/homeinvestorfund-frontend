@@ -1,0 +1,14 @@
+.panel {
+    width: 100%;
+    border-radius: $global-radius;
+    background-color: white;
+    @include padding(20px);
+
+    * {
+        text-align: center;
+    }
+
+    p {
+        font-weight: 300;
+    }
+}

@@ -6,7 +6,7 @@
 
 	widgets = {
 		"init-page" : require("./widgets/init-page"),
-		"offcanvas" : require("./widgets/offcanvas")
+		"navigation" : require("./widgets/navigation")
 	};
 
     function initWidgets ($node) {

@@ -87,6 +87,15 @@ p {
     @include font-sans(400);
     font-size: $font-size-base;
     line-height: $lineheight-base;
+    padding: 20px 0px;
+
+    &.light {
+        font-weight: 300;
+    }
+
+    b {
+        font-weight: 700;
+    }
 }
 
 a {

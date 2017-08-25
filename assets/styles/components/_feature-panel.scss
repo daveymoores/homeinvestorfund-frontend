@@ -1,0 +1,15 @@
+.feature-panel {
+    @extend .panel;
+
+    &.yellow {
+        background-color: $yellow-2;
+    }
+
+    &.teal {
+        background-color: $teal-2;
+    }
+
+    &.blue {
+        background-color: $blue-2;
+    }
+}

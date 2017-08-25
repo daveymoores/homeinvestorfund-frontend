@@ -1,6 +1,12 @@
 .navigation {
     background-color: $white;
-    border-bottom: 1px solid #e5e9ee;
+    border-bottom: 2px solid $blue-2;
+    border-top: 1px solid $grey-2;
+    @include transition(max-height .3s ease-in-out);
+    max-height: 55px;
+    overflow: hidden;
+
+    &.open {}
 
     @media all and (min-width: $container-tablet) {
         height: 55px;
@@ -18,6 +24,14 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+    }
+}
+
+.navigation__list--wrapper {
+    height: 55px;
+
+    @media all and (min-width: $container-tablet) {
+        height: auto;
     }
 }
 
@@ -92,6 +106,43 @@
         }
     }
 
+    &--mob-option {
+        float: right;
+        height: 55px;
+
+        li {
+            padding-top: 0px;
+            box-sizing: border-box;
+            border-bottom: none;
+            border-left: 1px solid $grey-1;
+            width: 55px;
+            height: 55px;
+            display: block;
+            float: left;
+
+            > a {
+                display: block;
+                @include padding(15px 17px);
+                box-sizing: border-box;
+                width: 55px;
+                height: 55px;
+            }
+
+            &:last-child > a {
+                @include padding(17px 15px);
+            }
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        @media all and (min-width: $container-tablet) {
+            display: none;
+        }
+    }
+
     &--main {
         float: none;
         width: 100%;
@@ -127,6 +178,10 @@
                 width: 100%;
             }
         }
+
+        // @media all and (min-width: $container-xlarge-desktop) {
+        //     width: 65%;
+        // }
     }
 }
 
@@ -135,7 +190,7 @@
 
     &--mob {
         display: block!important;
-        @include padding(15px 0 15px 20px);
+        @include padding(21px 0 16px 20px);
         float: left;
         width: 185px;
 

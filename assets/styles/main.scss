@@ -8,8 +8,17 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "common/mixins";
 @import "common/global";
 @import "common/typography";
+@import "common/centered-heading";
+@import "common/text-wrapper";
 
 @import "components/btn";
 @import "components/styleguide";
 @import "components/offcanvas";
+@import "components/burger-icon";
 @import "components/navigation";
+@import "components/fw-wrap";
+@import "components/call-out";
+
+@import "components/panel";
+@import "components/feature-panel";
+@import "components/quote-panel";

@@ -1,0 +1,38 @@
+@mixin  wrap-dims($color){
+    background-color: $color;
+    min-height: 600px;
+    @include padding(80px 0);
+
+    &.double-padding {
+        @include padding(140px 0);
+    }
+}
+
+.fw-wrap {
+    @include wrap-dims($white);
+
+    &--blue {
+        @include wrap-dims($blue-1);
+        color: white;
+
+        * {
+            color: inherit;
+        }
+    }
+
+    &--light-blue {
+        @include wrap-dims($blue-2);
+    }
+
+    &--green {
+        @include wrap-dims($teal-1);
+    }
+
+    &--light-green {
+        @include wrap-dims($teal-2);
+    }
+
+    &--red {
+        @include wrap-dims($red-1);
+    }
+}
