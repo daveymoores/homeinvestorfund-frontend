@@ -7,7 +7,7 @@
     font-size: $font-size-base;
     text-decoration: none;
     @include transition(all .3s ease);
-    @include font-proxima();
+    @include font-proxima(700);
 
     &:hover {
         background-color: shade($bg-color, 10%);
@@ -24,7 +24,7 @@
     font-size: $font-size-base;
     text-decoration: none;
     @include transition(all .3s ease);
-    @include font-proxima();
+    @include font-proxima(700);
 
     &:hover {
         color: shade($color, 10%);
@@ -41,7 +41,7 @@
     font-size: $font-size-base;
     text-decoration: none;
     @include transition(all .3s ease);
-    @include font-proxima();
+    @include font-proxima(700);
 
     &:hover {
         background-color: $hover-color;
@@ -58,7 +58,7 @@
     font-size: $font-size-base;
     text-decoration: none;
     @include transition(all .3s ease);
-    @include font-proxima();
+    @include font-proxima(700);
 
     &:hover {
         color: $hover-color;

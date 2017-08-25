@@ -15,6 +15,8 @@ $red-2: #fbd3d0;
 $blue-2: #ddeaf7;
 $yellow-2: #faf3d2;
 
+$grey-1: #dfdfdf;
+
 
 $global-radius: 5px;
 
@@ -51,11 +53,12 @@ $lineheight-h4:             24px;
 $lineheight-h5:             22px;
 
 
-$container-lrg-desktop:     1200px;
-$container-desktop:         992px;
-$container-tablet:          768px;
-$lrg-mobile:                650px;
+// $container-lrg-desktop:     1200px;
+// $container-desktop:         992px;
+// $container-tablet:          768px;
+// $lrg-mobile:                650px;
 $mobile-only:               580px;
 
 
 $font-heading: "proxima-nova",sans-serif;
+$font-body: 'Open Sans', sans-serif;

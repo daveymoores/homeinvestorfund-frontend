@@ -31,4 +31,10 @@
     &__heading-container {
         @include margin(40px null 80px);
     }
+
+    &__grey-wrapper {
+        background-color: $grey-1;
+        height: 700px;
+        margin-bottom: 60px;
+    }
 }

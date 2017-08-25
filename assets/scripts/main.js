@@ -5,7 +5,8 @@
     var $body = document.body;
 
 	widgets = {
-		"init-page" : require("./widgets/init-page")
+		"init-page" : require("./widgets/init-page"),
+		"offcanvas" : require("./widgets/offcanvas")
 	};
 
     function initWidgets ($node) {
