@@ -96,6 +96,11 @@ p {
     b {
         font-weight: 700;
     }
+
+    a {
+        color: $red-1;
+        text-decoration: underline;
+    }
 }
 
 a {

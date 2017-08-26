@@ -6,7 +6,8 @@
 
 	widgets = {
 		"init-page" : require("./widgets/init-page"),
-		"navigation" : require("./widgets/navigation")
+		"navigation" : require("./widgets/navigation"),
+		"calculator" : require("./widgets/calculator")
 	};
 
     function initWidgets ($node) {

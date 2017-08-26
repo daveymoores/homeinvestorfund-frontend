@@ -4,15 +4,89 @@
 <section class="fw-wrap--light-blue">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h1>Residential property investment for everyone</h1>
+					<h1><span class="colorpick--red">Residential property</span> investment for everyone</h1>
+					<p class="light">We’ve opened the doors to our £50m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
 				</heading>
 			</div>
-			<div class="col-md-6">
-				<div class="calculator">
+			<div class="col-md-6 col-sm-6">
 
+				<!--investment calculator-->
+				<div class="calculator" data-widget="calculator">
+					<div class="calculator--section">
+						<div class="calculator__amount">
+							<dl>
+							  <dt>An Investment 5 Years ago of...</dt>
+							  <dd>£<span class="calculator__amount--unit">25,000</span></dd>
+							</dl>
+						</div>
+						<div class="calculator--slider">
+							<input
+							type="range"
+							min="0"
+							max="100"
+							step="1"
+							data-buffer="60" />
+						</div>
+						<ul class="calculator--slider--range">
+							<li>£<span>100</span></li>
+							<li>£<span>150,000</span></li>
+						</ul>
+					</div>
+					<div class="calculator--section">
+						<p class="calculator__total--title">Would now be worth</p>
+						<div class="row">
+							<div class="col-md-6">
+								<ul class="calculator__total">
+									<li>£<span>27,290</span></li>
+									<li>Highstreet ISA 1.8% / year</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="calculator__total">
+									<li class="colorpick--red">£<span>34,056</span></li>
+									<li>homeinvestor.fund 35.73%<br /> total return</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="calculator--section">
+						<ul class="calculator--rates">
+							<li>
+								homeinvestor.fund
+							</li>
+							<li>
+								<span>2016</span>
+								<span>3.40%</span>
+							</li>
+							<li>
+								<span>2015</span>
+								<span>3.11%</span>
+							</li>
+							<li>
+								<span>2014</span>
+								<span>14.19%</span>
+							</li>
+							<li>
+								<span>2013</span>
+								<span>7.96%</span>
+							</li>
+							<li>
+								<span>2012</span>
+								<span>n/a</span>
+							</li>
+						</ul>
+					</div>
+					<div class="calculator--section">
+						<div class="calculator--cta">
+							<a href="#" class="btn__primary--red">Get started</a>
+							<p><a href="">Find out</a> how these numbers were calculated</a></p>
+						</div>
+					</div>
 				</div>
+				<!--end investment calculator-->
+
 			</div>
 		</div>
 	</div>

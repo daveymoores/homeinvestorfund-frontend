@@ -18,6 +18,9 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/navigation";
 @import "components/fw-wrap";
 @import "components/call-out";
+@import "components/colorpick";
+@import "components/calculator";
+@import "components/rangeslider";
 
 @import "components/panel";
 @import "components/feature-panel";
