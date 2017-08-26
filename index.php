@@ -24,9 +24,9 @@
 						<div class="calculator--slider">
 							<input
 							type="range"
-							min="0"
-							max="100"
-							step="1"
+							min="100"
+							max="150000"
+							step="1000"
 							data-buffer="60" />
 						</div>
 						<ul class="calculator--slider--range">
@@ -224,8 +224,87 @@
 	</div>
 </section>
 
-<footer>
+<section class="ghost-panel--section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="footer--list">
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">Latest News</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Properties</a></li>
+					<li><a href="">White label partnerships</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ghost-panel">
+					<h4>Looking to retire?</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+					<a href="">Find out more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__buttress">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<p><small>&copy; homeinvestor.fund 2017</small></p>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>T&amp;C's</li>
+						<li>Private policy</li>
+						<li>Investment Terms</li>
+					</ul>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</div>
 </footer>
 
 <script type="text/javascript" src="./dist/scripts/main.min.js"></script>

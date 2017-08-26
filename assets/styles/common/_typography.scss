@@ -61,6 +61,10 @@
     line-height: $lineheight-h5;
 }
 
+body {
+    @include font-sans(400);
+}
+
 
 h1 {
     @include heading--h1;

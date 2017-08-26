@@ -1,0 +1,25 @@
+.ghost-panel {
+    border: 1px solid $grey-2;
+    border-radius: $global-radius;
+    @include display(flex);
+    @include flex-direction(column);
+    @include padding(20px);
+
+    h4 {
+        font-size: $font-size-base;
+    }
+
+    p {
+        font-size: $font-size-small;
+    }
+
+    a {
+        margin-top: auto;
+        @include font-proxima(600);
+        color: $red-1;
+    }
+}
+
+.ghost-panel--section-padding {
+    @include padding(80px 0);
+}

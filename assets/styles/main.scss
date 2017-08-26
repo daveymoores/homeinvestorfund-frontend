@@ -21,7 +21,9 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/colorpick";
 @import "components/calculator";
 @import "components/rangeslider";
+@import "components/footer";
 
 @import "components/panel";
 @import "components/feature-panel";
 @import "components/quote-panel";
+@import "components/ghost-panel";
