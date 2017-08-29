@@ -22,6 +22,10 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/calculator";
 @import "components/rangeslider";
 @import "components/footer";
+@import "components/accordion";
+@import "components/faqs";
+@import "components/guide-signup-form";
+@import "components/formtype";
 
 @import "components/panel";
 @import "components/feature-panel";

@@ -1,0 +1,28 @@
+.formtype {
+    margin-top: 15px;
+
+    input {
+        @include font-proxima(700);
+        @include padding(15px 20px 13px);
+        font-size: $font-size-base;
+        line-height: $lineheight-input;
+        border-radius: $global-radius;
+        width: 100%;
+        border: 1px solid $grey-6;
+
+        @include placeholder {
+            color: $grey-6;
+        }
+    }
+}
+
+.formtype--email-wrapper {
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    margin-top: 15px;
+
+    > input {
+        width: 66%;
+    }
+}

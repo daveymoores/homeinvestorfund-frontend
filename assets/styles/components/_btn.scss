@@ -1,4 +1,5 @@
 @mixin button($color, $bg-color, $border-color) {
+    border: none;
     padding: 1.3em 2.6em 1.1em;
     border-radius: $global-radius;
     box-shadow: inset 0 0 0 1px $border-color;
@@ -16,6 +17,7 @@
 }
 
 @mixin transparent-button($color, $bg-color, $border-color) {
+    border: none;
     padding: 1.3em 2.6em 1.1em;
     border-radius: $global-radius;
     box-shadow: inset 0 0 0 1px $border-color;
@@ -33,6 +35,7 @@
 }
 
 @mixin white-button($color, $bg-color, $hover-color) {
+    border: none;
     padding: 1.3em 2.6em 1.1em;
     border-radius: $global-radius;
     box-shadow: inset 0 0 0 1px $bg-color;
@@ -50,6 +53,7 @@
 }
 
 @mixin dualtone-button($color, $hover-color) {
+    border: none;
     padding: 1.3em 2.6em 1.1em;
     border-radius: $global-radius;
     box-shadow: inset 0 0 0 1px $color;
