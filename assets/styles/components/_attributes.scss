@@ -1,0 +1,35 @@
+.attributes {
+    @include padding(60px 0);
+
+    &__container {
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+    }
+
+    &__unit {
+        @include display(flex);
+        @include flex-direction(row);
+        @include align-items(center);
+        margin-right: 80px;
+
+        p, li {
+            @include font-proxima(400);
+            font-size: $font-size-base;
+            line-height: $lineheight-small;
+
+            &.lrg {
+                font-size: 52px;
+                @include font-proxima(600);
+                line-height: $lineheight-base;
+                @include padding(5px 0px);
+            }
+        }
+
+        svg {
+            height: 65px;
+            width: 65px;
+            margin-right: 20px;
+        }
+    }
+}
