@@ -1,0 +1,12 @@
+.map {
+    &--unit {
+        height: 700px;
+    }
+
+    &--teaser {
+        border: 1px solid $grey-6;
+        margin-top: 60px;
+        padding-top: 40px;
+        border-radius: $global-radius;
+    }
+}

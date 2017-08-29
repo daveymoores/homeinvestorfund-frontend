@@ -19,7 +19,7 @@
 
         li {
             float: left;
-            @include padding(0px 10px);
+            @include padding(0px 15px);
             font-size: $font-size-base;
             line-height: $lineheight-base;
             border-right: 2px solid $grey-4;
@@ -27,13 +27,17 @@
             &:first-child {
                 padding-left: 0px;
             }
+
+            &:last-child {
+                border-right: none;
+            }
         }
     }
 }
 
 .footer--list {
     li {
-        padding-bottom: 25px;    
+        padding-bottom: 25px;
     }
 
     a {

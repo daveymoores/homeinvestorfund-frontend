@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="135px" viewBox="0 0 105 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 134 103.838 134 103.838 0.133 0 0.133"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.738281, -0.843750)">
+            <polygon id="Fill-1" fill="#106FAE" points="51.9189 6.867 9.6689 43.867 9.6689 63.996 56.4439 23.034 94.1689 56.071 94.1689 43.867"></polygon>
+            <polygon id="Fill-2" fill="#08ACA6" points="9.6687 63.9956 9.6687 134.8666 94.1687 134.8666 94.1687 56.0716 56.4437 23.0336"></polygon>
+            <g id="Group-17" transform="translate(0.000000, 0.867000)">
+                <path d="M4.393,51.5396 C5.14,52.3926 6.435,52.4776 7.288,51.7316 L51.919,12.6466 L96.55,51.7316 C97.402,52.4776 98.698,52.3926 99.445,51.5396 L103.33,47.1026 C104.076,46.2506 103.99,44.9546 103.138,44.2076 L53.478,0.7196 C52.586,-0.0624 51.252,-0.0624 50.359,0.7196 L0.7,44.2076 C-0.152,44.9546 -0.238,46.2506 0.508,47.1026 L4.393,51.5396 Z" id="Fill-3" fill="#D30B50"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <polygon id="Fill-5" fill="#106FAE" mask="url(#mask-2)" points="39.311 134 64.528 134 64.528 89.5 39.311 89.5"></polygon>
+                <path d="M51.9189,95.5625 C48.5019,95.5625 45.7319,98.3335 45.7319,101.7495 C45.7319,105.1665 48.5019,107.9375 51.9189,107.9375 C55.3359,107.9375 58.1059,105.1665 58.1059,101.7495 C58.1059,98.3335 55.3359,95.5625 51.9189,95.5625" id="Fill-7" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <path d="M33.2524,67.7134 C29.8354,67.7134 27.0654,70.4834 27.0654,73.9014 C27.0654,77.3184 29.8354,80.0884 33.2524,80.0884 C36.6694,80.0884 39.4394,77.3184 39.4394,73.9014 C39.4394,70.4834 36.6694,67.7134 33.2524,67.7134 Z" id="Stroke-8" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M70.5854,67.7134 C67.1684,67.7134 64.3984,70.4834 64.3984,73.9014 C64.3984,77.3184 67.1684,80.0884 70.5854,80.0884 C74.0024,80.0884 76.7724,77.3184 76.7724,73.9014 C76.7724,70.4834 74.0024,67.7134 70.5854,67.7134 Z" id="Stroke-9" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M51.9189,44.8647 C48.5019,44.8647 45.7319,47.6347 45.7319,51.0517 C45.7319,54.4687 48.5019,57.2397 51.9189,57.2397 C55.3359,57.2397 58.1059,54.4687 58.1059,51.0517 C58.1059,47.6347 55.3359,44.8647 51.9189,44.8647 Z" id="Stroke-10" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M51.9189,44.8647 L51.9189,57.2397" id="Stroke-11" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M58.1064,51.0522 L45.7314,51.0522" id="Stroke-12" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M33.2524,67.7134 L33.2524,80.0884" id="Stroke-13" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M39.4399,73.9014 L27.0649,73.9014" id="Stroke-14" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M70.5854,67.7134 L70.5854,80.0884" id="Stroke-15" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+                <path d="M76.7729,73.9014 L64.3979,73.9014" id="Stroke-16" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

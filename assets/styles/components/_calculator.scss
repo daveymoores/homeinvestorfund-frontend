@@ -3,6 +3,10 @@
     border-radius: $global-radius;
 }
 
+.calculator--wrapper {
+    @include position(relative);
+}
+
 .calculator--section {
     @include padding(20px);
     border-bottom: 1px solid $grey-2;

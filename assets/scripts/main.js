@@ -8,7 +8,8 @@
 		"init-page" : require("./widgets/init-page"),
 		"navigation" : require("./widgets/navigation"),
 		"calculator" : require("./widgets/calculator"),
-		"accordion" : require("./widgets/accordion")
+		"accordion" : require("./widgets/accordion"),
+		"maps" : require("./widgets/maps")
 	};
 
     function initWidgets ($node) {

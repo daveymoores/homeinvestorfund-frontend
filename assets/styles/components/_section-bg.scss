@@ -1,0 +1,21 @@
+.section-bg {
+    &__hero {
+        img {
+            width: 1500px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            margin-left: -750px;
+        }
+    }
+
+    &__get-started {
+        img {
+            width: 1500px;
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+            margin-left: -750px;
+        }
+    }
+}

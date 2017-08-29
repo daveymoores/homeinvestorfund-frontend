@@ -1,7 +1,7 @@
 <?php include 'components/head.php'; ?>
 <?php include 'components/navigation.php'; ?>
 
-<section class="fw-wrap--light-blue">
+<section class="fw-wrap--light-blue calculator--wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -90,12 +90,55 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="section-bg section-bg__hero">
+		<img src="./dist/images/bg/hero-home.png" alt="" />
+	</div>
 </section>
 
 <section class="container">
 	<div class="row">
 		<div class="col-md-12">
-
+			<div class="attributes">
+				<div class="attributes__container">
+					<div class="attributes__unit">
+						<div class="attributes__unit--icon">
+							<svg class="feature-panel--balloons">
+								<use xlink:href="./dist/svg/svg-sprite.svg#tick-red" />
+							</svg>
+						</div>
+						<div class="attributes__unit--p">
+							<p>We’re authorised by the Financial Conduct Authority</p>
+						</div>
+					</div>
+					<div class="attributes__unit">
+						<div class="attributes__unit--icon">
+							<svg class="feature-panel--balloons">
+								<use xlink:href="./dist/svg/svg-sprite.svg#smile-red" />
+							</svg>
+						</div>
+						<div class="attributes__unit--p">
+							<ul>
+								<li>10,000+</li>
+								<li>Customers and growing</li>
+							</ul>
+						</div>
+					</div>
+					<div class="attributes__unit">
+						<div class="attributes__unit--icon">
+							<svg class="feature-panel--balloons">
+								<use xlink:href="./dist/svg/svg-sprite.svg#stack-red" />
+							</svg>
+						</div>
+						<div class="attributes__unit--p">
+							<ul>
+								<li>Invest from as little as</li>
+								<li>£100</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -133,26 +176,47 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="feature-panel yellow">
-					<img src="" alt="" />
+					<svg class="feature-panel--balloons">
+						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
+					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="feature-panel teal">
-					<img src="" alt="" />
+					<svg class="feature-panel--houses">
+						<use xlink:href="./dist/svg/svg-sprite.svg#houses" />
+					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="feature-panel blue">
-					<img src="" alt="" />
+					<svg class="feature-panel--house-safe">
+						<use xlink:href="./dist/svg/svg-sprite.svg#house-safe" />
+					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="map--teaser">
+					<div class="centered-heading">
+						<heading>
+							<h2>New properties are added regularly</h2>
+						</heading>
+						<p>We’re always finding new opportunities for you to invest. Because we mostly select new build properties, we can keep maintenance costs low.</p>
+					</div>
+					<div class="map--unit" data-widget="maps"></div>
+				</div>
+			</div>
+		<div>
+
 	</div>
 </section>
 
@@ -399,6 +463,10 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="section-bg section-bg__get-started">
+		<img src="./dist/images/bg/signup.png" alt="" />
+	</div>
 </section>
 
 <section class="ghost-panel--section-padding">
@@ -436,82 +504,6 @@
 	</div>
 </section>
 
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<ul class="footer--list">
-					<li><a href="">Contact Us</a></li>
-					<li><a href="">Latest News</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Properties</a></li>
-					<li><a href="">White label partnerships</a></li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<div class="ghost-panel">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-					<a href="">Find out more</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="ghost-panel">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-					<a href="">Find out more</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<?php include 'components/footer.php'; ?>
 
-	<div class="footer__buttress">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<p><small>&copy; homeinvestor.fund 2017</small></p>
-				</div>
-				<div class="col-md-4">
-					<ul>
-						<li>T&amp;C's</li>
-						<li>Private policy</li>
-						<li>Investment Terms</li>
-					</ul>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<script type="text/javascript" src="./dist/scripts/main.min.js"></script>
-
-<script>
-	(function () {
-	  equalHeight(false);
-	})();
-
-	window.onresize = function(){
-	  equalHeight(true);
-	}
-
-	function equalHeight(resize) {
-	  var elements = document.getElementsByClassName("eq"),
-	      allHeights = [],
-	      i = 0;
-	  if(resize === true){
-	    for(i = 0; i < elements.length; i++){
-	      elements[i].style.height = 'auto';
-	    }
-	  }
-	  for(i = 0; i < elements.length; i++){
-	    var elementHeight = elements[i].clientHeight;
-	    allHeights.push(elementHeight);
-	  }
-	  for(i = 0; i < elements.length; i++){
-	    elements[i].style.height = Math.max.apply( Math, allHeights) + 'px';
-	  }
-	}
-</script>
-</body>
-</html>
+<?php include 'components/foot.php'; ?>
