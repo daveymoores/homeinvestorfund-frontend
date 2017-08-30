@@ -4,11 +4,25 @@ GoogleMaps.KEY = 'AIzaSyDor4jeGMzVTzl6x5QgpGPvahUSje9I-E0';
 
 function PropertyMap(node){
     this.$node = node;
+    this.setVars();
     this.init();
+}
+
+PropertyMap.prototype.setVars = function(){
+    this.css = {
+        states : {
+            'active':'active'
+        },
+        selectors : {
+            'mapOverlay' : 'mapOverlayHook'
+        }
+    }
 }
 
 PropertyMap.prototype.init = function(){
     var cxt = this;
+
+    this.mapOverlay = document.getElementById(this.css.selectors.mapOverlay);
 
     GoogleMaps.load(function(google) {
         var map;
@@ -161,16 +175,6 @@ PropertyMap.prototype.init = function(){
         {lat: 51.597818, lng: -0.106313}
       ]
 
-        // var locations = [
-        //     [51.521722, -0.130443],
-        //     [53.386278, -1.469588],
-        //     [55.869120, -4.251686],
-        //     [51.461624, -2.588994],
-        //     [51.537584, -0.138843],
-        //     [51.584594, -0.109231],
-        //     [51.597818, -0.106313]
-        // ]
-
         var options = {
            draggable: true,
            scrollwheel: true,
@@ -211,7 +215,7 @@ PropertyMap.prototype.init = function(){
 
             google.maps.event.addListener(marker, "click", (function(marker, i) {
                 return function() {
-
+                    cxt.mapOverlay.classList.add(cxt.css.states.active);
                 }
             })(marker, i));
 
@@ -272,7 +276,7 @@ PropertyMap.prototype.init = function(){
 }
 
 PropertyMap.prototype.buildOverlay = function(){
-    
+
 }
 
 module.exports = PropertyMap;
