@@ -335,11 +335,11 @@ PropertyMap.prototype.init = function(){
         var marker, i;
         var gmarkers = []; //marker for clusters
 
-        // get('story.json').then(function(response) {
-        //   console.log("Success!", response);
-        // }, function(error) {
-        //   console.error("Failed!", error);
-        // })
+        cxt.get('json/locations.json').then(function(response) {
+          console.log(response);
+        }, function(error) {
+          console.error("Failed!", error);
+        })
 
         for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
@@ -422,7 +422,7 @@ PropertyMap.prototype.get = function(url) {
       // so check the status
       if (req.status == 200) {
         // Resolve the promise with the response text
-        resolve(req.response);
+        resolve(JSON.parse(req.response));
       }
       else {
         // Otherwise reject with the status text
