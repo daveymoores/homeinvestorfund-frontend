@@ -181,127 +181,7 @@ PropertyMap.prototype.init = function(){
             }
         ];
 
-        var locations = [
-            {
-                lat: 51.521722,
-                lng: -0.130443,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Ferndale Road, Clapham',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 53.386278,
-                lng: -1.469588,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Some Road, Some place',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 55.869120,
-                lng: -4.251686,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Long Road, Longtown',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 51.461624,
-                lng: -2.588994,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'High Road, Hightown',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 51.537584,
-                lng: -0.138843,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Low Road, Lowtown',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 51.584594,
-                lng: -0.109231,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Middle Road, Middletown',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            },
-            {
-                lat: 51.597818,
-                lng: -0.106313,
-                pics: [
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg',
-                    './dist/images/house-pics/placeholder.jpg'
-                ],
-                location: 'Top Road, Toptown',
-                intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                points: [
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet',
-                    'Lorem ipsum dolor sit amet'
-                ]
-            }
-          ]
+        
 
         var options = {
            draggable: true,
@@ -335,76 +215,76 @@ PropertyMap.prototype.init = function(){
         var marker, i;
         var gmarkers = []; //marker for clusters
 
-        cxt.get('json/locations.json').then(function(response) {
-          console.log(response);
+        cxt.get('json/locations.json').then(function(locations) {
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                    map: map,
+                    icon: image
+                });
+
+                google.maps.event.addListener(marker, "click", (function(marker, i) {
+                    return function() {
+                        cxt.buildOverlay(locations[i]);
+                    }
+                })(marker, i));
+
+                gmarkers.push(marker);
+            }
+
+            //begin cluster definition
+            var clusterStyles = [
+                {
+                    textColor: 'white',
+                    textSize: 16,
+                    url: 'dist/images/icons/m1.png',
+                    height: 48,
+                    width: 48
+                },
+                {
+                    textColor: 'white',
+                    textSize: 16,
+                    url: 'dist/images/icons/m2.png',
+                    height: 48,
+                    width: 48
+                },
+                {
+                    textColor: 'white',
+                    textSize: 16,
+                    url: 'dist/images/icons/m3.png',
+                    height: 48,
+                    width: 48
+                },
+                {
+                    textColor: 'white',
+                    textSize: 16,
+                    url: 'dist/images/icons/m4.png',
+                    height: 48,
+                    width: 48
+                },
+                {
+                    textColor: 'white',
+                    textSize: 16,
+                    url: 'dist/images/icons/m5.png',
+                    height: 48,
+                    width: 48
+                }
+            ];
+
+
+              var mcOptions = {
+                  gridSize: 50,
+                  styles: clusterStyles,
+                  maxZoom: 15
+              };
+
+              var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
+
+
         }, function(error) {
           console.error("Failed!", error);
         })
-
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-                map: map,
-                icon: image
-            });
-
-            google.maps.event.addListener(marker, "click", (function(marker, i) {
-                return function() {
-                    cxt.buildOverlay(locations[i]);
-                }
-            })(marker, i));
-
-            gmarkers.push(marker);
-        }
-
-
-        //begin cluster definition
-        var clusterStyles = [
-            {
-                textColor: 'white',
-                textSize: 16,
-                url: 'dist/images/icons/m1.png',
-                height: 48,
-                width: 48
-            },
-            {
-                textColor: 'white',
-                textSize: 16,
-                url: 'dist/images/icons/m2.png',
-                height: 48,
-                width: 48
-            },
-            {
-                textColor: 'white',
-                textSize: 16,
-                url: 'dist/images/icons/m3.png',
-                height: 48,
-                width: 48
-            },
-            {
-                textColor: 'white',
-                textSize: 16,
-                url: 'dist/images/icons/m4.png',
-                height: 48,
-                width: 48
-            },
-            {
-                textColor: 'white',
-                textSize: 16,
-                url: 'dist/images/icons/m5.png',
-                height: 48,
-                width: 48
-            }
-        ];
-
-
-          var mcOptions = {
-              gridSize: 50,
-              styles: clusterStyles,
-              maxZoom: 15
-          };
-
-          var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
 
     });
 
@@ -488,7 +368,7 @@ PropertyMap.prototype.buildOverlay = function(data){
     var li = this.mapOverlayContents.querySelectorAll('li');
 
     [].forEach.call(li, function(el, index, array){
-        el.innerHTML = '<span class="check"></span>' + data.points[index];
+        el.innerHTML = '<span class="check"></span>' + data.points[index].txt;
     });
 
     //fill thumbnails
@@ -496,8 +376,8 @@ PropertyMap.prototype.buildOverlay = function(data){
     data.pics.forEach(function(i){
         var img = document.createElement('img');
         var a = document.createElement('a');
-        img.setAttribute('src', i);
-        a.innerHTML = "<img src="+ i +" alt=''>";
+        img.setAttribute('src', i.url);
+        a.innerHTML = "<img src="+ i.url +" alt=''>";
         cxt.mapCarouselTrack.appendChild(img);
         cxt.mapCarouselThumbnails.appendChild(a);
     });
