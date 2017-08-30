@@ -48,6 +48,7 @@
     "minimist": "^1.2.0",
     "node-bourbon": "^4.2.8",
     "node-js-marker-clusterer": "^1.0.0",
+    "promise": "^8.0.1",
     "run-sequence": "^1.2.2",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
@@ -59,6 +60,8 @@
     "browser-sync": "^2.16.0",
     "gulp-imagemin": "^3.0.3",
     "rangeslider-pure": "^0.4.2",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
     "sass-burger": "^1.3.1"
   }
 }

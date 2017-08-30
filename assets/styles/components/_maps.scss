@@ -38,16 +38,16 @@ $map-height: 760px;
         height: 84px;
         width: 84px;
         @include position(absolute, 0 null 0 -84px);
-        @include padding(15px);
+        @include padding(18px);
 
         > span {
             color: $white;
             @include transform(rotate(45deg));
             transform-origin: 50% 50%;
-            font-weight: 700;
+            font-weight: 600;
             display: inline-block;
-            font-size: 100px;
-            margin-top: -25px;
+            font-size: 85px;
+            @include position(absolute, -2px 16px null null);
         }
     }
 
@@ -58,14 +58,12 @@ $map-height: 760px;
     &--gallery {
         @include display(flex);
         @include flex-direction(row);
+        height: 300px;
+        overflow: hidden;
     }
 
     &--spotlight {
         width: 80%;
-
-        > img {
-            width: 100%;
-        }
     }
 
     &--contents {
@@ -121,14 +119,40 @@ $map-height: 760px;
         width: 20%;
         @include display(flex);
         @include flex-direction(column);
+        background-color: $white;
+        position: relative;
 
         a {
             width: 100%;
+            background-color: black;
+            position: relative;
+            cursor: pointer;
+
+            &.active > img {
+                opacity: 1;
+            }
+
+            &:hover > img {
+                opacity: 1;
+            }
         }
 
         img {
             width: 100%;
             display: block;
+            opacity: 0.4;
+            @include transition(opacity .3s ease);
         }
+    }
+}
+
+
+.map__overlay--carousel-track {
+    width: 100%;
+    @include transition(all .3s ease);
+
+    > img {
+        width: 100%;
+        float: left;
     }
 }

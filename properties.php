@@ -20,27 +20,23 @@
 <section class="map--wrapper">
 	<div class="map--unit" data-widget="property-map"></div>
 	<div class="map__overlay" id="mapOverlayHook">
+		<div class="map__overlay--loading"></div>
 		<a href="#" class="map__overlay--close"><span>+</span></a>
 		<div class="map__overlay--title">
-			<h4>Ferndale Road, Clapham</h4>
+			<h4></h4>
 		</div>
 		<div class="map__overlay--gallery">
 			<div class="map__overlay--spotlight">
-				<img src="./dist/images/house-pics/placeholder.jpg" alt="" />
+				<div class="map__overlay--carousel-track"></div>
 			</div>
-			<div class="map__overlay--thumbnails">
-				<a href="#"><img src="./dist/images/house-pics/placeholder.jpg" alt="" /></a>
-				<a href="#"><img src="./dist/images/house-pics/placeholder.jpg" alt="" /></a>
-				<a href="#"><img src="./dist/images/house-pics/placeholder.jpg" alt="" /></a>
-				<a href="#"><img src="./dist/images/house-pics/placeholder.jpg" alt="" /></a>
-			</div>
+			<div class="map__overlay--thumbnails"></div>
 		</div>
 		<div class="map__overlay--contents">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul>
-				<li><span class="check"></span>Lorem ipsum dolor sit amet</li>
-				<li><span class="check"></span>Lorem ipsum dolor sit amet</li>
-				<li><span class="check"></span>Lorem ipsum dolor sit amet</li>
+				<li></li>
+				<li></li>
+				<li></li>
 			</ul>
 
 			<a href="#" class="btn__primary--red">Invest in the fund now</a>
