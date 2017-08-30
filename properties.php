@@ -2,8 +2,38 @@
 
 <?php include 'components/navigation.php'; ?>
 
-<section>
-	<div class="map--unit" data-widget="maps"></div>
+<section class="fw-wrap--light-blue short">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="centered-heading">
+					<heading>
+						<h2>New properties are added regularly</h2>
+					</heading>
+					<p>We’re always finding new opportunities for you to invest. Because we mostly select new build properties, we can keep maintenance costs low.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="map--wrapper">
+	<div class="map--unit" data-widget="property-map"></div>
+	<div class="map__overlay">
+		<div class="map__overlay--title">
+			<h4>Ferndale Road, Clapham</h4>
+		</div>
+		<div class="map__overlay--contents">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+
+			<a href="#" class="btn__primary--red">Invest in the fund now</a>
+		</div>
+	</div>
 </section>
 
 <section class="fw-wrap">
@@ -52,7 +82,25 @@
 	</div>
 </section>
 
-<?php include 'components/attributes.php'; ?>
+<div class="attributes__wrapper">
+	<?php include 'components/attributes.php'; ?>
+</div>
+
+<section class="option-panel">
+	<div class="column">
+		<h3>I’m a personal investor</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<a href="#" class="btn__primary--red">Tell me more</a>
+	</div>
+	<div class="column">
+		<h3>I’m a financial advisor</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<a href="#" class="btn__primary--red">Tell me more</a>
+	</div>
+</section>
+
 
 <?php include 'components/call-out.php'; ?>
 

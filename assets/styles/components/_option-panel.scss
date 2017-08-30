@@ -1,0 +1,52 @@
+.option-panel {
+    width: 100%;
+    @include clearfix;
+
+    @media all and (min-width: $container-tablet) {
+        border-top: 1px solid $grey-6;
+    }
+
+    .column {
+        width: 100%;
+        @include padding(20px);
+
+        @media all and (min-width: $container-tablet) {
+            @include padding(80px);
+            width: 50%;
+            float: left;
+        }
+
+        @media all and (min-width: $container-desktop) {
+            @include padding(80px 15% 80px 80px);
+        }
+
+        &:last-child {
+            border-top: 1px solid $grey-6;
+
+            @media all and (min-width: $container-tablet) {
+                border-top: none;
+                border-left: 1px solid $grey-6;
+            }
+        }
+    }
+
+    a {
+        display: table;
+    }
+
+    h3 {
+        @include heading--h2;
+    }
+
+    p {
+        padding-bottom: 20px;
+
+        @media all and (min-width: $container-tablet) {
+            padding-bottom: 40px;
+        }
+
+        @media all and (min-width: $container-desktop) {
+            padding-bottom: 80px;
+        }
+    }
+}

@@ -3,6 +3,11 @@
     border-radius: $global-radius;
     background-color: white;
     @include padding(20px);
+    margin-bottom: 35px;
+
+    @media all and (min-width: $container-tablet) {
+        margin-bottom: 0px;
+    }
 
     * {
         text-align: center;

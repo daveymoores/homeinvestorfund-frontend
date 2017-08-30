@@ -29,8 +29,10 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/maps";
 @import "components/section-bg";
 @import "components/attributes";
+@import "components/video-prompt";
 
 @import "components/panel";
 @import "components/feature-panel";
 @import "components/quote-panel";
 @import "components/ghost-panel";
+@import "components/option-panel";

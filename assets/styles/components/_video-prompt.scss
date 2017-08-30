@@ -1,0 +1,43 @@
+.video-prompt {
+    margin-top: 60px;
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include align-items(center);
+
+    p {
+        @include font-proxima(600);
+    }
+}
+
+@mixin video-btn($size, $tri-size){
+    height: $size;
+    width: $size;
+    background-color: $grey-7;
+    position: relative;
+    border-radius: 50%;
+
+    > span {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: (($tri-size / 3) * 2) 0 (($tri-size / 3) * 2) $tri-size;
+        border-color: transparent transparent transparent #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate3d(-($tri-size / 3), -($tri-size / 2), 0));
+    }
+}
+
+.video-prompt--btn {
+    @include video-btn(42px, 9px);
+    margin-right: 20px;
+
+    &.lrg {
+        @include video-btn(104px, 20px);
+        @include margin(auto);
+        display: block;
+        margin-top: 30px;
+    }
+}

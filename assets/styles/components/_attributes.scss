@@ -1,35 +1,70 @@
 .attributes {
-    @include padding(60px 0);
+    @media all and (min-width: $container-tablet) {
+        @include padding(80px 0);
+    }
+
+    &__wrapper {
+        border-top: 1px solid $grey-6;
+    }
 
     &__container {
         @include display(flex);
-        @include flex-direction(row);
+        @include flex-direction(column);
         @include justify-content(flex-start);
+
+        @media all and (min-width: $container-tablet) {
+            @include flex-direction(row);
+        }
     }
 
     &__unit {
         @include display(flex);
         @include flex-direction(row);
         @include align-items(center);
-        margin-right: 80px;
+        width: calc(100% + 40px);
+        border-bottom: 1px solid $grey-6;
+        @include padding(20px);
+        margin-left: -20px;
+
+        @media all and (min-width: $container-tablet) {
+            @include padding(0px);
+            margin-right: 80px;
+            margin-left: 0px;
+            width: auto;
+            border: none;
+        }
 
         p, li {
             @include font-proxima(400);
-            font-size: $font-size-base;
+            font-size: $font-size-small;
             line-height: $lineheight-small;
+            @include padding(0px);
+
+            @media all and (min-width: $container-tablet) {
+                font-size: $font-size-base;
+            }
 
             &.lrg {
-                font-size: 52px;
+                font-size: 24px;
                 @include font-proxima(600);
                 line-height: $lineheight-base;
                 @include padding(5px 0px);
+
+                @media all and (min-width: $container-tablet) {
+                    font-size: 52px;
+                }
             }
         }
 
         svg {
-            height: 65px;
-            width: 65px;
+            height: 40px;
+            width: 40px;
             margin-right: 20px;
+
+            @media all and (min-width: $container-tablet) {
+                height: 65px;
+                width: 65px;
+            }
         }
     }
 }

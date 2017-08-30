@@ -89,9 +89,15 @@ h5 {
 
 p {
     @include font-sans(400);
-    font-size: $font-size-base;
-    line-height: $lineheight-base;
-    padding: 20px 0px;
+    font-size: $font-size-small;
+    line-height: $lineheight-small;
+    padding: 10px 0px;
+
+    @media all and (min-width: $container-tablet) {
+        font-size: $font-size-base;
+        line-height: $lineheight-base;
+        padding: 20px 0px;
+    }
 
     &.light {
         font-weight: 300;

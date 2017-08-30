@@ -1,4 +1,6 @@
 .ghost-panel {
+    @extend .panel;
+
     border: 1px solid $grey-2;
     border-radius: $global-radius;
     @include display(flex);
@@ -7,16 +9,19 @@
 
     h4 {
         font-size: $font-size-base;
+        text-align: left;
     }
 
     p {
         font-size: $font-size-small;
+        text-align: left;
     }
 
     a {
         margin-top: auto;
         @include font-proxima(600);
         color: $red-1;
+        text-align: left;
     }
 }
 

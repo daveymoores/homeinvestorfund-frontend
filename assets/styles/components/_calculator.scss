@@ -5,6 +5,7 @@
 
 .calculator--wrapper {
     @include position(relative);
+    overflow: hidden;
 }
 
 .calculator--section {

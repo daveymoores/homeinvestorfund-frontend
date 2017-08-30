@@ -9,6 +9,13 @@
 					<h1><span class="colorpick--red">Residential property</span> investment for everyone</h1>
 					<p class="light">We’ve opened the doors to our £50m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
 				</heading>
+
+				<div class="video-prompt">
+					<a href="" class="video-prompt--btn">
+						<span></span>
+					</a>
+					<p>See how it works in 60 seconds</p>
+				</div>
 			</div>
 			<div class="col-md-6 col-sm-6">
 
@@ -270,6 +277,17 @@
 		</div>
 	</div>
 </section>
+
+<div class="fw-wrap--video">
+	<div class="centered-heading">
+		<heading>
+			<h3>What do our customer's say?</h3>
+		</heading>
+		<a href="#" class="video-prompt--btn lrg">
+			<span></span>
+		</a>
+	</div>
+</div>
 
 <section class="faqs">
 

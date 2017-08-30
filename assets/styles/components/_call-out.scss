@@ -3,6 +3,7 @@
     min-height: 515px;
     @include padding($section-dbl-padding 0);
     position: relative;
+    overflow: hidden;
 
     .centered-heading * {
         color: white;
