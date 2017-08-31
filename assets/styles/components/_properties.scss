@@ -1,0 +1,32 @@
+.properties {
+    border-bottom: 1px solid $grey-6;
+    padding-bottom: 40px;
+
+    @media all and (min-width: $container-tablet) {
+        display: none;
+    }
+
+    &__panel {
+        width: 100%;
+        border: 1px solid $grey-6;
+        border-radius: $global-radius;
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        p {
+            @include font-proxima(600);
+            @include padding(20px);
+            font-size: $font-size-base;
+        }
+    }
+
+    a {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

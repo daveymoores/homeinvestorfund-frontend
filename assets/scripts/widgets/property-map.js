@@ -21,13 +21,18 @@ PropertyMap.prototype.setVars = function(){
             'mapCarouselThumbnails' : '.map__overlay--thumbnails',
             'mapOverlayTitle'  :  '.map__overlay--title',
             'mapOverlayContents' : '.map__overlay--contents',
-            'mapOverlayLoading' : '.map__overlay--loading'
+            'mapOverlayLoading' : '.map__overlay--loading',
+            'locationMobSelect' : 'locationMobSelectHook',
+            'propertiesPanel' : '.properties__panel',
+            'properties' : 'propertiesHook'
         }
     }
 }
 
 PropertyMap.prototype.init = function(){
     var cxt = this;
+
+    var ww = window.innerWidth;
 
     this.mapOverlay = document.getElementById(this.css.selectors.mapOverlay);
     this.mapOverlayClose = this.mapOverlay.querySelector(this.css.selectors.mapClose);
@@ -36,6 +41,11 @@ PropertyMap.prototype.init = function(){
     this.mapOverlayTitle = this.mapOverlay.querySelector(this.css.selectors.mapOverlayTitle);
     this.mapOverlayContents = this.mapOverlay.querySelector(this.css.selectors.mapOverlayContents);
     this.mapOverlayLoading = this.mapOverlay.querySelector(this.css.selectors.mapOverlayLoading);
+
+    //mobile selectors
+    this.locationMobSelect = document.getElementById(this.css.selectors.locationMobSelect);
+    this.properties = document.getElementById(this.css.selectors.properties);
+
 
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
@@ -198,104 +208,136 @@ PropertyMap.prototype.init = function(){
            styles: myStyles
        };
 
-        map = new google.maps.Map(cxt.$node, options);
-        map.setOptions({styles: styles['silver']});
+       if(ww > 768) {
 
-        //Resize Function
-        google.maps.event.addDomListener(window, "resize", function() {
-            var center = map.getCenter();
-            google.maps.event.trigger(map, "resize");
-            map.setCenter(center);
-        });
+           map = new google.maps.Map(cxt.$node, options);
+           map.setOptions({styles: styles['silver']});
 
-        var image = {
-          url: './dist/images/icons/pin.png',
-          size: new google.maps.Size(37, 40),
-          origin: new google.maps.Point(0, 0),
-          anchor: new google.maps.Point(0, 32)
-        };
+           //Resize Function
+           google.maps.event.addDomListener(window, "resize", function() {
+               var center = map.getCenter();
+               google.maps.event.trigger(map, "resize");
+               map.setCenter(center);
+           });
 
-        var marker, i;
-        var gmarkers = []; //marker for clusters
+           var image = {
+             url: './dist/images/icons/pin.png',
+             size: new google.maps.Size(37, 40),
+             origin: new google.maps.Point(0, 0),
+             anchor: new google.maps.Point(0, 32)
+           };
 
-        cxt.get('json/locations.json').then(function(locations) {
+           var marker, i;
+           var gmarkers = []; //marker for clusters
 
-            for (i = 0; i < locations.length; i++) {
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-                    map: map,
-                    icon: image
-                });
+           cxt.get('json/locations.json').then(function(locations) {
 
-                google.maps.event.addListener(marker, "click", (function(marker, i) {
-                    return function() {
-                        cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
-                        cxt.mapOverlayLoading.style.zIndex = 3;
-                        setTimeout(function(){
-                            cxt.scrap();
-                            cxt.buildOverlay(locations[i]);
-                        }, 300);
-                    }
-                })(marker, i));
+               for (i = 0; i < locations.length; i++) {
+                   marker = new google.maps.Marker({
+                       position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                       map: map,
+                       icon: image
+                   });
 
-                gmarkers.push(marker);
-            }
+                   google.maps.event.addListener(marker, "click", (function(marker, i) {
+                       return function() {
+                           cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+                           cxt.mapOverlayLoading.style.zIndex = 3;
+                           setTimeout(function(){
+                               cxt.scrap();
+                               cxt.buildOverlay(locations[i]);
+                           }, 300);
+                       }
+                   })(marker, i));
 
-            //begin cluster definition
-            var clusterStyles = [
-                {
-                    textColor: 'white',
-                    textSize: 16,
-                    url: 'dist/images/icons/m1.png',
-                    height: 48,
-                    width: 48
-                },
-                {
-                    textColor: 'white',
-                    textSize: 16,
-                    url: 'dist/images/icons/m2.png',
-                    height: 48,
-                    width: 48
-                },
-                {
-                    textColor: 'white',
-                    textSize: 16,
-                    url: 'dist/images/icons/m3.png',
-                    height: 48,
-                    width: 48
-                },
-                {
-                    textColor: 'white',
-                    textSize: 16,
-                    url: 'dist/images/icons/m4.png',
-                    height: 48,
-                    width: 48
-                },
-                {
-                    textColor: 'white',
-                    textSize: 16,
-                    url: 'dist/images/icons/m5.png',
-                    height: 48,
-                    width: 48
-                }
-            ];
+                   gmarkers.push(marker);
+               }
+
+               //begin cluster definition
+               var clusterStyles = [
+                   {
+                       textColor: 'white',
+                       textSize: 16,
+                       url: 'dist/images/icons/m1.png',
+                       height: 48,
+                       width: 48
+                   },
+                   {
+                       textColor: 'white',
+                       textSize: 16,
+                       url: 'dist/images/icons/m2.png',
+                       height: 48,
+                       width: 48
+                   },
+                   {
+                       textColor: 'white',
+                       textSize: 16,
+                       url: 'dist/images/icons/m3.png',
+                       height: 48,
+                       width: 48
+                   },
+                   {
+                       textColor: 'white',
+                       textSize: 16,
+                       url: 'dist/images/icons/m4.png',
+                       height: 48,
+                       width: 48
+                   },
+                   {
+                       textColor: 'white',
+                       textSize: 16,
+                       url: 'dist/images/icons/m5.png',
+                       height: 48,
+                       width: 48
+                   }
+               ];
 
 
-              var mcOptions = {
-                  gridSize: 50,
-                  styles: clusterStyles,
-                  maxZoom: 15
-              };
+                 var mcOptions = {
+                     gridSize: 50,
+                     styles: clusterStyles,
+                     maxZoom: 15
+                 };
 
-              var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
+                 var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
 
-        }, function(error) {
-          console.error("Failed!", error);
-        });
+           }, function(error) {
+             console.error("Failed!", error);
+           });
+
+       } else {
+
+           cxt.get('json/locations.json').then(function(locations) {
+
+               for (i = 0; i < locations.length; i++) {
+
+
+                   cxt.propertiesPanels = this.properties.querySelectorAll(this.css.selectors.properties);
+
+                   [].forEach.call(cxt.propertiesPanels, function(el, index, array){
+                       el.addEventListener('click', function(){
+                           console.log(locations[i]);
+                        //    cxt.scrap();
+                        //    cxt.buildOverlay(locations[i]);
+                       });
+                   });
+
+               }
+
+           }, function(error) {
+             console.error("Failed!", error);
+           });
+       }
 
     });
 
 }
+
+
+PropertyMap.prototype.buildMobileList = function(url) {
+
+}
+
 
 PropertyMap.prototype.get = function(url) {
 
@@ -369,7 +411,7 @@ PropertyMap.prototype.initCarousel = function(){
     cxt.mapOverlayLoading.classList.remove(cxt.css.states.active);
     setTimeout(function(){
         cxt.mapOverlayLoading.style.zIndex = -1;
-    });
+    }, 300);
 }
 
 PropertyMap.prototype.buildOverlay = function(data){

@@ -26,3 +26,39 @@
         width: 66%;
     }
 }
+
+
+.formtype--select {
+   background: url(../images/icons/chevron-down.svg) no-repeat 93% 53%;
+   overflow: hidden;
+   @include padding(5px 5px 5px 10px);
+   @include font-proxima(600);
+   font-size: $font-size-base;
+   width: 240px;
+   display: block;
+   margin: auto;
+   background-color: $white;
+   border-radius: $global-radius;
+   background-size: 20px;
+   margin-top: 30px;
+
+   @media all and (min-width: $container-tablet) {
+       display: none;
+   }
+
+    select {
+       background: transparent;
+       border: none;
+       font-size: 14px;
+       height: 29px;
+       padding: 5px; /* If you add too much padding here, the options won't show in IE */
+       width: 268px;
+       font-size: 16px;
+       height: 34px;
+       width: 268px;
+
+       &:focus {
+           outline: none;
+       }
+    }
+}

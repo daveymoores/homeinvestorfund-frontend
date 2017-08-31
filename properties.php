@@ -14,11 +14,58 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="formtype--select" id="locationMobSelectHook">
+					<select>
+						<option value="location_all">Location all</option>
+						<option value="location_one">Location one</option>
+						<option value="location_two">Location two</option>
+						<option value="location_three">Location three</option>
+						<option value="location_four">Location four</option>
+						<option value="location_five">Location five</option>
+						<option value="location_six">Location six</option>
+					</select>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
 <section class="map--wrapper">
-	<div class="map--unit" data-widget="property-map"></div>
+	<div class="map--unit"></div>
+	<div class="properties" id="propertiesHook">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="properties__panel">
+						<div class="properties__panel--img-cont">
+							<img src="./dist/images/house-pics/placeholder-2.jpg" alt="" />
+						</div>
+						<p>Ferndale Road</p>
+					</div>
+
+					<div class="properties__panel">
+						<div class="properties__panel--img-cont">
+							<img src="./dist/images/house-pics/placeholder-2.jpg" alt="" />
+						</div>
+						<p>Ferndale Road</p>
+					</div>
+
+					<div class="properties__panel">
+						<div class="properties__panel--img-cont">
+							<img src="./dist/images/house-pics/placeholder-2.jpg" alt="" />
+						</div>
+						<p>Ferndale Road</p>
+					</div>
+
+					<a href="#_" class="btn__primary--red">Load more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="map__overlay" id="mapOverlayHook">
 		<div class="map__overlay--loading"><div class="spinner"></div></div>
 		<a href="#" class="map__overlay--close"><span>+</span></a>

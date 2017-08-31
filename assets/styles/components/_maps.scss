@@ -2,14 +2,23 @@ $map-height: 760px;
 
 .map {
     &--wrapper {
-        height: $map-height;
         overflow: hidden;
         width: 100%;
         position: relative;
+
+        @media all and (min-width: $container-tablet) {
+            display: block;
+            height: $map-height;
+        }
     }
 
     &--unit {
+        display: none;
         height: $map-height;
+
+        @media all and (min-width: $container-tablet) {
+            display: block;
+        }
     }
 
     &--teaser {
@@ -22,12 +31,18 @@ $map-height: 760px;
 
 
 .map__overlay {
-    width: 550px;
-    height: $map-height;
-    @include position(absolute, 0 0 null null);
+    width: calc(100% - 50px);
+    height: 100%;
+    @include position(fixed, 0 0 null null);
     background-color: white;
     @include transition(all .25s ease-in-out);
     @include transform(translate3d(calc(100% + 90px), 0, 0));
+
+    @media all and (min-width: $container-tablet){
+        height: $map-height;
+        @include position(absolute, 0 0 null null);
+        width: 550px;
+    }
 
     &.active {
         @include transform(translate3d(0, 0, 0));
@@ -35,10 +50,16 @@ $map-height: 760px;
 
     &--close {
         background-color: $red-1;
-        height: 84px;
-        width: 84px;
-        @include position(absolute, 0 null 0 -84px);
+        height: 50px;
+        width: 50px;
+        @include position(absolute, 0 null 0 -50px);
         @include padding(18px);
+
+        @media all and (min-width: $container-tablet){
+            @include position(absolute, 0 null 0 -84px);
+            height: 84px;
+            width: 84px;
+        }
 
         > span {
             color: $white;
@@ -46,13 +67,23 @@ $map-height: 760px;
             transform-origin: 50% 50%;
             font-weight: 600;
             display: inline-block;
-            font-size: 85px;
-            @include position(absolute, -2px 15px null null);
+            font-size: 50px;
+            @include position(absolute, 0px 10px null null);
+
+            @media all and (min-width: $container-tablet){
+                font-size: 85px;
+                @include position(absolute, -2px 15px null null);
+
+            }
         }
     }
 
     &--title {
-        padding: 30px;
+        @include padding(13px 13px 13px 20px);
+
+        @media all and (min-width: $container-tablet){
+            padding: 30px;
+        }
     }
 
     &--gallery {
@@ -76,8 +107,13 @@ $map-height: 760px;
 
         ul {
             li {
-                font-size: $font-size-base;
-                line-height: $lineheight-base;
+                font-size: $font-size-small;
+                line-height: $lineheight-small;
+
+                @media all and (min-width: $container-tablet){
+                    font-size: $font-size-base;
+                    line-height: $lineheight-base;
+                }
             }
         }
 

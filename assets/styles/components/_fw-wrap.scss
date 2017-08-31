@@ -1,10 +1,28 @@
 @mixin  wrap-dims($color){
     background-color: $color;
     min-height: 600px;
-    @include padding(80px 0);
+    @include padding(40px 0);
+
+    @media all and (min-width: $container-tablet) {
+        @include padding(80px 0);
+    }
+
+    .col-md-4:last-child {
+        > div {
+            margin-bottom: 0px;
+
+            @media all and (min-width: $container-tablet) {
+                margin-bottom: 35px;
+            }
+        }
+    }
 
     &.double-padding {
-        @include padding(140px 0);
+        @include padding(80px 0);
+
+        @media all and (min-width: $container-tablet) {
+            @include padding(140px 0);
+        }
     }
 
     &.short {
