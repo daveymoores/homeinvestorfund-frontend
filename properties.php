@@ -20,7 +20,7 @@
 <section class="map--wrapper">
 	<div class="map--unit" data-widget="property-map"></div>
 	<div class="map__overlay" id="mapOverlayHook">
-		<div class="map__overlay--loading"></div>
+		<div class="map__overlay--loading"><div class="spinner"></div></div>
 		<a href="#" class="map__overlay--close"><span>+</span></a>
 		<div class="map__overlay--title">
 			<h4></h4>
@@ -32,7 +32,7 @@
 			<div class="map__overlay--thumbnails"></div>
 		</div>
 		<div class="map__overlay--contents">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p></p>
 			<ul>
 				<li></li>
 				<li></li>

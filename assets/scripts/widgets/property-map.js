@@ -20,7 +20,8 @@ PropertyMap.prototype.setVars = function(){
             'mapCarouselTrack' : '.map__overlay--carousel-track',
             'mapCarouselThumbnails' : '.map__overlay--thumbnails',
             'mapOverlayTitle'  :  '.map__overlay--title',
-            'mapOverlayContents' : '.map__overlay--contents'
+            'mapOverlayContents' : '.map__overlay--contents',
+            'mapOverlayLoading' : '.map__overlay--loading'
         }
     }
 }
@@ -34,6 +35,7 @@ PropertyMap.prototype.init = function(){
     this.mapCarouselTrack = this.mapOverlay.querySelector(this.css.selectors.mapCarouselTrack);
     this.mapOverlayTitle = this.mapOverlay.querySelector(this.css.selectors.mapOverlayTitle);
     this.mapOverlayContents = this.mapOverlay.querySelector(this.css.selectors.mapOverlayContents);
+    this.mapOverlayLoading = this.mapOverlay.querySelector(this.css.selectors.mapOverlayLoading);
 
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
@@ -181,7 +183,7 @@ PropertyMap.prototype.init = function(){
             }
         ];
 
-        
+
 
         var options = {
            draggable: true,
@@ -189,6 +191,7 @@ PropertyMap.prototype.init = function(){
            panControl: true,
            zoom: 6,
            disableDefaultUI: true,
+           zoomControl: true,
            clickableIcons: true,
            center: {lat: 53.634566, lng: -3.472727},
            mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -226,7 +229,12 @@ PropertyMap.prototype.init = function(){
 
                 google.maps.event.addListener(marker, "click", (function(marker, i) {
                     return function() {
-                        cxt.buildOverlay(locations[i]);
+                        cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+                        cxt.mapOverlayLoading.style.zIndex = 3;
+                        setTimeout(function(){
+                            cxt.scrap();
+                            cxt.buildOverlay(locations[i]);
+                        }, 300);
                     }
                 })(marker, i));
 
@@ -281,32 +289,27 @@ PropertyMap.prototype.init = function(){
 
               var markerCluster = new MarkerClusterer(map, gmarkers, mcOptions);
 
-
         }, function(error) {
           console.error("Failed!", error);
-        })
+        });
 
     });
 
 }
 
 PropertyMap.prototype.get = function(url) {
-  // Return a new promise.
+
   return new Promise(function(resolve, reject) {
-    // Do the usual XHR stuff
+
     var req = new XMLHttpRequest();
     req.open('GET', url);
 
     req.onload = function() {
-      // This is called even on 404 etc
-      // so check the status
+
       if (req.status == 200) {
-        // Resolve the promise with the response text
         resolve(JSON.parse(req.response));
       }
       else {
-        // Otherwise reject with the status text
-        // which will hopefully be a meaningful error
         reject(Error(req.statusText));
       }
     };
@@ -316,13 +319,22 @@ PropertyMap.prototype.get = function(url) {
       reject(Error("Network Error"));
     };
 
-    // Make the request
     req.send();
   });
 }
 
 PropertyMap.prototype.scrap = function(){
+    var h4 = this.mapOverlayTitle.querySelector('h4');
+    var p = this.mapOverlayContents.querySelector('p');
+    var li = this.mapOverlayContents.querySelectorAll('li');
 
+    h4.innerHTML = '';
+    p.innerHTML = '';
+    [].forEach.call(li, function(el, index, array){
+        el.innerHTML = '';
+    });
+    this.mapCarouselTrack.innerHTML = '';
+    this.mapCarouselThumbnails.innerHTML = '';
 }
 
 PropertyMap.prototype.initCarousel = function(){
@@ -352,8 +364,12 @@ PropertyMap.prototype.initCarousel = function(){
         });
     });
 
-    cxt.mapOverlay.classList.add(cxt.css.states.active);
+    this.mapOverlay.classList.add(cxt.css.states.active);
     this.mapCarouselTrack.style.width = imgWidth*imgsNum + 'px';
+    cxt.mapOverlayLoading.classList.remove(cxt.css.states.active);
+    setTimeout(function(){
+        cxt.mapOverlayLoading.style.zIndex = -1;
+    });
 }
 
 PropertyMap.prototype.buildOverlay = function(data){
@@ -371,8 +387,11 @@ PropertyMap.prototype.buildOverlay = function(data){
         el.innerHTML = '<span class="check"></span>' + data.points[index].txt;
     });
 
+    p.innerHTML = data.intro;
+
     //fill thumbnails
     //fill gallery
+    console.log(data.pics.length);
     data.pics.forEach(function(i){
         var img = document.createElement('img');
         var a = document.createElement('a');
@@ -384,7 +403,8 @@ PropertyMap.prototype.buildOverlay = function(data){
 
     var firstAnchor = cxt.mapCarouselThumbnails.querySelectorAll('a')[0];
     firstAnchor.classList.add(this.css.states.active);
-    this.initCarousel();
+
+    cxt.initCarousel();
 }
 
 module.exports = PropertyMap;

@@ -2,19 +2,19 @@
 	"lat": 51.521722,
 	"lng": -0.130443,
 	"pics": [{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location one, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -43,7 +43,36 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location two, Clapham",
+	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	"points": [{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		}
+	]
+},
+{
+	"lat": 53.406135,
+	"lng": -1.457062,
+	"pics": [{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		}
+	],
+	"location": "Location three, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -72,7 +101,65 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location four, Clapham",
+	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	"points": [{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		}
+	]
+},
+{
+	"lat": 55.879810,
+	"lng": -4.261299,
+	"pics": [{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		}
+	],
+	"location": "Location five, Clapham",
+	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	"points": [{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		}
+	]
+},
+{
+	"lat": 55.890637,
+	"lng": -4.248434,
+	"pics": [{
+			"url": "./dist/images/house-pics/placeholder.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder.jpg"
+		}
+	],
+	"location": "Location six, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -89,6 +176,35 @@
 	"lat": 51.461624,
 	"lng": -2.588994,
 	"pics": [{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		},
+		{
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
+		}
+	],
+	"location": "Location seven, Clapham",
+	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	"points": [{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		},
+		{
+			"txt": "Lorem ipsum dolor sit amet"
+		}
+	]
+},
+{
+	"lat": 51.459298,
+	"lng": -2.600994,
+	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		},
 		{
@@ -101,7 +217,7 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location eight, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -118,19 +234,19 @@
 	"lat": 51.537584,
 	"lng": -0.138843,
 	"pics": [{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location nine, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -159,7 +275,7 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location ten, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -176,19 +292,19 @@
 	"lat": 51.597818,
 	"lng": -0.106313,
 	"pics": [{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		},
 		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
+			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Ferndale Road, Clapham",
+	"location": "Location eleven, Clapham",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
