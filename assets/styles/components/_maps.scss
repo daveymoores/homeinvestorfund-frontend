@@ -46,6 +46,7 @@ $map-height: 760px;
 
     &.active {
         @include transform(translate3d(0, 0, 0));
+        z-index: 9;
     }
 
     &--close {
@@ -65,10 +66,10 @@ $map-height: 760px;
             color: $white;
             @include transform(rotate(45deg));
             transform-origin: 50% 50%;
-            font-weight: 600;
+            @include font-sans(400);
             display: inline-block;
             font-size: 50px;
-            @include position(absolute, 0px 10px null null);
+            @include position(absolute, -1px 9px null null);
 
             @media all and (min-width: $container-tablet){
                 font-size: 85px;

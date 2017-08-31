@@ -30,7 +30,7 @@ Navigation.prototype.openMenu = function(e){
     if(this.node.classList.contains(this.CLASSES.states.open)) {
         this.node.style.maxHeight = ww+'px';
     } else {
-        this.node.style = "";
+        this.node.style.maxHeight = "";
     }
 
     e.preventDefault();
