@@ -49,6 +49,38 @@ PropertyMap.prototype.init = function(){
     this.locationMobSelect = document.getElementById(this.css.selectors.locationMobSelect);
     this.properties = document.getElementById(this.css.selectors.properties);
     this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
+    this.loadMore = this.properties.querySelector('a');
+
+    this.loadMore.addEventListener('click', function(e){
+        e.preventDefault();
+
+        //current number of panels
+        var panels = cxt.propertiesPanels.length;
+        var panelsMax = panels+3;
+
+        cxt.get('json/locations.json').then(function(locations) {
+
+            for (i = panels; i < panelsMax; i++) {
+                cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
+            }
+
+            cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+
+            [].forEach.call(cxt.propertiesPanels, function(el, index, array){
+                el.addEventListener('click', function(){
+                    cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+                    cxt.mapOverlayLoading.style.zIndex = 3;
+                    setTimeout(function(){
+                        cxt.scrap();
+                        cxt.buildOverlay(locations[index]);
+                    }, 300);
+                });
+            });
+
+        }, function(error) {
+          console.error("Failed!", error);
+        });
+    });
 
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
@@ -197,7 +229,6 @@ PropertyMap.prototype.init = function(){
         ];
 
 
-
         var options = {
            draggable: true,
            scrollwheel: true,
@@ -311,24 +342,25 @@ PropertyMap.prototype.init = function(){
        } else {
 
            cxt.get('json/locations.json').then(function(locations) {
-               console.log(locations);
+
                for (i = 0; i < locations.length; i++) {
-
-                   cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
-                   cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
-
-                   [].forEach.call(cxt.propertiesPanels, function(el, index, array){
-                       el.addEventListener('click', function(){
-                           cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
-                           cxt.mapOverlayLoading.style.zIndex = 3;
-                           setTimeout(function(){
-                               cxt.scrap();
-                               cxt.buildOverlay(locations[index]);
-                           }, 300);
-                       });
-                   });
-
+                   if(locations.length > 3 && i < 3) {
+                        cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
+                   }
                }
+
+               cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+
+               [].forEach.call(cxt.propertiesPanels, function(el, index, array){
+                   el.addEventListener('click', function(){
+                       cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+                       cxt.mapOverlayLoading.style.zIndex = 3;
+                       setTimeout(function(){
+                           cxt.scrap();
+                           cxt.buildOverlay(locations[index]);
+                       }, 300);
+                   });
+               });
 
            }, function(error) {
              console.error("Failed!", error);

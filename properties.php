@@ -19,12 +19,10 @@
 				<div class="formtype--select" id="locationMobSelectHook">
 					<select>
 						<option value="location_all">Location all</option>
-						<option value="location_one">Location one</option>
-						<option value="location_two">Location two</option>
-						<option value="location_three">Location three</option>
-						<option value="location_four">Location four</option>
-						<option value="location_five">Location five</option>
-						<option value="location_six">Location six</option>
+						<option value="location_one">Area one</option>
+						<option value="location_two">Area two</option>
+						<option value="location_three">Area three</option>
+						<option value="location_four">Area four</option>
 					</select>
 				</div>
 			</div>
@@ -39,15 +37,15 @@
 				<div class="col-md-12">
 
 					<div class="properties__container"></div>
-
 					<a href="#_" class="btn__primary--red">Load more</a>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="map--unit" data-widget="property-map"></div>
-	
+
 	<div class="map__overlay" id="mapOverlayHook">
 		<div class="map__overlay--loading"><div class="spinner"></div></div>
 		<a href="#" class="map__overlay--close"><span>+</span></a>

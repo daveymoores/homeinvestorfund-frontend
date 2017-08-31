@@ -104,7 +104,7 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Location four, Clapham",
+	"location": "Location four, Area two",
 	"area": "Area two",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
@@ -134,7 +134,8 @@
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Location five, Clapham",
+	"location": "Location five, Area two",
+	"area": "Area two",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -163,7 +164,8 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Location six, Clapham",
+	"location": "Location six, Area three",
+	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -192,7 +194,8 @@
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Location seven, Clapham",
+	"location": "Location seven, Area three",
+	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -221,7 +224,8 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Location eight, Clapham",
+	"location": "Location eight, Area three",
+	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -250,7 +254,8 @@
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Location nine, Clapham",
+	"location": "Location nine, Area four",
+	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -279,7 +284,8 @@
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
-	"location": "Location ten, Clapham",
+	"location": "Location ten, Area four",
+	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
@@ -308,7 +314,8 @@
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
-	"location": "Location eleven, Clapham",
+	"location": "Location eleven, Area four",
+	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	"points": [{
 			"txt": "Lorem ipsum dolor sit amet"
