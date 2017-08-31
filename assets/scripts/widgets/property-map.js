@@ -321,8 +321,10 @@ PropertyMap.prototype.init = function(){
                        el.addEventListener('click', function(){
                            cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
                            cxt.mapOverlayLoading.style.zIndex = 3;
-                           cxt.scrap();
-                           cxt.buildOverlay(locations[index]);
+                           setTimeout(function(){
+                               cxt.scrap();
+                               cxt.buildOverlay(locations[index]);
+                           }, 300);
                        });
                    });
 
