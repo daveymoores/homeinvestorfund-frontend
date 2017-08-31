@@ -21,9 +21,11 @@ PropertyMap.prototype.setVars = function(){
             'mapCarouselThumbnails' : '.map__overlay--thumbnails',
             'mapOverlayTitle'  :  '.map__overlay--title',
             'mapOverlayContents' : '.map__overlay--contents',
+            'mapOverlaySpotlight'  : '.map__overlay--spotlight',
             'mapOverlayLoading' : '.map__overlay--loading',
             'locationMobSelect' : 'locationMobSelectHook',
             'propertiesPanel' : '.properties__panel',
+            'propertiesContainer' : '.properties__container',
             'properties' : 'propertiesHook'
         }
     }
@@ -40,12 +42,13 @@ PropertyMap.prototype.init = function(){
     this.mapCarouselTrack = this.mapOverlay.querySelector(this.css.selectors.mapCarouselTrack);
     this.mapOverlayTitle = this.mapOverlay.querySelector(this.css.selectors.mapOverlayTitle);
     this.mapOverlayContents = this.mapOverlay.querySelector(this.css.selectors.mapOverlayContents);
+    this.mapOverlaySpotlight = this.mapOverlay.querySelector(this.css.selectors.mapOverlaySpotlight);
     this.mapOverlayLoading = this.mapOverlay.querySelector(this.css.selectors.mapOverlayLoading);
 
     //mobile selectors
     this.locationMobSelect = document.getElementById(this.css.selectors.locationMobSelect);
     this.properties = document.getElementById(this.css.selectors.properties);
-
+    this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
 
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
@@ -208,8 +211,8 @@ PropertyMap.prototype.init = function(){
            styles: myStyles
        };
 
-       if(ww > 768) {
 
+       if(ww > 768) {
            map = new google.maps.Map(cxt.$node, options);
            map.setOptions({styles: styles['silver']});
 
@@ -308,17 +311,18 @@ PropertyMap.prototype.init = function(){
        } else {
 
            cxt.get('json/locations.json').then(function(locations) {
-
+               console.log(locations);
                for (i = 0; i < locations.length; i++) {
 
-
-                   cxt.propertiesPanels = this.properties.querySelectorAll(this.css.selectors.properties);
+                   cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
+                   cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
 
                    [].forEach.call(cxt.propertiesPanels, function(el, index, array){
                        el.addEventListener('click', function(){
-                           console.log(locations[i]);
-                        //    cxt.scrap();
-                        //    cxt.buildOverlay(locations[i]);
+                           cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+                           cxt.mapOverlayLoading.style.zIndex = 3;
+                           cxt.scrap();
+                           cxt.buildOverlay(locations[index]);
                        });
                    });
 
@@ -334,8 +338,24 @@ PropertyMap.prototype.init = function(){
 }
 
 
-PropertyMap.prototype.buildMobileList = function(url) {
+PropertyMap.prototype.buildMobileList = function(title, picUrl) {
 
+    var parent = document.createElement('div');
+    var imgCont = document.createElement('div');
+    var img = document.createElement('img');
+    var p = document.createElement('p');
+
+    parent.classList.add('properties__panel');
+    imgCont.classList.add('properties__panel--img-cont');
+    parent.appendChild(imgCont);
+
+    img.setAttribute('src', picUrl.url);
+    imgCont.appendChild(img);
+
+    p.innerHTML = title;
+    parent.appendChild(p);
+
+    this.propertiesContainer.appendChild(parent);
 }
 
 
@@ -384,7 +404,7 @@ PropertyMap.prototype.initCarousel = function(){
     var thumbs = this.mapCarouselThumbnails.querySelectorAll('a');
     var imgs = this.mapCarouselTrack.querySelectorAll('img');
     var imgsNum = imgs.length;
-    var imgWidth = imgs[0].getBoundingClientRect().width;
+    var imgWidth = this.mapOverlaySpotlight.getBoundingClientRect().width;
 
     [].forEach.call(imgs, function(el, index, array){
         el.setAttribute('data-imgindex', index);

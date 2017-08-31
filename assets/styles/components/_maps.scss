@@ -89,12 +89,17 @@ $map-height: 760px;
     &--gallery {
         @include display(flex);
         @include flex-direction(row);
-        height: 300px;
+        height: auto;
         overflow: hidden;
+
+        @media all and (min-width: $container-tablet){
+            height: 300px;
+        }
     }
 
     &--spotlight {
         width: 80%;
+        overflow: hidden;
     }
 
     &--contents {
@@ -188,8 +193,12 @@ $map-height: 760px;
     @include transition(all .3s ease);
 
     > img {
-        width: 440px;
+        width: 100%;
         float: left;
+
+        @media all and (min-width: $container-tablet){
+            width: 440px;
+        }
     }
 }
 
