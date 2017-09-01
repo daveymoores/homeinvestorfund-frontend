@@ -51,41 +51,13 @@ PropertyMap.prototype.init = function(){
     this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
     this.loadMore = this.properties.querySelector('a');
 
-    this.loadMore.addEventListener('click', function(e){
-        e.preventDefault();
 
-        //current number of panels
-        var panels = cxt.propertiesPanels.length;
-        var panelsMax = panels+3;
-
-        cxt.get('json/locations.json').then(function(locations) {
-
-            for (i = panels; i < panelsMax; i++) {
-                cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
-            }
-
-            cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
-
-            [].forEach.call(cxt.propertiesPanels, function(el, index, array){
-                el.addEventListener('click', function(){
-                    cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
-                    cxt.mapOverlayLoading.style.zIndex = 3;
-                    setTimeout(function(){
-                        cxt.scrap();
-                        cxt.buildOverlay(locations[index]);
-                    }, 300);
-                });
-            });
-
-        }, function(error) {
-          console.error("Failed!", error);
-        });
-    });
-
+    //same close button for desktop and mobile overlays
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
         cxt.mapOverlay.classList.remove(cxt.css.states.active);
     });
+
 
     GoogleMaps.load(function(google) {
         var map;
@@ -341,26 +313,47 @@ PropertyMap.prototype.init = function(){
 
        } else {
 
+           //load more button functionality
+           // NOTE: move json out inton seperate method
+           cxt.loadMore.addEventListener('click', function(e){
+               e.preventDefault();
+
+               cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+               //prevent action if button is disabled
+               if(!e.currentTarget.classList.contains('disabled')) {
+                   //current number of panels
+                   var panels = cxt.propertiesPanels.length;
+                   var panelsMax = panels+3;
+
+                   cxt.get('json/locations.json').then(function(locations) {
+
+                       var locationsMax = locations.length; //max number of locations
+
+                       if(locationsMax < panelsMax) {
+                           cxt.loadMore.classList.add('disabled');
+                           for (i = panels; i < panelsMax; i++) {
+                               cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                           }
+                       } else {
+                           for (i = panels; i < panelsMax; i++) {
+                               cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                           }
+                       }
+
+                   }, function(error) {
+                     console.error("Failed!", error);
+                   });
+               }
+
+           });
+
            cxt.get('json/locations.json').then(function(locations) {
 
                for (i = 0; i < locations.length; i++) {
                    if(locations.length > 3 && i < 3) {
-                        cxt.buildMobileList(locations[i].location, locations[i].pics[0]); //create property panels
+                        cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
                    }
                }
-
-               cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
-
-               [].forEach.call(cxt.propertiesPanels, function(el, index, array){
-                   el.addEventListener('click', function(){
-                       cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
-                       cxt.mapOverlayLoading.style.zIndex = 3;
-                       setTimeout(function(){
-                           cxt.scrap();
-                           cxt.buildOverlay(locations[index]);
-                       }, 300);
-                   });
-               });
 
            }, function(error) {
              console.error("Failed!", error);
@@ -372,8 +365,9 @@ PropertyMap.prototype.init = function(){
 }
 
 
-PropertyMap.prototype.buildMobileList = function(title, picUrl) {
+PropertyMap.prototype.buildMobileList = function(data, title, picUrl) {
 
+    var cxt = this;
     var parent = document.createElement('div');
     var imgCont = document.createElement('div');
     var img = document.createElement('img');
@@ -390,6 +384,16 @@ PropertyMap.prototype.buildMobileList = function(title, picUrl) {
     parent.appendChild(p);
 
     this.propertiesContainer.appendChild(parent);
+
+    //add click handler and build overlay
+    parent.addEventListener('click', function(){
+        cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+        cxt.mapOverlayLoading.style.zIndex = 3;
+        setTimeout(function(){
+            cxt.scrap();
+            cxt.buildOverlay(data);
+        }, 300);
+    });
 }
 
 

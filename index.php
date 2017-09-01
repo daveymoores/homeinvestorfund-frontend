@@ -46,13 +46,13 @@
 						<div class="row">
 							<div class="col-md-6">
 								<ul class="calculator__total">
-									<li>£<span>27,290</span></li>
+									<li>£<span class="calculator__standard-rate">27,290</span></li>
 									<li>Highstreet ISA 1.8% / year</li>
 								</ul>
 							</div>
 							<div class="col-md-6">
 								<ul class="calculator__total">
-									<li class="colorpick--red">£<span>34,056</span></li>
+									<li class="colorpick--red">£<span class="calculator__fund-rate">34,056</span></li>
 									<li>homeinvestor.fund 35.73%<br /> total return</li>
 								</ul>
 							</div>

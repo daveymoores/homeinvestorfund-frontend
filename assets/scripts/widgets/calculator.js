@@ -12,7 +12,9 @@ Calculator.prototype.setVars = function(){
         states : {},
         selectors : {
             'calcUnit' : '.calculator__amount--unit',
-            'calcSlider' : '.calculator--slider'
+            'calcSlider' : '.calculator--slider',
+            'calcStandardRate' : '.calculator__standard-rate',
+            'calcFundRate' : '.calculator__fund-rate'
         }
     }
 }
@@ -20,6 +22,8 @@ Calculator.prototype.setVars = function(){
 Calculator.prototype.init = function(){
     this.calcUnit = this.node.querySelector(this.CLASSES.selectors.calcUnit);
     this.calcSlider = this.node.querySelector(this.CLASSES.selectors.calcSlider);
+    this.calcStandardRate = this.node.querySelector(this.CLASSES.selectors.calcStandardRate);
+    this.calcFundRate = this.node.querySelector(this.CLASSES.selectors.calcFundRate);
 
     this.setSlider();
 }
@@ -54,11 +58,21 @@ Calculator.prototype.setSlider = function(){
         onSlide: function (position, value) {
             console.log('onSlide', 'position: ' + position, 'value: ' + value);
             cxt.calcUnit.innerText = position.toLocaleString();
+            cxt.calcStandardRate.innerText = cxt.calcInterest(position)[0];
+            cxt.calcFundRate.innerText = cxt.calcInterest(position)[1];
         },
         onSlideEnd: function (position, value) {
             console.warn('onSlideEnd', 'position: ' + position, 'value: ' + value);
         }
     });
+}
+
+Calculator.prototype.calcInterest = function(amount){
+    var r = 1.8/100;
+    var R = 35.73/100;
+    var standardRate = Math.round(amount*(1 + (r * 5)));
+    var fundRate = Math.round(amount*(1 + (R * 5)));
+    return [standardRate, fundRate];
 }
 
 module.exports = Calculator;

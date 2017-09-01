@@ -73,6 +73,10 @@
 //primary buttons
 .btn__primary--red {
     @include button($white, $red-1, $red-1);
+
+    &.small {
+        @include padding(0.5em 1.6em 0.5em);
+    }
 }
 
 .btn__primary--teal {

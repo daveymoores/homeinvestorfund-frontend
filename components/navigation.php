@@ -17,7 +17,7 @@
 
                 <ul class="navigation__list navigation__list--login">
                     <li><a href=""><img src="./dist/images/icons/login.svg" alt="">Log in</a></li>
-                    <li><a href="">Sign up</a></li>
+                    <li><a href="" class="btn__primary--red small">Sign up</a></li>
                 </ul>
 
                 <ul class="navigation__list navigation__list--main">
@@ -31,3 +31,4 @@
         </div>
     </div>
 </nav>
+<div class="navigation--spacer"></div>
