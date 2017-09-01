@@ -1,9 +1,13 @@
 .video-prompt {
-    margin-top: 60px;
+    @include margin(30px null 30px);
     @include display(flex);
     @include flex-direction(row);
     @include justify-content(flex-start);
     @include align-items(center);
+
+    @media all and (min-width: $container-tablet) {
+        @include margin(60px null 0px);
+    }
 
     p {
         @include font-proxima(600);

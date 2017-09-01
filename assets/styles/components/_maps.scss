@@ -14,10 +14,11 @@ $map-height: 760px;
 
     &--unit {
         display: none;
-        height: $map-height;
+        height: 400px;
 
         @media all and (min-width: $container-tablet) {
             display: block;
+            height: $map-height;
         }
     }
 
@@ -26,6 +27,10 @@ $map-height: 760px;
         margin-top: 60px;
         padding-top: 40px;
         border-radius: $global-radius;
+
+        .map--unit {
+            display: block;
+        }
     }
 }
 

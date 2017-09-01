@@ -1,6 +1,8 @@
 .calculator {
     background-color: $white;
     border-radius: $global-radius;
+    position: relative;
+    z-index: 2;
 }
 
 .calculator--wrapper {
@@ -19,14 +21,23 @@
 
 .calculator--cta {
     .btn__primary--red {
-        display: inline-block;
+        display: block;
+        text-align: center;
+
+        @media all and (min-width: $container-tablet) {
+            display: inline-block;
+        }
     }
 
     p {
-        float: right;
+        display: block;
         font-size: $font-size-small;
         line-height: $lineheight-small;
         font-weight: 300;
+
+        @media all and (min-width: $container-tablet) {
+            float: right;
+        }
     }
 }
 

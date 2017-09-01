@@ -87,8 +87,8 @@
 					</div>
 					<div class="calculator--section">
 						<div class="calculator--cta">
-							<a href="#" class="btn__primary--red">Get started</a>
 							<p><a href="">Find out</a> how these numbers were calculated</a></p>
+							<a href="#" class="btn__primary--red">Get started</a>
 						</div>
 					</div>
 				</div>
