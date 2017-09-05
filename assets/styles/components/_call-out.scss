@@ -1,9 +1,14 @@
 .call-out {
     background-color: $red-1;
-    min-height: 515px;
-    @include padding($section-dbl-padding 0);
+    min-height: auto;
+    padding: 40px 0 100px;
     position: relative;
     overflow: hidden;
+
+    @media all and (min-width: $container-tablet) {
+        min-height: 515px;
+        @include padding($section-dbl-padding 0);
+    }
 
     .centered-heading * {
         color: white;

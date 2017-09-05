@@ -21,10 +21,10 @@
         @include display(flex);
         @include flex-direction(row);
         @include align-items(center);
-        width: calc(100% + 40px);
+        width: calc(100% + 30px);
         border-bottom: 1px solid $grey-6;
-        @include padding(20px);
-        margin-left: -20px;
+        @include padding(15px);
+        margin-left: -15px;
 
         @media all and (min-width: $container-tablet) {
             @include padding(0px);

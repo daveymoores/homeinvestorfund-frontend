@@ -17,13 +17,20 @@
 }
 
 .formtype--email-wrapper {
-    @include display(flex);
-    @include flex-direction(row);
-    @include justify-content(space-between);
     margin-top: 15px;
 
+    @media all and ($container-tablet) {
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+
     > input {
-        width: 66%;
+        width: 100%;
+
+        @media all and ($container-tablet) {
+            width: 66%;
+        }
     }
 }
 

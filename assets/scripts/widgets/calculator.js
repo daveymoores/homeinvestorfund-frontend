@@ -50,7 +50,7 @@ Calculator.prototype.setSlider = function(){
         stick: null,        // [Number stickTo, Number stickRadius] : use it if handle should stick to stickTo-th value in stickRadius
         borderRadius: 10,    // Number, if you use buffer + border-radius in css for looks good,
         onInit: function () {
-            console.info('onInit')
+            console.info('onInit');
         },
         onSlideStart: function (position, value) {
             console.info('onSlideStart', 'position: ' + position, 'value: ' + value);
@@ -72,7 +72,7 @@ Calculator.prototype.calcInterest = function(amount){
     var R = 35.73/100;
     var standardRate = Math.round(amount*(1 + (r * 5)));
     var fundRate = Math.round(amount*(1 + (R * 5)));
-    return [standardRate, fundRate];
+    return [standardRate.toLocaleString(), fundRate.toLocaleString()];
 }
 
 module.exports = Calculator;

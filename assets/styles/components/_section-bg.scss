@@ -20,7 +20,12 @@
     }
 
     &__hard-work {
-        background: #1B54AA url(../images/bg/blue-rock.png) bottom center no-repeat;
-        background-size: cover;
+        background: #226bba url(../images/bg/blue-rock-mob.jpg) bottom center no-repeat;
+        background-size: contain;
+
+        @media all and (min-width: $mobile-only) {
+            background: #226bba url(../images/bg/blue-rock.png) bottom center no-repeat;
+            background-size: cover;
+        }
     }
 }

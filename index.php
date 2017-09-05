@@ -219,6 +219,20 @@
 						</heading>
 						<p>We’re always finding new opportunities for you to invest. Because we mostly select new build properties, we can keep maintenance costs low.</p>
 					</div>
+
+					<div class="properties" id="propertiesHook">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+
+									<div class="properties__container"></div>
+									<a href="#_" class="btn__primary--red">Load more</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="map--unit" data-widget="maps"></div>
 				</div>
 			</div>

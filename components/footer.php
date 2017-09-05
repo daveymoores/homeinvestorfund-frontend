@@ -31,13 +31,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<p><small>&copy; homeinvestor.fund 2017</small></p>
+					<p class="footer--copyright"><small>&copy; homeinvestor.fund 2017</small></p>
 				</div>
 				<div class="col-md-8">
 					<ul>
 						<li>T&amp;C's</li>
 						<li>Private policy</li>
 						<li>Investment Terms</li>
+						<li class="mobile-only">&copy; homeinvestor.fund 2017</li>
 					</ul>
 				</div>
 			</div>

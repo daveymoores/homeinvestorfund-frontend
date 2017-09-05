@@ -17,3 +17,17 @@
         font-weight: 300;
     }
 }
+
+.container > .row {
+    .col-md-3:last-child {
+        > .panel {
+            margin-bottom: 0px;
+        }
+    }
+
+    .col-md-4:last-child {
+        > .panel {
+            margin-bottom: 0px;
+        }
+    }
+}
