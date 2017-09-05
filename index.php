@@ -221,16 +221,8 @@
 					</div>
 
 					<div class="properties" id="propertiesHook">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-
-									<div class="properties__container"></div>
-									<a href="#_" class="btn__primary--red">Load more</a>
-
-								</div>
-							</div>
-						</div>
+						<div class="properties__container"></div>
+						<a href="#_" class="btn__primary--red">Load more</a>
 					</div>
 
 					<div class="map--unit" data-widget="maps"></div>
@@ -462,6 +454,7 @@
 					<div class="guide-signup-form--wrapper">
 						<h2>Not ready just yet?</h2>
 						<p>Get our free beginners guide to investing in property the smart way now. Discover 10 ways to start investing with as little as £100.</p>
+
 						<form class="formtype">
 							<input type="text" placeholder="Your Name" />
 							<span class="formtype--email-wrapper">
@@ -469,6 +462,7 @@
 								<button class="btn__primary--red">Get eBook</button>
 							</span>
 						</form>
+
 					</div>
 				</div>
 				<div class="col-md-offset-1 col-sm-offset-1 col-md-3 col-sm-3">

@@ -23,13 +23,18 @@ $map-height: 760px;
     }
 
     &--teaser {
-        border: 1px solid $grey-6;
-        margin-top: 60px;
-        padding-top: 40px;
+        margin-top: 20px;
+        padding-top: 20px;
         border-radius: $global-radius;
 
-        .map--unit {
-            display: block;
+        @media all and (min-width: $container-tablet) {
+            border: 1px solid $grey-6;
+            margin-top: 60px;
+            padding-top: 40px;
+        }
+
+        .properties {
+            border-bottom: none;
         }
     }
 }

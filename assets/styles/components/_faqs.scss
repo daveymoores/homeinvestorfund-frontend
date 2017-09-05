@@ -1,3 +1,7 @@
 .faqs {
-    @include padding(80px 0 0);
+    @include padding(40px 0 0);
+
+    @media all and ($container-tablet) {
+        @include padding(80px 0 0);
+    }
 }

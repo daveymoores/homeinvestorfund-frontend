@@ -1,11 +1,14 @@
 .guide-signup-form {
     overflow: hidden;
-
-    img {
-        width: 100%;
-    }
 }
 
 .guide-signup-form--iphone {
-    margin-bottom: -2px;
+    width: 250px;
+    margin: 40px auto 0px;
+    display: block;
+
+    @media all and (min-width: $container-tablet) {
+        width: 100%;
+        margin: auto;
+    }
 }

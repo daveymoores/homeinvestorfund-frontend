@@ -1,5 +1,10 @@
 .formtype {
     margin-top: 15px;
+    margin-bottom: 20px;
+
+    @media all and ($container-tablet) {
+        margin-bottom: 0px;
+    }
 
     input {
         @include font-proxima(700);
@@ -9,6 +14,11 @@
         border-radius: $global-radius;
         width: 100%;
         border: 1px solid $grey-6;
+        margin-bottom: 20px;
+
+        @media all and ($container-tablet) {
+            margin-bottom: 0px;
+        }
 
         @include placeholder {
             color: $grey-6;
@@ -19,17 +29,27 @@
 .formtype--email-wrapper {
     margin-top: 15px;
 
-    @media all and ($container-tablet) {
+    @media all and (min-width: $container-tablet) {
         @include display(flex);
         @include flex-direction(row);
         @include justify-content(space-between);
     }
 
+    button {
+        display: block;
+        width: 100%;
+
+        @media all and (min-width: $container-tablet) {
+            width: auto;
+        }
+    }
+
     > input {
         width: 100%;
 
-        @media all and ($container-tablet) {
+        @media all and (min-width: $container-tablet) {
             width: 66%;
+            margin-bottom: 0px;
         }
     }
 }

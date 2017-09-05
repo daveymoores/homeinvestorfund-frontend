@@ -1,5 +1,9 @@
 .accordion {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
+
+    @media all and ($container-tablet) {
+        margin-bottom: 120px;
+    }
 
     &--rendered {
         @include font-proxima(600);

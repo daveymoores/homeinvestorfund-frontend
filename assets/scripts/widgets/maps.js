@@ -1,13 +1,36 @@
 var GoogleMapsLoader = require('google-maps');
+var Promise = require('promise');
 GoogleMapsLoader.KEY = 'AIzaSyDor4jeGMzVTzl6x5QgpGPvahUSje9I-E0';
 
 function InitGoogleMaps(node){
     this.$node = node;
+    this.setVars();
     this.init();
+}
+
+InitGoogleMaps.prototype.setVars = function(){
+    this.css = {
+        states : {
+            'active':'active'
+        },
+        selectors : {
+            'propertiesPanel' : '.properties__panel',
+            'propertiesContainer' : '.properties__container',
+            'properties' : 'propertiesHook'
+        }
+    }
 }
 
 InitGoogleMaps.prototype.init = function(){
     var cxt = this;
+
+    var ww = window.innerWidth;
+
+    //mobile selectors
+    this.locationMobSelect = document.getElementById(this.css.selectors.locationMobSelect);
+    this.properties = document.getElementById(this.css.selectors.properties);
+    this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
+    this.loadMore = this.properties.querySelector('a');
 
     GoogleMapsLoader.load(function(google) {
         var map;
@@ -172,37 +195,146 @@ InitGoogleMaps.prototype.init = function(){
            styles: myStyles
        };
 
-        map = new google.maps.Map(cxt.$node, options);
-        map.setOptions({styles: styles['silver']});
 
-        //Resize Function
-        google.maps.event.addDomListener(window, "resize", function() {
-            var center = map.getCenter();
-            google.maps.event.trigger(map, "resize");
-            map.setCenter(center);
-        });
+      if(ww > 768) {
+          map = new google.maps.Map(cxt.$node, options);
+          map.setOptions({styles: styles['silver']});
 
-        var image = {
-          url: './dist/images/icons/pin.png',
-          size: new google.maps.Size(37, 40),
-          origin: new google.maps.Point(0, 0),
-          anchor: new google.maps.Point(0, 32)
-        };
+          //Resize Function
+          google.maps.event.addDomListener(window, "resize", function() {
+              var center = map.getCenter();
+              google.maps.event.trigger(map, "resize");
+              map.setCenter(center);
+          });
+
+          var image = {
+            url: './dist/images/icons/pin.png',
+            size: new google.maps.Size(37, 40),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(0, 32)
+          };
 
 
-        var marker, i;
+          var marker, i;
 
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][0], locations[i][1]),
-            map: map,
-            icon: image
-        });
+          for (i = 0; i < locations.length; i++) {
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+                  map: map,
+                  icon: image
+              });
+           }
 
+      } else {
+
+          //load more button functionality
+          // NOTE: move json out inton seperate method
+          cxt.loadMore.addEventListener('click', function(e){
+              e.preventDefault();
+
+              cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+              //prevent action if button is disabled
+              if(!e.currentTarget.classList.contains('disabled')) {
+                  //current number of panels
+                  var panels = cxt.propertiesPanels.length;
+                  var panelsMax = panels+3;
+
+                  cxt.get('json/locations.json').then(function(locations) {
+
+                      var locationsMax = locations.length; //max number of locations
+
+                      if(locationsMax < panelsMax) {
+                          cxt.loadMore.classList.add('disabled');
+                          for (i = panels; i < panelsMax; i++) {
+                              cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                          }
+                      } else {
+                          for (i = panels; i < panelsMax; i++) {
+                              cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                          }
+                      }
+
+                  }, function(error) {
+                    console.error("Failed!", error);
+                  });
+              }
+
+          });
+
+          cxt.get('json/locations.json').then(function(locations) {
+
+              for (i = 0; i < locations.length; i++) {
+                  if(locations.length > 3 && i < 3) {
+                       cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                  }
+              }
+
+          }, function(error) {
+            console.error("Failed!", error);
+          });
       }
+
     });
 
 
+}
+
+InitGoogleMaps.prototype.buildMobileList = function(data, title, picUrl) {
+
+    var cxt = this;
+    var parent = document.createElement('div');
+    var imgCont = document.createElement('div');
+    var img = document.createElement('img');
+    var p = document.createElement('p');
+
+    parent.classList.add('properties__panel');
+    imgCont.classList.add('properties__panel--img-cont');
+    parent.appendChild(imgCont);
+
+    img.setAttribute('src', picUrl.url);
+    imgCont.appendChild(img);
+
+    p.innerHTML = title;
+    parent.appendChild(p);
+
+    this.propertiesContainer.appendChild(parent);
+
+    //add click handler and build overlay
+    parent.addEventListener('click', function(){
+        cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
+        cxt.mapOverlayLoading.style.zIndex = 3;
+        setTimeout(function(){
+            cxt.scrap();
+            cxt.buildOverlay(data);
+        }, 300);
+    });
+}
+
+
+InitGoogleMaps.prototype.get = function(url) {
+
+  return new Promise(function(resolve, reject) {
+
+    var req = new XMLHttpRequest();
+    req.open('GET', url);
+
+    req.onload = function() {
+
+      if (req.status == 200) {
+        resolve(JSON.parse(req.response));
+      }
+      else {
+        reject(Error(req.statusText));
+      }
+    };
+
+    // Handle network errors
+    req.onerror = function() {
+      reject(Error("Network Error"));
+    };
+
+    req.send();
+  });
 }
 
 module.exports = InitGoogleMaps;

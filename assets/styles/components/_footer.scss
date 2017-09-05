@@ -91,6 +91,10 @@
 
     li {
         padding-bottom: 25px;
+
+        @media all and (min-width: $container-tablet) {
+            padding-bottom: 15px;
+        }
     }
 
     a {
