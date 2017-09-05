@@ -59,6 +59,7 @@
     "accordion": "^2.1.1",
     "browser-sync": "^2.16.0",
     "gulp-imagemin": "^3.0.3",
+    "lory.js": "^2.3.3",
     "rangeslider-pure": "^0.4.2",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4",

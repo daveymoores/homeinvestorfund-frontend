@@ -5,6 +5,10 @@
         margin-bottom: 120px;
     }
 
+    svg {
+        width: 11px;
+    }
+
     &--rendered {
         @include font-proxima(600);
         border: 1px solid $grey-6;

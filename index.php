@@ -235,6 +235,7 @@
 
 <section class="fw-wrap--light-green">
 	<div class="container">
+
 		<div class="row">
 			<div class="col-md-12">
 				<div class="centered-heading">
@@ -246,7 +247,34 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" data-widget="carousel">
+			<div class="col-md-4">
+				<div class="quote-panel">
+					<div class="quote-panel--img-cont">
+						<img src="./dist/images/profile-pics/quote-placeholder.jpg" alt="" />
+					</div>
+					<h3>The is a title</h3>
+					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra placerat magna.”</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="quote-panel">
+					<div class="quote-panel--img-cont">
+						<img src="./dist/images/profile-pics/quote-placeholder.jpg" alt="" />
+					</div>
+					<h3>The is a title</h3>
+					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra placerat magna.”</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="quote-panel">
+					<div class="quote-panel--img-cont">
+						<img src="./dist/images/profile-pics/quote-placeholder.jpg" alt="" />
+					</div>
+					<h3>The is a title</h3>
+					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra placerat magna.”</p>
+				</div>
+			</div>
 			<div class="col-md-4">
 				<div class="quote-panel">
 					<div class="quote-panel--img-cont">
@@ -450,7 +478,7 @@
 
  		<div class="guide-signup-form">
 			<div class="row">
-				<div class="col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-6">
+				<div class="col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-10">
 					<div class="guide-signup-form--wrapper">
 						<h2>Not ready just yet?</h2>
 						<p>Get our free beginners guide to investing in property the smart way now. Discover 10 ways to start investing with as little as £100.</p>
@@ -465,7 +493,7 @@
 
 					</div>
 				</div>
-				<div class="col-md-offset-1 col-sm-offset-1 col-md-3 col-sm-3">
+				<div class="col-sm-12 col-md-3 col-md-offset-1">
 					<img class="guide-signup-form--iphone" src="./dist/images/icons/iphone.png" alt="" />
 				</div>
 			</div>

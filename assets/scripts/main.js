@@ -10,7 +10,8 @@
 		"calculator" : require("./widgets/calculator"),
 		"accordion" : require("./widgets/accordion"),
 		"maps" : require("./widgets/maps"),
-		"property-map" : require("./widgets/property-map")
+		"property-map" : require("./widgets/property-map"),
+		"carousel" : require("./widgets/carousel")
 	};
 
     function initWidgets ($node) {
