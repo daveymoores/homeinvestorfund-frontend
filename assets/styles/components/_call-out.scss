@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         min-height: 515px;
         @include padding($section-dbl-padding 0);
     }

@@ -5,7 +5,7 @@
     @include padding(20px);
     margin-bottom: 35px;
 
-    @media all and (min-width: $container-lg) {
+    @media all and (min-width: $screen-lg) {
         margin-bottom: 0px;
     }
 

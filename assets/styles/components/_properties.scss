@@ -2,7 +2,7 @@
     border-bottom: 1px solid $grey-6;
     padding-bottom: 40px;
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         display: none;
     }
 

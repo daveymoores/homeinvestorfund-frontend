@@ -7,7 +7,7 @@
     margin: 40px auto 0px;
     display: block;
 
-    @media all and (min-width: $container-desktop) {
+    @media all and (min-width: $screen-md) {
         width: 100%;
         margin: auto;
     }

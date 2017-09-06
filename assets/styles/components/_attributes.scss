@@ -1,5 +1,5 @@
 .attributes {
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         @include padding(80px 0);
     }
 
@@ -12,7 +12,7 @@
         @include flex-direction(column);
         @include justify-content(flex-start);
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             @include flex-direction(row);
         }
     }
@@ -26,7 +26,7 @@
         @include padding(15px);
         margin-left: -15px;
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             @include padding(0px);
             margin-right: 80px;
             margin-left: 0px;
@@ -40,7 +40,7 @@
             line-height: $lineheight-small;
             @include padding(0px);
 
-            @media all and (min-width: $container-tablet) {
+            @media all and (min-width: $screen-sm) {
                 font-size: $font-size-base;
             }
 
@@ -50,7 +50,7 @@
                 line-height: $lineheight-base;
                 @include padding(5px 0px);
 
-                @media all and (min-width: $container-tablet) {
+                @media all and (min-width: $screen-sm) {
                     font-size: 52px;
                 }
             }
@@ -61,7 +61,7 @@
             width: 40px;
             margin-right: 20px;
 
-            @media all and (min-width: $container-tablet) {
+            @media all and (min-width: $screen-sm) {
                 height: 65px;
                 width: 65px;
             }

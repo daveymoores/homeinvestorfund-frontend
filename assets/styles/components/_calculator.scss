@@ -24,7 +24,7 @@
         display: block;
         text-align: center;
 
-        @media all and (min-width: $container-lg) {
+        @media all and (min-width: $screen-lg) {
             display: inline-block;
         }
     }
@@ -35,7 +35,7 @@
         line-height: $lineheight-small;
         font-weight: 300;
 
-        @media all and (min-width: $container-lg) {
+        @media all and (min-width: $screen-lg) {
             float: right;
         }
     }
@@ -66,7 +66,7 @@
     dt {
         font-size: $font-size-base;
 
-        @media all and (min-width: $container-desktop) {
+        @media all and (min-width: $screen-md) {
             float: left;
         }
     }
@@ -76,7 +76,7 @@
         display: block;
         margin-top: 10px;
 
-        @media all and (min-width: $container-desktop) {
+        @media all and (min-width: $screen-md) {
             font-size: $font-size-h1;
             float: right;
             margin-top: 0px;
@@ -125,7 +125,7 @@
         border-bottom: 1px solid $grey-2;
         @include margin(5px 0 0px);
 
-        @media all and (min-width: $container-lg) {
+        @media all and (min-width: $screen-lg) {
             width: calc(100% / 7);
             text-align: center;
             border-left: 1px solid $grey-2;
@@ -139,7 +139,7 @@
             margin-bottom: 15px;
             border-bottom: none;
 
-            @media all and (min-width: $container-lg) {
+            @media all and (min-width: $screen-lg) {
                 float: left;
                 margin-bottom: 0px;
                 width: calc(100% / 7 * 2);
@@ -155,7 +155,7 @@
             float: left;
             margin-right: 20px;
 
-            @media all and (min-width: $container-lg) {
+            @media all and (min-width: $screen-lg) {
                 float: none;
                 margin-right: 0px;
             }

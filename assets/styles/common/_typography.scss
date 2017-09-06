@@ -21,7 +21,7 @@
         line-height: $font-size-h1-mobile;
     }
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         font-size: $font-size-h1;
         line-height: $lineheight-h1;
     }
@@ -37,7 +37,7 @@
         line-height: $font-size-h2-mobile;
     }
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         font-size: $font-size-h2;
         line-height: $lineheight-h2;
     }
@@ -93,7 +93,7 @@ p {
     line-height: $lineheight-small;
     padding: 10px 0px;
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         font-size: $font-size-base;
         line-height: $lineheight-base;
         padding: 20px 0px;

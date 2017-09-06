@@ -1,4 +1,4 @@
-var carousel = require('tiny-slider').tns;
+var lory = require('lory.js').lory;
 
 function Carousel(node){
     this.node = node;
@@ -7,12 +7,12 @@ function Carousel(node){
 
 Carousel.prototype.init = function(){
 
-    // var slider = carousel({
-    //     container: this.node,
-    //     items: 6,
-    //     slideBy: 'page',
-    //     autoplay: true
-    //   });
+    var slider = this.node;
+
+    lory(slider, {
+        infinite: 3,
+        enableMouseEvents: true
+    });
 
 }
 

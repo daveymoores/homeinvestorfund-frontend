@@ -6,7 +6,7 @@ $map-height: 760px;
         width: 100%;
         position: relative;
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             display: block;
             height: $map-height;
         }
@@ -16,7 +16,7 @@ $map-height: 760px;
         display: none;
         height: 400px;
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             display: block;
             height: $map-height;
         }
@@ -27,7 +27,7 @@ $map-height: 760px;
         padding-top: 20px;
         border-radius: $global-radius;
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             border: 1px solid $grey-6;
             margin-top: 60px;
             padding-top: 40px;
@@ -48,7 +48,7 @@ $map-height: 760px;
     @include transition(all .25s ease-in-out);
     @include transform(translate3d(calc(100% + 90px), 0, 0));
 
-    @media all and (min-width: $container-tablet){
+    @media all and (min-width: $screen-sm){
         height: $map-height;
         @include position(absolute, 0 0 null null);
         width: 550px;
@@ -66,7 +66,7 @@ $map-height: 760px;
         @include position(absolute, 0 null 0 -50px);
         @include padding(18px);
 
-        @media all and (min-width: $container-tablet){
+        @media all and (min-width: $screen-sm){
             @include position(absolute, 0 null 0 -84px);
             height: 84px;
             width: 84px;
@@ -81,7 +81,7 @@ $map-height: 760px;
             font-size: 50px;
             @include position(absolute, -1px 9px null null);
 
-            @media all and (min-width: $container-tablet){
+            @media all and (min-width: $screen-sm){
                 font-size: 85px;
                 @include position(absolute, -2px 15px null null);
 
@@ -92,7 +92,7 @@ $map-height: 760px;
     &--title {
         @include padding(13px 13px 13px 20px);
 
-        @media all and (min-width: $container-tablet){
+        @media all and (min-width: $screen-sm){
             padding: 30px;
         }
     }
@@ -103,7 +103,7 @@ $map-height: 760px;
         height: auto;
         overflow: hidden;
 
-        @media all and (min-width: $container-tablet){
+        @media all and (min-width: $screen-sm){
             height: 300px;
         }
     }
@@ -126,7 +126,7 @@ $map-height: 760px;
                 font-size: $font-size-small;
                 line-height: $lineheight-small;
 
-                @media all and (min-width: $container-tablet){
+                @media all and (min-width: $screen-sm){
                     font-size: $font-size-base;
                     line-height: $lineheight-base;
                 }
@@ -207,7 +207,7 @@ $map-height: 760px;
         width: 100%;
         float: left;
 
-        @media all and (min-width: $container-tablet){
+        @media all and (min-width: $screen-sm){
             width: 440px;
         }
     }

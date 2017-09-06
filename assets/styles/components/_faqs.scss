@@ -1,7 +1,7 @@
 .faqs {
     @include padding(40px 0 0);
 
-    @media all and ($container-tablet) {
+    @media all and ($screen-sm) {
         @include padding(80px 0 0);
     }
 }

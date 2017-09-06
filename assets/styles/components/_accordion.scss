@@ -1,7 +1,7 @@
 .accordion {
     margin-bottom: 40px;
 
-    @media all and ($container-tablet) {
+    @media all and ($screen-sm) {
         margin-bottom: 120px;
     }
 

@@ -28,7 +28,7 @@
 .ghost-panel--section-padding {
     @include padding(40px 0);
 
-    @media all and (min-width: $container-tablet) {
-        @include padding(80px 0);    
+    @media all and (min-width: $screen-sm) {
+        @include padding(80px 0);
     }
 }

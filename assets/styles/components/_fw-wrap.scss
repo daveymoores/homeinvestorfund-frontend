@@ -3,7 +3,7 @@
     min-height: 600px;
     @include padding(40px 0);
 
-    @media all and (min-width: $container-tablet) {
+    @media all and (min-width: $screen-sm) {
         @include padding(80px 0);
     }
 
@@ -11,7 +11,7 @@
         > div {
             margin-bottom: 0px;
 
-            @media all and (min-width: $container-tablet) {
+            @media all and (min-width: $screen-sm) {
                 margin-bottom: 35px;
             }
         }
@@ -20,7 +20,7 @@
     &.double-padding {
         @include padding(40px 0 80px);
 
-        @media all and (min-width: $container-tablet) {
+        @media all and (min-width: $screen-sm) {
             @include padding(140px 0);
         }
     }
