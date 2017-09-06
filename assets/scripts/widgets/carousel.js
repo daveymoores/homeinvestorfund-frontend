@@ -12,6 +12,7 @@ Carousel.prototype.init = function(){
     var dot_container     = slider.querySelector('.js_dots');
     var dot_list_item     = document.createElement('li');
 
+
     function handleDotEvent(e) {
         if (e.type === 'before.lory.init') {
           for (var i = 0, len = dot_count; i < len; i++) {
@@ -31,7 +32,7 @@ Carousel.prototype.init = function(){
           for (var i = 0, len = dot_container.childNodes.length; i < len; i++) {
             dot_container.childNodes[i].classList.remove('active');
           }
-          dot_container.childNodes[e.detail.currentSlide - 1].classList.add('active');
+          dot_container.childNodes[e.detail.currentSlide - 3].classList.add('active');
         }
         if (e.type === 'on.lory.resize') {
             for (var i = 0, len = dot_container.childNodes.length; i < len; i++) {
