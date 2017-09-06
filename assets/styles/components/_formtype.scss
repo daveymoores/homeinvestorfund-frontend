@@ -24,6 +24,25 @@
             color: $grey-6;
         }
     }
+
+    textarea {
+        @include font-proxima(700);
+        @include padding(15px 20px 13px);
+        font-size: $font-size-base;
+        line-height: $lineheight-input;
+        border-radius: $global-radius;
+        width: 100%;
+        border: 1px solid $grey-6;
+        margin-bottom: 20px;
+
+        @media all and ($screen-md) {
+            margin-bottom: 0px;
+        }
+
+        @include placeholder {
+            color: $grey-6;
+        }
+    }
 }
 
 .formtype--email-wrapper {
@@ -52,7 +71,7 @@
             margin-bottom: 0px;
         }
 
-        @media all and (min-width: $container-large-desktop) {
+        @media all and (min-width: $screen-lg) {
             width: 66%;
             margin-bottom: 0px;
         }
@@ -92,5 +111,12 @@
        &:focus {
            outline: none;
        }
+    }
+}
+
+
+.formtype--contact-us {
+    button {
+        float: right;
     }
 }

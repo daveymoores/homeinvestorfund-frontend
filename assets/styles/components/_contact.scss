@@ -1,0 +1,18 @@
+.contact--form {
+    padding: 70px 0;
+    border-top: 1px solid $grey-2;
+}
+
+.contact--map {
+
+    height: 260px;
+
+    @media all and (min-width: $screen-sm) {
+        height: 630px;
+    }
+
+    .map--unit {
+        height: 100%;
+        display: block!important;
+    }
+}

@@ -11,7 +11,8 @@
 		"accordion" : require("./widgets/accordion"),
 		"maps" : require("./widgets/maps"),
 		"property-map" : require("./widgets/property-map"),
-		"carousel" : require("./widgets/carousel")
+		"carousel" : require("./widgets/carousel"),
+		"contact-map" : require("./widgets/contact-map")
 	};
 
     function initWidgets ($node) {
