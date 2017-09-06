@@ -12,7 +12,8 @@
 		"maps" : require("./widgets/maps"),
 		"property-map" : require("./widgets/property-map"),
 		"carousel" : require("./widgets/carousel"),
-		"contact-map" : require("./widgets/contact-map")
+		"contact-map" : require("./widgets/contact-map"),
+		"info-overlay" : require("./widgets/info-overlay")
 	};
 
     function initWidgets ($node) {
