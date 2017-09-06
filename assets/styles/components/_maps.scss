@@ -56,7 +56,7 @@ $map-height: 760px;
 
     &.active {
         @include transform(translate3d(0, 0, 0));
-        z-index: 9;
+        z-index: 999;
     }
 
     &--close {
