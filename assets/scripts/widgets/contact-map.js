@@ -165,13 +165,12 @@ ContactMap.prototype.initMap = function() {
         ];
 
         var options = {
-           draggable: false,
-           scrollwheel: false,
-           panControl: false,
-           maxZoom: 15,
-           minZoom: 15,
+           draggable: true,
+           scrollwheel: true,
+           panControl: true,
            zoom: 15,
            disableDefaultUI: true,
+           zoomControl: true,
            clickableIcons: false,
            center: {lat: 51.514809, lng: -0.091095},
            mapTypeId: google.maps.MapTypeId.ROADMAP,

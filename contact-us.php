@@ -4,7 +4,7 @@
 <section class="hero--contact">
 	<div class="centered-heading">
 		<heading>
-			<h2>Get in touch</h2>
+			<h2>Contact us today</h2>
 		</heading>
 	</div>
 </section>
@@ -16,31 +16,25 @@
 <section class="ghost-panel--section-padding">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet</p>
-					<a href="">Find out more</a>
+					<h4>Drop us an email</h4>
+					<a href="mailto:hi@homeinvestor.fund">hi@homeinvestor.fund</a>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet.</p>
-					<a href="">Find out more</a>
+					<h4>homeinvestor.fund</h4>
+					<ul>
+						<li>60 Gresham Street</li>
+						<li>London</li>
+						<li>EC2V 7BB</li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet.</p>
-					<a href="">Find out more</a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="ghost-panel eq">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet.</p>
+					<h4>Find us on Twitter</h4>
 					<a href="">Find out more</a>
 				</div>
 			</div>

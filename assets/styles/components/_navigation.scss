@@ -5,6 +5,9 @@
     @include transition(max-height .3s ease-in-out);
     max-height: 55px;
     overflow: hidden;
+    @include position(fixed, 0px null null);
+    width: 100%;
+    z-index: 99;
 
     &.open {}
 
