@@ -7,7 +7,7 @@
     position: relative;
 
     .frame {
-        width: 345px;
+        width: 320px;
         margin: auto;
 
         @media all and (min-width: $screen-sm) {
@@ -25,10 +25,37 @@
         display: inline-block;
     }
 
+    .js_dots {
+        text-align: center;
+        display: block;
+        @media all and (min-width: $screen-sm) {
+            display: none;
+        }
+
+
+        li {
+            height: 12px;
+            width: 12px;
+            background-color: $grey-3;
+            border-radius: 50%;
+            opacity: 0.5;
+            @include transition(opacity .3s ease);
+            margin: 25px 10px 0px;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
     li {
         position: relative;
         display: inline-block;
-        width: 345px;
+        width: 320px;
+
+        @media all and (min-width: $screen-sm) {
+            width: 345px;
+        }
 
         @media all and (min-width: $screen-md) {
             width: 293.33px;

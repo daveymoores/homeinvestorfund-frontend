@@ -326,6 +326,7 @@
 						  </g>
 						</svg>
 		            </span>
+					<ul class="js_dots dots"></ul>
         		</div>
 			</div>
 		</div>
