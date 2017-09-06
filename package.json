@@ -13,6 +13,7 @@
     "asset-builder": "^1.1.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "debounce": "^1.0.2",
     "del": "^2.2.2",
     "gmaps-marker-clusterer": "^1.2.1",
     "google-maps": "^3.2.1",

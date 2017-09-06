@@ -2,6 +2,7 @@ var MarkerClusterer = require('node-js-marker-clusterer');
 var GoogleMaps = require('google-maps');
 var Promise = require('promise');
 GoogleMaps.KEY = 'AIzaSyDor4jeGMzVTzl6x5QgpGPvahUSje9I-E0';
+var debounce = require('debounce');
 
 function PropertyMap(node){
     this.$node = node;
@@ -34,8 +35,6 @@ PropertyMap.prototype.setVars = function(){
 PropertyMap.prototype.init = function(){
     var cxt = this;
 
-    var ww = window.innerWidth;
-
     this.mapOverlay = document.getElementById(this.css.selectors.mapOverlay);
     this.mapOverlayClose = this.mapOverlay.querySelector(this.css.selectors.mapClose);
     this.mapCarouselThumbnails = this.mapOverlay.querySelector(this.css.selectors.mapCarouselThumbnails);
@@ -57,6 +56,17 @@ PropertyMap.prototype.init = function(){
         e.preventDefault();
         cxt.mapOverlay.classList.remove(cxt.css.states.active);
     });
+
+
+    this.initMap();
+    window.addEventListener('resize', debounce(this.initMap.bind(this), 200));
+
+}
+
+PropertyMap.prototype.initMap = function() {
+
+    var cxt = this;
+    var ww = window.innerWidth;
 
 
     GoogleMaps.load(function(google) {
@@ -361,9 +371,7 @@ PropertyMap.prototype.init = function(){
        }
 
     });
-
 }
-
 
 PropertyMap.prototype.buildMobileList = function(data, title, picUrl) {
 

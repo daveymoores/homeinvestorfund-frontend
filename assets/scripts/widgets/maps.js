@@ -1,6 +1,7 @@
 var GoogleMapsLoader = require('google-maps');
 var Promise = require('promise');
 GoogleMapsLoader.KEY = 'AIzaSyDor4jeGMzVTzl6x5QgpGPvahUSje9I-E0';
+var debounce = require('debounce');
 
 function InitGoogleMaps(node){
     this.$node = node;
@@ -22,8 +23,8 @@ InitGoogleMaps.prototype.setVars = function(){
 }
 
 InitGoogleMaps.prototype.init = function(){
-    var cxt = this;
 
+    var cxt = this;
     var ww = window.innerWidth;
 
     //mobile selectors
@@ -31,6 +32,17 @@ InitGoogleMaps.prototype.init = function(){
     this.properties = document.getElementById(this.css.selectors.properties);
     this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
     this.loadMore = this.properties.querySelector('a');
+
+
+    this.initMap();
+    window.addEventListener('resize', debounce(this.initMap.bind(this), 200));
+
+}
+
+InitGoogleMaps.prototype.initMap = function() {
+
+    var cxt = this;
+    var ww = window.innerWidth;
 
     GoogleMapsLoader.load(function(google) {
         var map;
@@ -275,7 +287,6 @@ InitGoogleMaps.prototype.init = function(){
       }
 
     });
-
 
 }
 
