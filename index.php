@@ -98,7 +98,7 @@
 		</div>
 	</div>
 
-	<div class="section-bg section-bg__hero">
+	<div class="section-bg section-bg__hero-home">
 		<img src="./dist/images/bg/hero-home.png" alt="" />
 	</div>
 

@@ -7,6 +7,10 @@
 			<h2>Contact us today</h2>
 		</heading>
 	</div>
+
+	<div class="section-bg section-bg__hero-contact">
+		<img src="./dist/images/bg/hero-contact.png" alt="" />
+	</div>
 </section>
 
 <section class="contact--map">

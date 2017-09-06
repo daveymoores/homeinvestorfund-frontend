@@ -1,11 +1,27 @@
 .section-bg {
-    &__hero {
+    &__hero-home {
         img {
             width: 1500px;
             position: absolute;
             bottom: 0px;
             left: 50%;
             margin-left: -750px;
+        }
+    }
+
+    &__hero-contact {
+        img {
+            width: 150%;
+            position: absolute;
+            bottom: 0px;
+            left: -25%;
+            z-index: 0;
+
+            @media all and (min-width: $screen-sm) {
+                width: 1300px;
+                left: 50%;
+                margin-left: -650px;
+            }    
         }
     }
 

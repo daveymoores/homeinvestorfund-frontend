@@ -2,10 +2,13 @@
     &--contact {
         height: 150px;
         background-color: $teal-3;
+        position: relative;
 
         h2 {
             padding-top: 65px;
             color: white;
+            position: relative;
+            z-index: 2;
 
             @media all and (min-width: $screen-sm) {
                 padding-top: 110px;
