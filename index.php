@@ -349,6 +349,7 @@
 </section>
 
 <div class="fw-wrap--video">
+	<div data-widget="plyr-init" data-type="vimeo" data-video-id="143418951"></div>
 	<div class="centered-heading">
 		<heading>
 			<h3>What do our customer's say?</h3>

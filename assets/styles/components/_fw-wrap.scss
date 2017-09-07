@@ -64,6 +64,7 @@
     }
 }
 
+
 .fw-wrap--video {
     background-color: $grey-1;
     background-size: cover;
@@ -85,5 +86,15 @@
         top: 50%;
         @include transform(translate3d(0, -50%, 0));
         width: 100vw;
+    }
+}
+
+
+.fw-wrap--about-us {
+    background-color: $yellow-3;
+    @include padding(40px 0);
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(70px 0);
     }
 }

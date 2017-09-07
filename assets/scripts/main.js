@@ -13,7 +13,8 @@
 		"property-map" : require("./widgets/property-map"),
 		"carousel" : require("./widgets/carousel"),
 		"contact-map" : require("./widgets/contact-map"),
-		"info-overlay" : require("./widgets/info-overlay")
+		"info-overlay" : require("./widgets/info-overlay"),
+		"plyr-init" : require("./widgets/plyr-init")
 	};
 
     function initWidgets ($node) {
