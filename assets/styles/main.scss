@@ -3,6 +3,8 @@ $output-bourbon-deprecation-warnings: false !default;
 @import 'bourbon';
 @import 'bootstrap/bootstrap-sass-grid';
 
+@import 'plyr/plyr';
+
 @import "common/reset";
 @import "common/variables";
 @import "common/mixins";
@@ -34,7 +36,6 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/slider";
 @import "components/contact";
 @import "components/hero";
-@import "components/plyr";
 
 @import "components/panel";
 @import "components/feature-panel";

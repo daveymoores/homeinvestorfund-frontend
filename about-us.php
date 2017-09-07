@@ -13,8 +13,8 @@
 	</div>
 </section>
 
-<section class="fw-wrap--video">
-	<div data-widget="plyr-init" data-type="vimeo" data-video-id="143418951"></div>
+<section class="fw-wrap--video" data-widget="plyr-init">
+	<div data-type="vimeo" data-video-id="143418951"></div>
 	<div class="centered-heading">
 		<a href="#" class="video-prompt--btn lrg">
 			<span></span>

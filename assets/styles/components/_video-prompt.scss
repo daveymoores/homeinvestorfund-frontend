@@ -37,6 +37,12 @@
 .video-prompt--btn {
     @include video-btn(42px, 9px);
     margin-right: 20px;
+    opacity: 1;
+    @include transition(opacity .3s ease);
+
+    &.remove {
+        opacity: 0;
+    }
 
     &.lrg {
         @include video-btn(104px, 20px);

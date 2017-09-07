@@ -68,8 +68,10 @@
 .fw-wrap--video {
     background-color: $grey-1;
     background-size: cover;
-    min-height: 470px;
     position: relative;
+    max-height: 470px;
+    overflow: hidden;
+    @include transition(all .4s ease-in-out);
 
     &::before {
         content: "";
@@ -86,6 +88,12 @@
         top: 50%;
         @include transform(translate3d(0, -50%, 0));
         width: 100vw;
+        opacity: 1;
+        @include transition(opacity .3s ease);
+
+        &.remove {
+            opacity: 0;
+        }
     }
 }
 
