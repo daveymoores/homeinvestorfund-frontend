@@ -13,6 +13,11 @@
 		list-style-type: none;
 		border-bottom: 1px solid $grey-6;
 		padding-top: 40px;
+		display: none;
+
+		@media all and (min-width: $screen-sm) {
+			display: block;
+		}
 
 		> li {
 			float: left;
@@ -66,4 +71,9 @@
 	width: 100%;
 	border-top: 1px solid $grey-6;
 	@include position(absolute, 216px null null);
+	display: none;
+
+	@media all and (min-width: $screen-sm) {
+		display: block;
+	}
 }

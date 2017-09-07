@@ -36,6 +36,17 @@
 </section>
 
 <section class="container--tabs" data-widget="nav-tabs">
+
+	<div class="map__overlay map__overlay--home" id="overlayHook">
+		<a href="#" class="map__overlay--close"><span>+</span></a>
+		<div class="map__overlay--title staff-panel--content">
+			<h3>Alan Collett</h3>
+			<h5>Fund Manager</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<div class="map__overlay--bg" id="overlayBackgroundHook"></div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -59,7 +70,7 @@
 					<div id="tab-1" class="tab-pane active">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="staff-panel">
+								<div class="staff-panel" data-widget="staff-overlay">
 									<div class="staff-panel--img-cont red">
 
 									</div>
@@ -67,12 +78,15 @@
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										<a href="" class="btn__primary--red">Read Alan's bio</a>
+										<a href="" class="btn__primary--red" data-target>Read Alan's bio</a>
+									</div>
+									<div class="staff-panel--hidden-content">
+										Bacon ipsum dolor amet porchetta ground round chicken salami flank, andouille tri-tip rump alcatra cow chuck short ribs corned beef tail. Ribeye rump short loin, strip steak andouille chicken fatback porchetta landjaeger alcatra pancetta. Ground round swine kevin prosciutto hamburger shankle andouille shoulder pork strip steak leberkas beef ribs. Fatback biltong picanha pork chop doner, burgdoggen hamburger ball tip tenderloin.
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="staff-panel">
+								<div class="staff-panel" data-widget="staff-overlay">
 									<div class="staff-panel--img-cont teal">
 
 									</div>
@@ -80,12 +94,15 @@
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										<a href="" class="btn__primary--teal">Read Alan's bio</a>
+										<a href="" class="btn__primary--teal" data-target>Read Alan's bio</a>
+									</div>
+									<div class="staff-panel--hidden-content">
+										Bacon ipsum dolor amet porchetta ground round chicken salami flank, andouille tri-tip rump alcatra cow chuck short ribs corned beef tail. Ribeye rump short loin, strip steak andouille chicken fatback porchetta landjaeger alcatra pancetta. Ground round swine kevin prosciutto hamburger shankle andouille shoulder pork strip steak leberkas beef ribs. Fatback biltong picanha pork chop doner, burgdoggen hamburger ball tip tenderloin.
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="staff-panel">
+								<div class="staff-panel" data-widget="staff-overlay">
 									<div class="staff-panel--img-cont blue">
 
 									</div>
@@ -93,12 +110,15 @@
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										<a href="" class="btn__primary--blue">Read Alan's bio</a>
+										<a href="" class="btn__primary--blue" data-target>Read Alan's bio</a>
+									</div>
+									<div class="staff-panel--hidden-content">
+										Bacon ipsum dolor amet porchetta ground round chicken salami flank, andouille tri-tip rump alcatra cow chuck short ribs corned beef tail. Ribeye rump short loin, strip steak andouille chicken fatback porchetta landjaeger alcatra pancetta. Ground round swine kevin prosciutto hamburger shankle andouille shoulder pork strip steak leberkas beef ribs. Fatback biltong picanha pork chop doner, burgdoggen hamburger ball tip tenderloin.
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="staff-panel">
+								<div class="staff-panel" data-widget="staff-overlay">
 									<div class="staff-panel--img-cont yellow">
 
 									</div>
@@ -106,7 +126,10 @@
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										<a href="" class="btn__primary--yellow">Read Alan's bio</a>
+										<a href="" class="btn__primary--yellow" data-target>Read Alan's bio</a>
+									</div>
+									<div class="staff-panel--hidden-content">
+										Bacon ipsum dolor amet porchetta ground round chicken salami flank, andouille tri-tip rump alcatra cow chuck short ribs corned beef tail. Ribeye rump short loin, strip steak andouille chicken fatback porchetta landjaeger alcatra pancetta. Ground round swine kevin prosciutto hamburger shankle andouille shoulder pork strip steak leberkas beef ribs. Fatback biltong picanha pork chop doner, burgdoggen hamburger ball tip tenderloin.
 									</div>
 								</div>
 							</div>

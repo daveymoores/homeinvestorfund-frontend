@@ -9,7 +9,8 @@ InfoOverlay.prototype.init = function(){
     var close = this.node.querySelector('.map__overlay--close');
     var cxt = this;
 
-    close.addEventListener('click', function(){
+    close.addEventListener('click', function(e){
+        e.preventDefault();
         cxt.node.classList.remove('active');
         bg.classList.remove('active');
         setTimeout(function(){

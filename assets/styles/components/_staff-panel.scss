@@ -8,6 +8,18 @@
         text-align: left;
     }
 
+    a {
+        display: inline-block;
+    }
+}
+
+.staff-panel--content {
+    @include padding(20px);
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(40px);
+    }
+
     h5 {
         color: $red-1;
         margin-bottom: 20px;
@@ -18,14 +30,6 @@
         font-size: $font-size-small;
         line-height: $lineheight-small;
     }
-
-    a {
-        display: inline-block;
-    }
-}
-
-.staff-panel--content {
-    @include padding(40px);
 }
 
 .staff-panel--img-cont {
@@ -50,4 +54,8 @@
     &.yellow {
         background-color: $yellow-2;
     }
+}
+
+.staff-panel--hidden-content {
+    display: none;
 }

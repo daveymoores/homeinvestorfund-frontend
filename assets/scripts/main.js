@@ -15,7 +15,8 @@
 		"contact-map" : require("./widgets/contact-map"),
 		"info-overlay" : require("./widgets/info-overlay"),
 		"plyr-init" : require("./widgets/plyr-init"),
-		"nav-tabs" : require("./widgets/nav-tabs")
+		"nav-tabs" : require("./widgets/nav-tabs"),
+		"staff-overlay" : require("./widgets/staff-overlay")
 	};
 
     function initWidgets ($node) {
