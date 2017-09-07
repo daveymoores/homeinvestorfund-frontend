@@ -20,7 +20,7 @@ PlyrInit.prototype.init = function(){
     playBtn.addEventListener('click', function(e){
         e.preventDefault();
         vidInstance[0].play();
-        playBtn.classList.add('remove');
+        heading.classList.add('remove');
 
         var vidWrapper = cxt.node.childNodes[0].nextSibling;
         vidHeight = vidWrapper.getBoundingClientRect().height;
@@ -29,12 +29,12 @@ PlyrInit.prototype.init = function(){
 
     vidInstance[0].on('pause', function(event) {
       cxt.node.style.maxHeight = '470px';
-      playBtn.classList.remove('remove');
+      heading.classList.remove('remove');
     });
 
     vidInstance[0].on('stop', function(event) {
       cxt.node.style.maxHeight = '470px';
-      playBtn.classList.remove('remove');
+      heading.classList.remove('remove');
     });
 }
 

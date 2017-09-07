@@ -14,7 +14,8 @@
 		"carousel" : require("./widgets/carousel"),
 		"contact-map" : require("./widgets/contact-map"),
 		"info-overlay" : require("./widgets/info-overlay"),
-		"plyr-init" : require("./widgets/plyr-init")
+		"plyr-init" : require("./widgets/plyr-init"),
+		"nav-tabs" : require("./widgets/nav-tabs")
 	};
 
     function initWidgets ($node) {
