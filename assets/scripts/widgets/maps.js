@@ -12,7 +12,9 @@ function InitGoogleMaps(node){
 InitGoogleMaps.prototype.setVars = function(){
     this.css = {
         states : {
-            'active':'active'
+            'active':'active',
+            'init' : 'initialised',
+            'disabled' : 'disabled'
         },
         selectors : {
             'propertiesPanel' : '.properties__panel',
@@ -33,13 +35,49 @@ InitGoogleMaps.prototype.init = function(){
     this.propertiesContainer = this.properties.querySelector(this.css.selectors.propertiesContainer);
     this.loadMore = this.properties.querySelector('a');
 
-
-    this.initMap();
+    this.loadMore.addEventListener('click', this.loadData.bind(this));
+    window.addEventListener('load', this.initMap.bind(this));
     window.addEventListener('resize', debounce(this.initMap.bind(this), 200));
 
 }
 
-InitGoogleMaps.prototype.initMap = function() {
+InitGoogleMaps.prototype.loadData = function(e){
+    //load more button functionality
+    // NOTE: move json out into seperate method
+    var cxt = this;
+
+    e.preventDefault();
+
+    cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+    //prevent action if button is disabled
+    if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
+        //current number of panels
+        var panels = cxt.propertiesPanels.length;
+        var panelsMax = panels+3;
+
+        cxt.get('json/locations.json').then(function(locations) {
+
+            var locationsMax = locations.length; //max number of locations
+
+            if(locationsMax < panelsMax) {
+                cxt.loadMore.classList.add(cxt.css.states.disabled);
+                for (i = panels; i < panelsMax; i++) {
+                    cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                }
+            } else {
+                for (i = panels; i < panelsMax; i++) {
+                    cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                }
+            }
+
+        }, function(error) {
+          console.error("Failed!", error);
+        });
+    }
+
+}
+
+InitGoogleMaps.prototype.initMap = function(e) {
 
     var cxt = this;
     var ww = window.innerWidth;
@@ -239,51 +277,19 @@ InitGoogleMaps.prototype.initMap = function() {
 
       } else {
 
-          //load more button functionality
-          // NOTE: move json out inton seperate method
-          cxt.loadMore.addEventListener('click', function(e){
-              e.preventDefault();
-
-              cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
-              //prevent action if button is disabled
-              if(!e.currentTarget.classList.contains('disabled')) {
-                  //current number of panels
-                  var panels = cxt.propertiesPanels.length;
-                  var panelsMax = panels+3;
-
-                  cxt.get('json/locations.json').then(function(locations) {
-
-                      var locationsMax = locations.length; //max number of locations
-
-                      if(locationsMax < panelsMax) {
-                          cxt.loadMore.classList.add('disabled');
-                          for (i = panels; i < panelsMax; i++) {
-                              cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
-                          }
-                      } else {
-                          for (i = panels; i < panelsMax; i++) {
-                              cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
-                          }
+          //check whether it already contains properties and has initialised
+          if(!cxt.propertiesContainer.classList.contains(cxt.css.states.init)) {
+              cxt.get('json/locations.json').then(function(locations) {
+                  for (i = 0; i < locations.length; i++) {
+                      if(locations.length > 3 && i < 3) {
+                           cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
                       }
-
-                  }, function(error) {
-                    console.error("Failed!", error);
-                  });
-              }
-
-          });
-
-          cxt.get('json/locations.json').then(function(locations) {
-
-              for (i = 0; i < locations.length; i++) {
-                  if(locations.length > 3 && i < 3) {
-                       cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
                   }
-              }
-
-          }, function(error) {
-            console.error("Failed!", error);
-          });
+                 cxt.propertiesContainer.classList.add(cxt.css.states.init);
+              }, function(error) {
+                console.error("Failed!", error);
+              });
+          }
       }
 
     });
@@ -309,16 +315,6 @@ InitGoogleMaps.prototype.buildMobileList = function(data, title, picUrl) {
     parent.appendChild(p);
 
     this.propertiesContainer.appendChild(parent);
-
-    //add click handler and build overlay
-    parent.addEventListener('click', function(){
-        cxt.mapOverlayLoading.classList.add(cxt.css.states.active);
-        cxt.mapOverlayLoading.style.zIndex = 3;
-        setTimeout(function(){
-            cxt.scrap();
-            cxt.buildOverlay(data);
-        }, 300);
-    });
 }
 
 

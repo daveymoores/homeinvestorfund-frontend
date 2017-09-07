@@ -13,7 +13,9 @@ function PropertyMap(node){
 PropertyMap.prototype.setVars = function(){
     this.css = {
         states : {
-            'active':'active'
+            'active':'active',
+            'init' : 'initialised',
+            'disabled' : 'disabled'
         },
         selectors : {
             'mapOverlay' : 'mapOverlayHook',
@@ -51,15 +53,188 @@ PropertyMap.prototype.init = function(){
     this.loadMore = this.properties.querySelector('a');
 
 
+    this.locationMobSelect.addEventListener('change', this.loadData.bind(this));
+
     //same close button for desktop and mobile overlays
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
         cxt.mapOverlay.classList.remove(cxt.css.states.active);
     });
 
-
-    this.initMap();
+    this.loadMore.addEventListener('click', this.loadData.bind(this));
+    window.addEventListener('load', this.initMap.bind(this));
     window.addEventListener('resize', debounce(this.initMap.bind(this), 200));
+
+}
+
+PropertyMap.prototype.loadData = function(e){
+    //load more and select functionality
+    // NOTE: move json out into seperate method
+    var cxt = this;
+    console.log(e.type);
+    e.preventDefault();
+
+    //if the select menu changes...
+    if(e.type == 'change') {
+        cxt.propertiesContainer.innerHTML = "";
+
+
+        cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+        //prevent action if button is disabled
+        if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
+            //current number of panels
+            var panels = cxt.propertiesPanels.length;
+            var panelsMax = panels+3;
+            var target = cxt.locationMobSelect.childNodes[1];                 //select menu
+            var value = target.options[ target.selectedIndex ].text;    //value of select
+
+            cxt.get('json/locations.json').then(function(locations) {
+
+                var locationsMax = locations.length;
+                var areaArr = [];
+
+                if(value !== 'Location all') {
+                    //create new array of properties
+                    for(i=0 ; i<locationsMax ; i++) {
+                        if(locations[i].area == value) {
+                            areaArr.push(locations[i]);
+                        }
+                    }
+
+                    locationsMax = areaArr.length; //max from new array
+
+                    if(locationsMax <= panelsMax) {
+                        cxt.loadMore.classList.add(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+                        }
+                    } else {
+                        cxt.loadMore.classList.remove(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+                        }
+                    }
+
+                } else {
+
+                    if(locationsMax <= panelsMax) {
+                        cxt.loadMore.classList.add(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                        }
+                    } else {
+                        cxt.loadMore.classList.remove(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                        }
+                    }
+
+                }
+
+            }, function(error) {
+              console.error("Failed!", error);
+            });
+        }
+
+        // cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+        //
+        // var target = e.currentTarget.childNodes[1];                 //select menu
+        // var value = target.options[ target.selectedIndex ].text;    //value of select
+        // //var panels = cxt.propertiesPanels.length;                   //number of current panels
+        // var panelsMax = 3;                                   //number of panels that can load
+        //
+        // cxt.get('json/locations.json').then(function(locations) {
+        //
+        //     var locationsMax = locations.length; //max number of locations
+        //     var areaArr = [];
+        //
+        //     //create new array of properties
+        //     for(i=0 ; i<locationsMax ; i++) {
+        //         if(locations[i].area == value) {
+        //             areaArr.push(locations[i]);
+        //         } else if(value == 'Location all'){
+        //             areaArr.push(locations[i]);
+        //         }
+        //     }
+        //
+        //     var areaMax = areaArr.length; //max from new array
+        //
+        //     if(areaMax <= panelsMax) {
+        //         cxt.loadMore.classList.add(cxt.css.states.disabled);
+        //         for (i = 0; i < panelsMax; i++) {
+        //             cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+        //         }
+        //     } else {
+        //         cxt.loadMore.classList.remove(cxt.css.states.disabled);
+        //         for (i = 0; i < panelsMax; i++) {
+        //             cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+        //         }
+        //     }
+        //
+        // }, function(error) {
+        //   console.error("Failed!", error);
+        // });
+
+    } else {
+
+        cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
+        //prevent action if button is disabled
+        if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
+            //current number of panels
+            var panels = cxt.propertiesPanels.length;
+            var panelsMax = panels+3;
+            var target = cxt.locationMobSelect.childNodes[1];                 //select menu
+            var value = target.options[ target.selectedIndex ].text;    //value of select
+
+            cxt.get('json/locations.json').then(function(locations) {
+
+                var locationsMax = locations.length;
+                var areaArr = [];
+
+                if(value !== 'Location all') {
+                    //create new array of properties
+                    for(i=0 ; i<locationsMax ; i++) {
+                        if(locations[i].area == value) {
+                            areaArr.push(locations[i]);
+                        }
+                    }
+
+                    locationsMax = areaArr.length; //max from new array
+
+                    if(locationsMax <= panelsMax) {
+                        cxt.loadMore.classList.add(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+                        }
+                    } else {
+                        cxt.loadMore.classList.remove(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(areaArr[i], areaArr[i].location, areaArr[i].pics[0]); //create property panels
+                        }
+                    }
+
+                } else {
+
+                    if(locationsMax <= panelsMax) {
+                        cxt.loadMore.classList.add(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                        }
+                    } else {
+                        cxt.loadMore.classList.remove(cxt.css.states.disabled);
+                        for (i = panels; i < panelsMax; i++) {
+                            cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
+                        }
+                    }
+
+                }
+
+            }, function(error) {
+              console.error("Failed!", error);
+            });
+        }
+
+    }
 
 }
 
@@ -323,51 +498,22 @@ PropertyMap.prototype.initMap = function() {
 
        } else {
 
-           //load more button functionality
-           // NOTE: move json out inton seperate method
-           cxt.loadMore.addEventListener('click', function(e){
-               e.preventDefault();
+           //check whether it already contains properties and has initialised
+           if(!cxt.propertiesContainer.classList.contains(cxt.css.states.init)) {
+               cxt.get('json/locations.json').then(function(locations) {
 
-               cxt.propertiesPanels = cxt.properties.querySelectorAll(cxt.css.selectors.propertiesPanel);
-               //prevent action if button is disabled
-               if(!e.currentTarget.classList.contains('disabled')) {
-                   //current number of panels
-                   var panels = cxt.propertiesPanels.length;
-                   var panelsMax = panels+3;
-
-                   cxt.get('json/locations.json').then(function(locations) {
-
-                       var locationsMax = locations.length; //max number of locations
-
-                       if(locationsMax < panelsMax) {
-                           cxt.loadMore.classList.add('disabled');
-                           for (i = panels; i < panelsMax; i++) {
-                               cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
-                           }
-                       } else {
-                           for (i = panels; i < panelsMax; i++) {
-                               cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
-                           }
+                   for (i = 0; i < locations.length; i++) {
+                       if(locations.length > 3 && i < 3) {
+                            console.log(locations[i].location);
+                            cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
                        }
-
-                   }, function(error) {
-                     console.error("Failed!", error);
-                   });
-               }
-
-           });
-
-           cxt.get('json/locations.json').then(function(locations) {
-
-               for (i = 0; i < locations.length; i++) {
-                   if(locations.length > 3 && i < 3) {
-                        cxt.buildMobileList(locations[i], locations[i].location, locations[i].pics[0]); //create property panels
                    }
-               }
+                   cxt.propertiesContainer.classList.add(cxt.css.states.init);
 
-           }, function(error) {
-             console.error("Failed!", error);
-           });
+               }, function(error) {
+                 console.error("Failed!", error);
+               });
+           }
        }
 
     });
