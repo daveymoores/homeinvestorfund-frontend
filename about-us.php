@@ -35,34 +35,104 @@
 	</div>
 </section>
 
-<div class="container--tabs" data-widget="nav-tabs">
+<section class="container--tabs" data-widget="nav-tabs">
 	<div class="container">
-		<section class="row">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="centered-heading">
+					<heading>
+						<h2>Meet the team</h2>
+					</heading>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-tabs--border"></div>
+	<div class="container">
+		<div class="row">
 			<div class="col-md-12">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab-1">Tab 1</a></li>
-					<li class=""><a href="#tab-2">Tab 2</a></li>
+					<li class="active"><a href="#tab-1">homeinvestor.fund</a></li>
+					<li class=""><a href="#tab-2">Partners</a></li>
 				</ul>
 				<div class="tab-content">
 					<div id="tab-1" class="tab-pane active">
-						<span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-						<span class="col-md-10">
-							<h3>Feature 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</span>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="staff-panel">
+									<div class="staff-panel--img-cont red">
+
+									</div>
+									<div class="staff-panel--content">
+										<h3>Alan Collett</h3>
+										<h5>Fund Manager</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="btn__primary--red">Read Alan's bio</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="staff-panel">
+									<div class="staff-panel--img-cont teal">
+
+									</div>
+									<div class="staff-panel--content">
+										<h3>Alan Collett</h3>
+										<h5>Fund Manager</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="btn__primary--teal">Read Alan's bio</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="staff-panel">
+									<div class="staff-panel--img-cont blue">
+
+									</div>
+									<div class="staff-panel--content">
+										<h3>Alan Collett</h3>
+										<h5>Fund Manager</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="btn__primary--blue">Read Alan's bio</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="staff-panel">
+									<div class="staff-panel--img-cont yellow">
+
+									</div>
+									<div class="staff-panel--content">
+										<h3>Alan Collett</h3>
+										<h5>Fund Manager</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="" class="btn__primary--yellow">Read Alan's bio</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id="tab-2" class="tab-pane">
-						<span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-						<span class="col-md-10">
-							<h3>Feature 2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</span>
+						<div class="row">
+							<div class="col-md-6">
+
+							</div>
+							<div class="col-md-6">
+
+							</div>
+							<div class="col-md-6">
+
+							</div>
+							<div class="col-md-6">
+
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
-</div>
+</section>
 
 <?php include 'components/call-out.php'; ?>
 
