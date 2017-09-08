@@ -33,21 +33,105 @@
 		</div>
 		<div class="row">
 			<div class="grid--matrix grid">
-				<div class="grid-item grid-item--width2"></div>
-				<div class="grid-item video"></div>
-				<div class="grid-item"></div>
+				<div class="grid-item grid-item--width2">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item video">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
 
-				<div class="grid-item video"></div>
-				<div class="grid-item video"></div>
-				<div class="grid-item grid-item--width2 downloads"></div>
+				<div class="grid-item video">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item video">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item grid-item--width2 downloads">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
 
-				<div class="grid-item grid-item--width2 downloads"></div>
-				<div class="grid-item category"></div>
-				<div class="grid-item"></div>
+				<div class="grid-item grid-item--width2 downloads">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item category">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
 
-				<div class="grid-item category"></div>
-				<div class="grid-item category"></div>
-				<div class="grid-item grid-item--width2 category"></div>
+				<div class="grid-item category">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item category">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
+				<div class="grid-item grid-item--width2 category">
+					<div class="grid-item__content">
+						<p class="grid-item__content--title">
+							<a href="">Market needs "turbo boost" as supply shortage continues</a>
+						</p>
+						<p class="grid-item__content--date">10.02.2017</p>
+					</div>
+				</div>
 			</div>
 		</div>
 

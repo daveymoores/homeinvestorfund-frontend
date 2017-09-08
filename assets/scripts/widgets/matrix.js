@@ -32,6 +32,9 @@ Matrix.prototype.init = function(){
     [].forEach.call(this.navAnchor, function(element, index, array){
         element.addEventListener('click', function(e){
             e.preventDefault();
+            var active = cxt.navigation.querySelector('.'+cxt.css.states.active);
+            active.classList.remove(cxt.css.states.active);
+            e.currentTarget.parentNode.classList.add(cxt.css.states.active);
             var filterValue = e.currentTarget.getAttribute('data-filter');
             cxt.iso.arrange({filter: filterValue});
         });
