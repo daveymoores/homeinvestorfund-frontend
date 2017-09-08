@@ -62,6 +62,11 @@ Matrix.prototype.loadData = function(e){
 
     cxt.get('json/news.json').then(function(news) {
 
+        // NOTE: add links!!
+        // NOTE: doesnt stop creating news stories
+        // NOTE: add different classes for sizes
+    
+
         var newsMax = news.length; //max number of locations
         var panelsMax = cxt.gridItem.length;
 
@@ -93,6 +98,7 @@ Matrix.prototype.buildNewsItem = function(data, img, date, title) {
     var p2 = document.createElement('p');
 
     a.innerText = title;
+    a.setAttribute('href', '#');
     p2.innerText = date;
 
     parent.classList.add('grid-item');
