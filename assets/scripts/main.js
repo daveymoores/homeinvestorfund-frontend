@@ -16,7 +16,8 @@
 		"info-overlay" : require("./widgets/info-overlay"),
 		"plyr-init" : require("./widgets/plyr-init"),
 		"nav-tabs" : require("./widgets/nav-tabs"),
-		"staff-overlay" : require("./widgets/staff-overlay")
+		"staff-overlay" : require("./widgets/staff-overlay"),
+		"matrix" : require("./widgets/matrix")
 	};
 
     function initWidgets ($node) {

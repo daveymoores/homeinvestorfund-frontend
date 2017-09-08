@@ -9,6 +9,10 @@ module.exports = {
       filename: 'main.min.js'
    },
    resolve: {
-      extensions: ['', '.js', '.json', '.coffee']
+      extensions: ['', '.js', '.json', '.coffee'],
+      alias: {
+        'masonry': 'masonry-layout',
+        'isotope': 'isotope-layout',
+      }
    }
 };

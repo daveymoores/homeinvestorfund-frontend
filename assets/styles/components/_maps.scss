@@ -215,6 +215,7 @@ $map-height: 760px;
 
 .map__overlay--home {
     @include position(fixed, 0px 0px null null);
+    height: 100%;
 }
 
 

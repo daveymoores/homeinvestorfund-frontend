@@ -37,6 +37,8 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/contact";
 @import "components/hero";
 @import "components/nav-tabs";
+@import "components/fa-prompt";
+@import "components/grid-item";
 
 @import "components/panel";
 @import "components/feature-panel";
@@ -44,3 +46,4 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/ghost-panel";
 @import "components/option-panel";
 @import "components/staff-panel";
+@import "components/partner-panel";

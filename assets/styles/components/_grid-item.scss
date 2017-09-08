@@ -1,0 +1,62 @@
+.grid {
+    .video {
+        background-color: $grey-3;
+    }
+
+    .downloads {
+        background-color: $grey-4;
+    }
+
+    .category {
+        background-color: $grey-5;
+    }
+}
+
+.grid--wrapper {
+    padding-bottom: 80px;
+}
+
+.grid--navigation {
+    @include display(flex);
+    @include flex-direction(row);
+    @include align-items(center);
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    li {
+        margin-right: 30px;
+        @include font-proxima(600);
+
+        &.active {
+            background-color: $blue-2;
+            border-radius: 3px;
+            @include padding(10px 15px);
+        }
+    }
+}
+
+.grid--matrix {
+    @include margin(0 5px);
+}
+
+.grid-item {
+    width: calc(100% - 20px);
+    @include margin(10px);
+    height: 300px;
+    background-color: $grey-3;
+
+    @media all and (min-width: $screen-sm) {
+        width: calc(25% - 20px);
+    }
+}
+
+.grid-item--width2 {
+    @include margin(10px);
+    height: 300px;
+    width: calc(100% - 20px);
+    background-color: $grey-4;
+
+    @media all and (min-width: $screen-sm) {
+        width: calc(50% - 20px);
+    }
+}

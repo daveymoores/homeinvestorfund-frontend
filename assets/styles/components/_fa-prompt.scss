@@ -1,0 +1,14 @@
+.fa-prompt {
+    background-color: $black-1;
+    text-align: center;
+
+    p {
+        @include font-proxima(600);
+        color: $white;
+
+        a {
+            color: $blue-3;
+            text-decoration: underline;
+        }
+    }
+}
