@@ -54,7 +54,7 @@
 .grid-item {
     width: calc(100% - 20px);
     @include margin(10px);
-    height: 300px;
+    height: 360px;
     background-color: $grey-3;
     position: relative;
 
@@ -102,7 +102,7 @@
 
     &.grid-item--width2 {
         @include margin(10px);
-        height: 300px;
+        height: 360px;
         width: calc(100% - 20px);
         background-color: $grey-4;
 
