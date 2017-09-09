@@ -21,11 +21,21 @@
                 </ul>
 
                 <ul class="navigation__list navigation__list--main">
-                    <li><a href="" class="navigation__logo navigation__logo--dt"><img src="./dist/images/logo/logo.svg" alt="" /></a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">How it works</a></li>
-                    <li><a href="">FAQ's</a></li>
-                    <li><a href="">I'm a financial advisor</a></li>
+                    <li><a href="/" class="navigation__logo navigation__logo--dt"><img src="./dist/images/logo/logo.svg" alt="" /></a></li>
+                    <li class="short"><a href="/">Home</a></li>
+                    <li class="short"><a href="">How it works</a></li>
+                    <li class="short"><a href="faqs.php">FAQ's</a></li>
+                    <li class="mobile-only"><a href="">Latest news</a></li>
+                    <li class="mobile-only"><a href="">About us</a></li>
+                    <li class="mobile-only"><a href="">Properties</a></li>
+                    <li class="mobile-only"><a href="">Contact us</a></li>
+                    <li class="navigation__dropdown">
+                        <a href="">I'm a financial advisor</a>
+                        <ul class="navigation__dropdown--panel">
+                            <li><a href="faqs-fa.php">Financial adviser FAQs</a></li>
+                            <li><a href="news-content-hub-fa.php">Financial adviser news</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

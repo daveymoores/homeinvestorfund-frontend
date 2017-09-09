@@ -65,7 +65,6 @@ Matrix.prototype.loadData = function(e){
         // NOTE: add links!!
         // NOTE: doesnt stop creating news stories
         // NOTE: add different classes for sizes
-    
 
         var newsMax = news.length; //max number of locations
         var panelsMax = cxt.gridItem.length;

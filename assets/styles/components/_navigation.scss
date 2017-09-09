@@ -13,6 +13,7 @@
 
     @media all and (min-width: $screen-sm) {
         height: 55px;
+        overflow: visible;
     }
 
     .col-md-12, .container, .row {
@@ -40,7 +41,11 @@
 
 .navigation__list {
     text-align: center;
-    display: inline-block;
+    display: block;
+
+    @media all and (min-width: $screen-sm) {
+        display: inline-block;
+    }
 
     li {
         display: inline-block;
@@ -51,6 +56,23 @@
 
         @media all and (min-width: $screen-sm) {
             border-bottom: none;
+            height: 52px;
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(center);
+
+            &:first-child {
+                display: inline-block;
+                height: auto;
+            }
+        }
+
+        &.mobile-only {
+            display: block;
+
+            @media all and (min-width: $screen-sm) {
+                display: none;
+            }
         }
 
         &:last-child {
@@ -182,9 +204,12 @@
             }
         }
 
-        // @media all and (min-width: $container-xlarge-desktop) {
-        //     width: 65%;
-        // }
+    }
+
+    .short {
+        @media all and (min-width: $screen-sm) {
+            max-width: 140px;
+        }
     }
 }
 
@@ -208,6 +233,114 @@
         @media all and (min-width: $screen-sm) {
             display: block!important;
             width: 210px!important;
+        }
+    }
+}
+
+.navigation__dropdown {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include transition(all .3s ease);
+    position: relative;
+    cursor: pointer;
+    padding: 15px!important;
+
+    > a {
+        width: 100%;
+        background-color: $grey-3;
+        display: block;
+        color: $white;
+        @include padding(15px);
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        @media all and (min-width: $screen-sm) {
+            background-color: transparent;
+            color: black;
+            @include padding(0px);
+            width: auto;
+            border-radius: none;
+        }
+    }
+
+    &::after {
+        content:"";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 6px;
+        border-color: transparent transparent transparent $red-1;
+        margin-left: 12px;
+        @include transition(all .3s ease);
+        display: none;
+
+        @media all and (min-width: $screen-sm) {
+            display: block;
+        }
+    }
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(0px!important);
+
+        &:hover {
+            background-color: $blue-2;
+
+            &::after {
+                @include transform(rotate(90deg));
+                @include transition(all .3s ease);
+            }
+
+            .navigation__dropdown--panel {
+                max-height: 300px;
+            }
+        }
+    }
+
+    &--panel {
+        background-color: white;
+        z-index: 3;
+        top: 0;
+        width: 100%;
+        max-height: initial;
+        @include transition(max-height .3s ease);
+        display: block;
+
+        @media all and (min-width: $screen-sm) {
+            max-height: 0px;
+            overflow: hidden;
+            position: absolute;
+            margin-top: 52px;
+        }
+
+        li {
+            padding: 18px 15px;
+            text-align: center;
+            background-color: $grey-3;
+            border-top: 1px solid black;
+            border-bottom: none;
+            color: white;
+
+            &:first-child {
+                display: block!important;
+
+                @media all and (min-width: $screen-sm) {
+                    border-top: 2px solid $blue-2;
+                }
+            }
+
+            &:last-child {
+                -webkit-border-bottom-right-radius: 3px;
+                -webkit-border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+
+                @media all and (min-width: $screen-sm) {
+                    border-radius: 0px;
+                }
+            }
         }
     }
 }
