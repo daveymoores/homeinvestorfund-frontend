@@ -1,0 +1,94 @@
+.news-story {}
+
+.news-story--navigation {
+    width: 100%;
+    @include clearfix;
+
+    .column {
+        width: 100%;
+        @include padding(20px);
+        position: relative;
+        background-size: cover;
+        display: block;
+
+        &:last-child {
+            border-top: 2px solid white;
+
+            @media all and (min-width: $screen-sm) {
+                border-left: 2px solid white;
+                border-top: none;
+            }
+        }
+
+        @media all and (min-width: $screen-sm) {
+            @include padding(80px);
+            width: 50%;
+            float: left;
+        }
+
+        @media all and (min-width: $screen-md) {
+            @include padding(80px 15% 80px 80px);
+        }
+    }
+}
+
+.news-story--bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.news-story--item {
+    position: relative;
+    z-index: 3;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        @include font-proxima(600);
+        padding-bottom: 0px;
+    }
+}
+
+.news-story--author {
+    background-color: $blue-2;
+    @include padding(40px 0px);
+    margin-bottom: 40px;
+
+    @media all and (min-width: $screen-md) {
+        @include padding(70px 0px);
+        margin-bottom: 70px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    h2, h3, p {
+        width: 100%;
+        text-align: center;
+
+        @media all and (min-width: $screen-md) {
+            text-align: left;
+        }
+    }
+}
+
+.news-story--img-cont {
+    @extend .quote-panel--img-cont;
+}
+
+.news-story--content {
+    margin-top: 80px;
+
+    img {
+        width: 100%;
+        margin: 80px 0px;
+    }
+}

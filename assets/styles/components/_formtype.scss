@@ -46,7 +46,6 @@
 }
 
 .formtype--email-wrapper {
-    margin-top: 15px;
 
     @media all and (min-width: $screen-md) {
         @include display(flex);
