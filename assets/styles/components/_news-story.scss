@@ -9,7 +9,13 @@
         @include padding(20px);
         position: relative;
         background-size: cover;
-        display: block;
+        @include display(flex);
+        @include align-items(center);
+        height: 350px;
+
+        @media all and (min-width: $screen-md) {
+            height: auto;
+        }
 
         &:last-child {
             border-top: 2px solid white;
@@ -36,7 +42,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     width: 100%;
     height: 100%;
 }
@@ -44,6 +50,11 @@
 .news-story--item {
     position: relative;
     z-index: 3;
+    @include padding(0px 20px);
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(0px);
+    }
 
     h2 {
         color: white;
@@ -89,6 +100,112 @@
 
     img {
         width: 100%;
-        margin: 80px 0px;
+        margin: 30px 0px 40px;
+
+        @media all and (min-width: $screen-md) {
+            margin: 60px 0px 80px;
+        }
     }
+}
+
+.news-story--share-btns--wrapper {
+    border-top: 2px solid $blue-2;
+    @include padding(30px 0px);
+    margin-top: 10px;
+}
+
+.news-story--share-btns {
+    @include clearfix;
+
+    li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    li > a {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        display: block;
+        background-color: $blue-2;
+    }
+}
+
+.news-story--headline {
+    position: relative;
+    z-index: 3;
+
+    ul {
+        @include display(flex);
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        margin-bottom: 40px;
+
+        li {
+            color: white;
+            margin-right: 10px;
+            @include padding(8px 12px 8px 0px);
+            @include font-proxima(600);
+            position: relative;
+            font-size: 14px;
+            margin-bottom: 5px;
+
+            @media all and (min-width: $screen-sm) {
+                font-size: $font-size-base;
+                @include padding(10px 15px);
+                margin-right: 20px;
+            }
+
+            &.active {
+                background-color: $blue-2;
+                border-radius: 3px;
+                color: black;
+                margin-right: 10px;
+                @include padding(8px 12px);
+
+                @media all and (min-width: $screen-sm) {
+                    font-size: $font-size-base;
+                    @include padding(10px 15px);
+                    margin-right: 20px;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                height: 14px;
+                width: 1px;
+                background-color: #ed1558;
+                margin-top: -7px;
+
+                @media all and (min-width: $screen-sm) {
+                    right: -10px;
+                    height: 16px;
+                    margin-top: -8px;
+                }
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    h1 {
+        color: white;
+
+        span {
+            color: $red-1;
+            display: block;
+        }
+    }
+
 }

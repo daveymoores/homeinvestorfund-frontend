@@ -39,4 +39,24 @@
     &--faqs-fa {
         @include short-coloured-hero($red-1, $white);
     }
+
+    &--news-story {
+        min-height: 350px;
+        background-color: black;
+        @include display(flex);
+        @include align-items(center);
+        overflow:hidden;
+        background-size: cover;
+        position: relative;
+
+        > .container {
+            @media all and (max-width: $screen-sm) {
+                width: 100%;
+            }
+        }
+
+        @media all and (min-width: $screen-sm) {
+            min-height: 625px;
+        }
+    }
 }

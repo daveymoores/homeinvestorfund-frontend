@@ -18,7 +18,7 @@
 
     @media all and (min-width: $mobile-only) {
         font-size: $font-size-h1-tablet;
-        line-height: $font-size-h1-mobile;
+        line-height: $font-size-h1-tablet;
     }
 
     @media all and (min-width: $screen-sm) {
