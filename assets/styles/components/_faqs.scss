@@ -1,7 +1,25 @@
 .faqs {
     @include padding(40px 0 0);
+    margin-bottom: 40px;
 
     @media all and ($screen-sm) {
         @include padding(80px 0 0);
+    }
+}
+
+.faqs--page-wrapper {
+    margin-top: 40px;
+
+    @media all and ($screen-md) {
+        margin-top: 80px;
+    }
+
+    .faqs {
+        @include padding(0px 0 0);
+        margin-bottom: 0px;
+
+        heading > h3 {
+            padding-bottom: 40px;
+        }
     }
 }

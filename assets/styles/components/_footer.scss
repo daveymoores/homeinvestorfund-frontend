@@ -84,16 +84,28 @@
     border-bottom: 1px solid $grey-2;
     font-size: $font-size-base;
     line-height: $lineheight-base;
+    display: none;
 
     @media all and (min-width: $screen-sm) {
         border-bottom: none;
+        display: block;
+    }
+
+    &.mobile-only {
+        display: block;
     }
 
     li {
         padding-bottom: 25px;
+        display: none;
 
         @media all and (min-width: $screen-sm) {
             padding-bottom: 15px;
+            display: block;
+        }
+
+        &.mobile-only {
+            display: block;
         }
     }
 

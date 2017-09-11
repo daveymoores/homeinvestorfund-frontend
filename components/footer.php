@@ -1,27 +1,30 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<ul class="footer--list">
+			<div class="col-md-3">
+				<ul class="footer--list mobile-only">
 					<li><a href="">Contact Us</a></li>
 					<li><a href="">Latest News</a></li>
 					<li><a href="">About Us</a></li>
 					<li><a href="">Properties</a></li>
-					<li><a href="">White label partnerships</a></li>
+					<li class="mobile-only"><a href="">White label partnerships</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<ul class="footer--list">
+					<li><a href="">Are you a financial advisor?</a></li>
+					<li><a href="">I'm a financial advisor</a></li>
+					<li><a href="">Financial advisor FAQs</a></li>
+					<li><a href="">Financial advisor news</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
 				<div class="ghost-panel">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-					<a href="">Find out more</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="ghost-panel">
-					<h4>Looking to retire?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-					<a href="">Find out more</a>
+					<div class="ghost-panel--content">
+						<h4>Got questions? We're here to help.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
+						<a href="">Get in touch</a>
+					</div>
 				</div>
 			</div>
 		</div>

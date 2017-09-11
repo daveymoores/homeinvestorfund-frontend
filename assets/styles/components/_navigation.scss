@@ -75,6 +75,14 @@
             }
         }
 
+        &.hide-for-mobile {
+            display: none;
+
+            @media all and (min-width: $screen-sm) {
+                @include display(flex);
+            }
+        }
+
         &:last-child {
             margin-right: 0px;
         }
@@ -276,6 +284,7 @@
         margin-left: 12px;
         @include transition(all .3s ease);
         display: none;
+        @include transform(rotate(90deg));
 
         @media all and (min-width: $screen-sm) {
             display: block;
@@ -287,11 +296,10 @@
 
         &:hover {
             background-color: $blue-2;
-
-            &::after {
-                @include transform(rotate(90deg));
-                @include transition(all .3s ease);
-            }
+            // &::after {
+            //     @include transform(rotate(90deg));
+            //     @include transition(all .3s ease);
+            // }
 
             .navigation__dropdown--panel {
                 max-height: 300px;

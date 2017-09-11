@@ -31,4 +31,12 @@
     &--news-content-hub-fa {
         @include short-coloured-hero($red-1, $white);
     }
+
+    &--faqs {
+        @include short-coloured-hero($blue-3, $white);
+    }
+
+    &--faqs-fa {
+        @include short-coloured-hero($red-1, $white);
+    }
 }

@@ -3,7 +3,7 @@
     border-radius: $global-radius;
     background-color: white;
     @include padding(20px);
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
     @media all and (min-width: $screen-lg) {
         margin-bottom: 0px;

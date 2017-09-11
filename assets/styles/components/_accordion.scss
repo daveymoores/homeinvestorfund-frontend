@@ -17,7 +17,11 @@
         .accordion__item {
             overflow: hidden;
             border-bottom: 1px solid $grey-6;
-            @include padding(30px 30px 30px 80px);
+            @include padding(25px 30px 25px 80px);
+
+            @media all and (min-width: $screen-sm) {
+                @include padding(30px 30px 30px 80px);
+            }
 
             &:last-child {
                 border-bottom: none;
@@ -25,9 +29,14 @@
 
             &__trigger {
                 display: block;
-                font-size: $font-size-base;
-                line-height: $lineheight-base;
+                font-size: $font-size-small;
+                line-height: $lineheight-small;
                 position: relative;
+
+                @media all and (min-width: $screen-sm) {
+                    font-size: $font-size-base;
+                    line-height: $lineheight-base;
+                }
             }
 
             &__icon {

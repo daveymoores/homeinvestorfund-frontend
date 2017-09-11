@@ -22,24 +22,30 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>Drop us an email</h4>
-					<a href="mailto:hi@homeinvestor.fund">hi@homeinvestor.fund</a>
+					<div class="ghost-panel--content">
+						<h4>Drop us an email</h4>
+						<a href="mailto:hi@homeinvestor.fund">hi@homeinvestor.fund</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>homeinvestor.fund</h4>
-					<ul>
-						<li>60 Gresham Street</li>
-						<li>London</li>
-						<li>EC2V 7BB</li>
-					</ul>
+					<div class="ghost-panel--content">
+						<h4>homeinvestor.fund</h4>
+						<ul>
+							<li>60 Gresham Street</li>
+							<li>London</li>
+							<li>EC2V 7BB</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="ghost-panel eq">
-					<h4>Find us on Twitter</h4>
-					<a href="">Find out more</a>
+					<div class="ghost-panel--content">
+						<h4>Find us on Twitter</h4>
+						<a href="">Find out more</a>
+					</div>
 				</div>
 			</div>
 		</div>

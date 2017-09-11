@@ -4,8 +4,13 @@
     border: 1px solid $grey-2;
     border-radius: $global-radius;
     @include display(flex);
-    @include flex-direction(column);
-    @include padding(20px);
+    @include flex-direction(row);
+    @include padding(0px);
+    overflow: hidden;
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(20px);
+    }
 
     h4 {
         text-align: left;
@@ -35,10 +40,65 @@
     }
 }
 
+.ghost-panel--nav-options {
+    h4 {
+        margin-bottom: 0px;
+
+        @media all and (min-width: $screen-sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        display: none;
+
+        @media all and (min-width: $screen-sm) {
+            display: block;
+        }
+    }
+
+    a {
+        display: none;
+
+        @media all and (min-width: $screen-sm) {
+            display: block;
+        }
+    }
+}
+
 .ghost-panel--section-padding {
     @include padding(40px 0);
 
     @media all and (min-width: $screen-sm) {
         @include padding(80px 0);
+    }
+}
+
+.ghost-panel--content {
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include padding(20px);
+
+    @media all and (min-width: $screen-sm) {
+        @include padding(0px);
+    }
+}
+
+.ghost-panel--mobile-chevron {
+    @include display(flex);
+    @include align-items(center);
+    @include padding(10px);
+    width: 30px;
+    margin-left: auto;
+    background-color: $grey-9;
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media all and (min-width: $screen-sm) {
+        display: none;
     }
 }

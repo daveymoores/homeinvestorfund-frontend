@@ -13,7 +13,9 @@ Navigation.prototype.CLASSES = function(){
         selectors : {
             'menuButton' : '.navigation--menu-button',
             'dropdownToggle' : '.navigation__dropdown',
-            'dropdownPanel' : '.navigation__dropdown--panel'
+            'dropdownPanel' : '.navigation__dropdown--panel',
+            'navigationMain' : '.navigation__list--main',
+            'navigationWrapper' : '.navigation__list--main'
         }
     }
 }
@@ -22,17 +24,20 @@ Navigation.prototype.init = function(){
     this.menuButton = this.node.querySelector(this.CLASSES.selectors.menuButton);
     this.dropdownToggle = this.node.querySelector(this.CLASSES.selectors.dropdownToggle);
     this.dropdownPanel = this.dropdownToggle.querySelector(this.CLASSES.selectors.dropdownPanel);
+    this.navigationMain = this.node.querySelector(this.CLASSES.selectors.navigationMain);
+    this.navigationWrapper = this.node.querySelector(this.CLASSES.selectors.navigationWrapper);
 
     this.menuButton.addEventListener('click', this.openMenu.bind(this));
 }
 
 Navigation.prototype.openMenu = function(e){
-    var ww = window.innerWidth + 30;
+    var navHeight = this.navigationMain.getBoundingClientRect().height;
+    var wrapHeight = this.navigationWrapper.getBoundingClientRect().height;
     e.currentTarget.classList.toggle(this.CLASSES.states.active);
     this.node.classList.toggle(this.CLASSES.states.open);
 
     if(this.node.classList.contains(this.CLASSES.states.open)) {
-        this.node.style.maxHeight = ww+'px';
+        this.node.style.maxHeight = (navHeight+wrapHeight)+'px';
     } else {
         this.node.style.maxHeight = "";
     }

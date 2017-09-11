@@ -22,7 +22,7 @@
 
                 <ul class="navigation__list navigation__list--main">
                     <li><a href="/" class="navigation__logo navigation__logo--dt"><img src="./dist/images/logo/logo.svg" alt="" /></a></li>
-                    <li class="short"><a href="/">Home</a></li>
+                    <li class="short hide-for-mobile"><a href="/">Home</a></li>
                     <li class="short"><a href="">How it works</a></li>
                     <li class="short"><a href="faqs.php">FAQ's</a></li>
                     <li class="mobile-only"><a href="">Latest news</a></li>
