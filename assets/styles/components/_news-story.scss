@@ -96,7 +96,11 @@
 }
 
 .news-story--content {
-    margin-top: 80px;
+    margin-top: 40px;
+
+    @media all and (min-width: $screen-md) {
+        margin-top: 80px;
+    }
 
     img {
         width: 100%;
