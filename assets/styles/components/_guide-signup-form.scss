@@ -14,5 +14,11 @@
     @media all and (min-width: $screen-md) {
         width: 100%;
         margin: auto;
+        padding-left: 25%;
+        padding-top: 25%;
+    }
+
+    @media all and (min-width: $screen-lg) {
+        padding-top: 0px;
     }
 }

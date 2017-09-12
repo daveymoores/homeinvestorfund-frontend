@@ -17,7 +17,7 @@
 
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-3 col-md-offset-1">
+				<div class="col-sm-12 col-md-4">
 					<img class="guide-signup-form--iphone" src="./dist/images/icons/iphone.png" alt="" />
 				</div>
 			</div>

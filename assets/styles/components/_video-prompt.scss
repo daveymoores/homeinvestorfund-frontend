@@ -46,9 +46,14 @@
     }
 
     &.lrg {
-        @include video-btn(104px, 20px);
+        @include video-btn(74px, 15px);
         @include margin(auto);
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
+
+        @media all and (min-width: $screen-sm) {
+            @include video-btn(104px, 20px);
+            margin-top: 30px;
+        }
     }
 }
