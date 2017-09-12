@@ -15,6 +15,7 @@
         width: 100%;
         border: 1px solid $grey-6;
         margin-bottom: 20px;
+        -webkit-appearance: none;
 
         @media all and ($screen-md) {
             margin-bottom: 0px;

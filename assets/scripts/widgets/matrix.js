@@ -79,7 +79,6 @@ Matrix.prototype.loadData = function(e){
 
     var activeFilter = this.navigation.querySelector('.active').childNodes[0];
     var activeFilterValue = activeFilter.getAttribute('data-filter');
-    console.log(activeFilterValue);
 
     this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
 

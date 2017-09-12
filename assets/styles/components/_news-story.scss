@@ -92,7 +92,20 @@
 }
 
 .news-story--img-cont {
-    @extend .quote-panel--img-cont;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    overflow: hidden;
+    margin: 20px auto 40px;
+
+    img {
+        width: 100%;
+    }
+
+    @media all and (min-width: $screen-sm) {
+        height: 185px;
+        width: 185px;
+    }
 }
 
 .news-story--content {
@@ -114,8 +127,13 @@
 
 .news-story--share-btns--wrapper {
     border-top: 2px solid $blue-2;
-    @include padding(30px 0px);
-    margin-top: 10px;
+    @include padding(15px 0px);
+    margin-top: 20px;
+
+    @media all and (min-width: $screen-md) {
+        @include padding(30px 0px);
+        margin-top: 20px;
+    }
 }
 
 .news-story--share-btns {
@@ -127,11 +145,16 @@
     }
 
     li > a {
-        height: 90px;
-        width: 90px;
+        height: 65px;
+        width: 65px;
         border-radius: 50%;
         display: block;
         background-color: $blue-2;
+
+        @media all and (min-width: $screen-md) {
+            height: 90px;
+            width: 90px;
+        }
     }
 }
 

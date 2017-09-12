@@ -14,3 +14,18 @@
         color: white;
     }
 }
+
+.call-out--faqs {
+    a {
+        min-width: auto;
+        display: block;
+        text-align: center;
+
+        @media all and (min-width: $screen-md) {
+            min-width: 280px;
+            text-align: center;
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+    }
+}
