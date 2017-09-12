@@ -62,6 +62,8 @@ Matrix.prototype.init = function(){
             e.currentTarget.parentNode.classList.add(cxt.css.states.active);
             var filterValue = e.currentTarget.getAttribute('data-filter');
             cxt.iso.arrange({filter: filterValue});
+            cxt.setClassNames(); // set class names
+            cxt.iso.layout(); //reset layout
         });
     });
 
@@ -75,6 +77,10 @@ Matrix.prototype.loadData = function(e){
     var cxt = this;
     e.preventDefault();
 
+    var activeFilter = this.navigation.querySelector('.active').childNodes[0];
+    var activeFilterValue = activeFilter.getAttribute('data-filter');
+    console.log(activeFilterValue);
+
     this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
 
     if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
@@ -84,8 +90,6 @@ Matrix.prototype.loadData = function(e){
             var newsMax = news.length; //max number of locations
             var panelsMax = cxt.gridItem.length;
             var num2Load = 3;
-
-            console.log(newsMax, panelsMax);
 
             if(newsMax <= (panelsMax+num2Load)) {
                 cxt.btn.classList.add(cxt.css.states.disabled);
@@ -119,6 +123,7 @@ Matrix.prototype.setClassNames = function(e){
     this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
 
     [].forEach.call(this.gridItem, function(element, index, array){
+        element.classList.remove(cxt.css.states.dblWidth);
         var l = arr.length;
 
         if(l == 0 || l == 5) {
@@ -128,7 +133,7 @@ Matrix.prototype.setClassNames = function(e){
             arr = [];
             k = 0;
         }
-        //console.log(arr);
+
         arr.push(k);
         k++;
     });
@@ -144,7 +149,7 @@ Matrix.prototype.setGrid = function(e){
 
 Matrix.prototype.buildNewsItem = function(data, img, date, title, url, cat) {
 
-    var parent = document.createElement('div');
+    var parent = document.createElement('a');
     var content = document.createElement('div');
     var a = document.createElement('a');
     var p1 = document.createElement('p');
@@ -156,6 +161,7 @@ Matrix.prototype.buildNewsItem = function(data, img, date, title, url, cat) {
     console.log(img);
     parent.classList.add('grid-item');
     parent.classList.add(cat);
+    parent.setAttribute('href', url);
     content.classList.add('grid-item__content');
     content.style.backgroundImage = "url('"+img+"')";
     p1.classList.add('grid-item__content--title');

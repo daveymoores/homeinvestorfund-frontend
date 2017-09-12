@@ -16,113 +16,13 @@
 				<ul class="grid--navigation">
 					<li class="active"><a href="" data-filter="">All posts</a></li>
 					<li><a href="" data-filter=".video">Video</a></li>
-					<li><a href="" data-filter=".downloads">Downloads</a></li>
-					<li><a href="" data-filter=".category">Category 2</a></li>
+					<li><a href="" data-filter=".download">Downloads</a></li>
+					<li><a href="" data-filter=".category-2">Category 2</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div class="grid--matrix grid">
-				<div class="grid-item grid-item--width2">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item video">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-
-				<div class="grid-item video">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item video">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item grid-item--width2 downloads">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-
-				<div class="grid-item grid-item--width2 downloads">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item category">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-
-				<div class="grid-item category">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item category">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-				<div class="grid-item grid-item--width2 category">
-					<div class="grid-item__content">
-						<p class="grid-item__content--title">
-							<a href="">Market needs "turbo boost" as supply shortage continues</a>
-						</p>
-						<p class="grid-item__content--date">10.02.2017</p>
-					</div>
-				</div>
-			</div>
+			<div class="grid--matrix grid"></div>
 		</div>
 
 
