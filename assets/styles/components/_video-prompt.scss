@@ -4,6 +4,7 @@
     @include flex-direction(row);
     @include justify-content(flex-start);
     @include align-items(center);
+    cursor: pointer;
 
     @media all and (min-width: $screen-sm) {
         @include margin(60px null 0px);

@@ -17,7 +17,8 @@
 		"plyr-init" : require("./widgets/plyr-init"),
 		"nav-tabs" : require("./widgets/nav-tabs"),
 		"staff-overlay" : require("./widgets/staff-overlay"),
-		"matrix" : require("./widgets/matrix")
+		"matrix" : require("./widgets/matrix"),
+		"video-modal" : require("./widgets/video-modal")
 	};
 
     function initWidgets ($node) {
