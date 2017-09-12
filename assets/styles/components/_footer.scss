@@ -63,6 +63,10 @@
                 }
             }
 
+            &.no-border {
+                border-right: none;
+            }
+
             &:first-child {
                 @media all and (min-width: $screen-sm) {
                     padding-left: 0px;

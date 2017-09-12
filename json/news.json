@@ -1,115 +1,161 @@
 [{
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-4.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-4.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-4.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-4.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-3.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-4.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "category-2",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-1.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "video",
+	"url" : "news-single.php"
 },
 {
-	"img": "./dist/images/house-pics/placeholder.jpg",
+	"img": "./dist/images/stock/stock-bg-2.png",
 	"date": "10.02.2017",
-	"title": "Market needs turbo boost as supply shortage continues"
+	"title": "Market needs turbo boost as supply shortage continues",
+	"cat" : "download",
+	"url" : "news-single.php"
 }]

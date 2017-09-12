@@ -40,7 +40,7 @@
 					<ul>
 						<li>T&amp;C's</li>
 						<li>Private policy</li>
-						<li>Investment Terms</li>
+						<li class="no-border">Investment Terms</li>
 						<li class="mobile-only">&copy; homeinvestor.fund 2017</li>
 					</ul>
 				</div>

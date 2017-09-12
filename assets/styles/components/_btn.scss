@@ -14,6 +14,11 @@
         background-color: shade($bg-color, 10%);
         box-shadow: inset 0 0 0 1px shade($border-color, 10%);
     }
+
+    &.disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
 }
 
 @mixin transparent-button($color, $bg-color, $border-color) {
@@ -31,6 +36,11 @@
     &:hover {
         color: shade($color, 10%);
         box-shadow: inset 0 0 0 1px shade($color, 10%);
+    }
+
+    &.disabled {
+        opacity: 0.3;
+        cursor: default;
     }
 }
 
@@ -50,6 +60,11 @@
         background-color: $hover-color;
         box-shadow: inset 0 0 0 1px $hover-color;
     }
+
+    &.disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
 }
 
 @mixin dualtone-button($color, $hover-color) {
@@ -67,6 +82,11 @@
     &:hover {
         color: $hover-color;
         box-shadow: inset 0 0 0 1px $hover-color;
+    }
+
+    &.disabled {
+        opacity: 0.3;
+        cursor: default;
     }
 }
 

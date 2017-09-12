@@ -11,8 +11,10 @@ function Matrix(node){
 Matrix.prototype.setVars = function(){
     this.css = {
         states : {
+            'init' : 'init',
             'active' : 'active',
-            'disabled' : 'disabled'
+            'disabled' : 'disabled',
+            'dblWidth' : 'grid-item--width2'
         },
         selectors : {
             'grid' : '.grid',
@@ -32,12 +34,25 @@ Matrix.prototype.init = function(){
     this.btn = this.node.querySelector(this.css.selectors.btn);
     this.gridMatrix = this.node.querySelector(this.css.selectors.gridMatrix);
     this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
+
     var cxt = this;
 
-    this.iso = new Isotope( cxt.elem, {
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows'
-    });
+    //check whether it already contains properties and has initialised
+    if(!this.node.classList.contains(cxt.css.states.init)) {
+        cxt.get('json/news.json').then(function(news) {
+            for (var i = 0; i < news.length; i++) {
+                if(i < 12) {
+                    cxt.buildNewsItem(news[i], news[i].img, news[i].date, news[i].title, news[i].url, news[i].cat);
+                }
+                cxt.setClassNames(); // set class names
+                cxt.setGrid();
+            }
+           cxt.node.classList.add(cxt.css.states.init);
+        }, function(error) {
+          console.error("Failed!", error);
+        });
+    }
+
 
     [].forEach.call(this.navAnchor, function(element, index, array){
         element.addEventListener('click', function(e){
@@ -60,36 +75,75 @@ Matrix.prototype.loadData = function(e){
     var cxt = this;
     e.preventDefault();
 
-    cxt.get('json/news.json').then(function(news) {
+    this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
 
-        // NOTE: add links!!
-        // NOTE: doesnt stop creating news stories
-        // NOTE: add different classes for sizes
+    if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
 
-        var newsMax = news.length; //max number of locations
-        var panelsMax = cxt.gridItem.length;
+        cxt.get('json/news.json').then(function(news) {
 
-        if(newsMax < panelsMax) {
-            cxt.loadMore.classList.add(cxt.css.states.disabled);
-            for (i = panelsMax; i < (panelsMax+3); i++) {
-                cxt.buildNewsItem(news[i], news[i].img, news[i].date, news[i].title);
+            var newsMax = news.length; //max number of locations
+            var panelsMax = cxt.gridItem.length;
+            var num2Load = 3;
+
+            console.log(newsMax, panelsMax);
+
+            if(newsMax <= (panelsMax+num2Load)) {
+                cxt.btn.classList.add(cxt.css.states.disabled);
+                for (i = panelsMax; i < (panelsMax+num2Load); i++) {
+                    cxt.buildNewsItem(news[i], news[i].img, news[i].date, news[i].title, news[i].url, news[i].cat);
+                }
+                cxt.setClassNames(); // set class names
+                cxt.iso.layout(); //reset layout
+            } else {
+                for (i = panelsMax; i < (panelsMax+num2Load); i++) {
+                    cxt.buildNewsItem(news[i], news[i].img, news[i].date, news[i].title, news[i].url, news[i].cat);
+                }
+                cxt.setClassNames(); // set class names
+                cxt.iso.layout(); //reset layout
             }
-        } else {
-            for (i = panelsMax; i < (panelsMax+3); i++) {
-                cxt.buildNewsItem(news[i], news[i].img, news[i].date, news[i].title);
-            }
-        }
 
-    }, function(error) {
-      console.error("Failed!", error);
-    });
+        }, function(error) {
+          console.error("Failed!", error);
+        });
+
+    }
 
 }
 
 
-Matrix.prototype.buildNewsItem = function(data, img, date, title) {
+Matrix.prototype.setClassNames = function(e){
+    var cxt = this;
+    var arr = [];
+    var k = 0;
 
-    console.log(img, date, title);
+    this.gridItem = this.node.querySelectorAll(this.css.selectors.gridItem);
+
+    [].forEach.call(this.gridItem, function(element, index, array){
+        var l = arr.length;
+
+        if(l == 0 || l == 5) {
+            element.classList.add(cxt.css.states.dblWidth);
+        } else if(l == 6) {
+            element.classList.add(cxt.css.states.dblWidth);
+            arr = [];
+            k = 0;
+        }
+        //console.log(arr);
+        arr.push(k);
+        k++;
+    });
+}
+
+Matrix.prototype.setGrid = function(e){
+    this.iso = new Isotope( this.elem, {
+      itemSelector: '.grid-item',
+      layoutMode: 'fitRows'
+    });
+}
+
+
+Matrix.prototype.buildNewsItem = function(data, img, date, title, url, cat) {
+
     var parent = document.createElement('div');
     var content = document.createElement('div');
     var a = document.createElement('a');
@@ -97,11 +151,13 @@ Matrix.prototype.buildNewsItem = function(data, img, date, title) {
     var p2 = document.createElement('p');
 
     a.innerText = title;
-    a.setAttribute('href', '#');
+    a.setAttribute('href', url);
     p2.innerText = date;
-
+    console.log(img);
     parent.classList.add('grid-item');
+    parent.classList.add(cat);
     content.classList.add('grid-item__content');
+    content.style.backgroundImage = "url('"+img+"')";
     p1.classList.add('grid-item__content--title');
     p2.classList.add('grid-item__content--date');
     parent.appendChild(content);
@@ -109,8 +165,11 @@ Matrix.prototype.buildNewsItem = function(data, img, date, title) {
     content.appendChild(p2);
     p1.appendChild(a);
 
-    this.iso.insert(parent);
-    this.iso.layout();
+    if(this.node.classList.contains(this.css.states.init)) {
+        this.iso.insert(parent);
+    } else {
+        this.gridMatrix.appendChild(parent);
+    }
 }
 
 

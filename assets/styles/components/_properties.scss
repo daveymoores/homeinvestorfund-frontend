@@ -29,10 +29,5 @@
         display: block;
         margin-top: 30px;
         text-align: center;
-
-        &.disabled {
-            opacity: 0.3;
-            cursor: default;
-        }
     }
 }
