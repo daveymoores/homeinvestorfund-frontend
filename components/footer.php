@@ -3,10 +3,10 @@
 		<div class="row">
 			<div class="col-md-3">
 				<ul class="footer--list mobile-only">
-					<li><a href="">Contact Us</a></li>
-					<li><a href="">Latest News</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Properties</a></li>
+					<li><a href="contact-us.php">Contact Us</a></li>
+					<li><a href="news-content-hub.php">Latest News</a></li>
+					<li><a href="about-us.php">About Us</a></li>
+					<li><a href="properties.php">Properties</a></li>
 					<li class="mobile-only"><a href="">White label partnerships</a></li>
 				</ul>
 			</div>
@@ -14,8 +14,8 @@
 				<ul class="footer--list">
 					<li><a href="">Are you a financial advisor?</a></li>
 					<li><a href="">I'm a financial advisor</a></li>
-					<li><a href="">Financial advisor FAQs</a></li>
-					<li><a href="">Financial advisor news</a></li>
+					<li><a href="faqs-fa.php">Financial advisor FAQs</a></li>
+					<li><a href="news-content-hub-fa.php">Financial advisor news</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
