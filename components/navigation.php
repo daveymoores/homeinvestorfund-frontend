@@ -25,10 +25,10 @@
                     <li class="short hide-for-mobile"><a href="/">Home</a></li>
                     <li class="short"><a href="">How it works</a></li>
                     <li class="short"><a href="faqs.php">FAQ's</a></li>
-                    <li class="mobile-only"><a href="">Latest news</a></li>
-                    <li class="mobile-only"><a href="">About us</a></li>
-                    <li class="mobile-only"><a href="">Properties</a></li>
-                    <li class="mobile-only"><a href="">Contact us</a></li>
+                    <li class="mobile-only"><a href="news-content-hub.php">Latest news</a></li>
+                    <li class="mobile-only"><a href="about-us.php">About us</a></li>
+                    <li class="mobile-only"><a href="properties.php">Properties</a></li>
+                    <li class="mobile-only"><a href="contact-us.php">Contact us</a></li>
                     <li class="navigation__dropdown">
                         <a href="">I'm a financial advisor</a>
                         <ul class="navigation__dropdown--panel">

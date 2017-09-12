@@ -22,6 +22,7 @@
 .hero {
     &--contact {
         @include short-coloured-hero($teal-3, $white);
+        overflow: hidden;
     }
 
     &--news-content-hub {
