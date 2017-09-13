@@ -20,7 +20,7 @@
 }
 
 .hero {
-    &--contact {
+    &--contact, &--how-it-works {
         @include short-coloured-hero($teal-3, $white);
         overflow: hidden;
     }

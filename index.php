@@ -173,14 +173,14 @@
 <section class="fw-wrap--blue double-padding section-bg__hard-work">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<heading>
 					<h2>Investing your money can be hard work</h2>
 				</heading>
 				<p class="light">We know you want to invest your money - for your pension, your children and for your future. Your want your money to be safe, but also to work hard. But in today’s unpredictable climate, many investment opportunities aren’t all that rewarding.</p>
 				<p><b>That’s where we come in. Our team of experts will help you say “bye bye” to underperforming investments and “hello” to a smarter way to invest in residential property.</b></p>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 
 			</div>
 		</div>
