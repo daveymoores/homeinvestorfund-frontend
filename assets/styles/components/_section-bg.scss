@@ -21,7 +21,7 @@
                 width: 1300px;
                 left: 50%;
                 margin-left: -650px;
-            }    
+            }
         }
     }
 
@@ -42,6 +42,21 @@
         @media all and (min-width: $mobile-only) {
             background: #226bba url(../images/bg/blue-rock.png) bottom center no-repeat;
             background-size: cover;
+        }
+    }
+
+    &__simple-investment {
+        background: #226bba url(../images/bg/blue-arrows-houses-mob.png) bottom center no-repeat;
+        background-size: 100%;
+
+        @media all and (min-width: 445px) {
+            background: #226bba url(../images/bg/blue-arrows-houses-tablet.png) bottom center no-repeat;
+            background-size: contain;
+        }
+
+        @media all and (min-width: $screen-sm) {
+            background: #226bba url(../images/bg/blue-arrows-houses.png) bottom center no-repeat;
+            background-size: contain;
         }
     }
 }

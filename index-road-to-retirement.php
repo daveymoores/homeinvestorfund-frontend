@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h1><span class="colorpick--red">Residential property</span> investment for everyone</h1>
-					<p class="light">We’ve opened the doors to our £50m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
+					<h1><span class="colorpick--red">Finally, some good news </span> for first time buyers</h1>
+					<p class="light">We’ve opened the doors to a £54m residential property fund to help thousands of customers like you invest and save in a whole new way.</p>
 				</heading>
 
 				<div class="video-prompt" id="videoModalHook">
@@ -170,15 +170,14 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__hard-work">
+<section class="fw-wrap--blue double-padding section-bg__simple-investment">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h2>Investing your money can be hard work</h2>
+					<h2>A simple investment choice to save for your first home</h2>
 				</heading>
-				<p class="light">We know you want to invest your money - for your pension, your children and for your future. Your want your money to be safe, but also to work hard. But in today’s unpredictable climate, many investment opportunities aren’t all that rewarding.</p>
-				<p><b>That’s where we come in. Our team of experts will help you say “bye bye” to underperforming investments and “hello” to a smarter way to invest in residential property.</b></p>
+				<p class="light">We know you want to start saving for your first home. You want your money to be safe, but also to work hard. But with today’s low interest rates, ISAs offer less of an opportunity to get you closer to owning your first home.</p>
 			</div>
 			<div class="col-md-6 col-sm-6">
 

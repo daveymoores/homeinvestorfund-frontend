@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h1><span class="colorpick--red">Residential property</span> investment for everyone</h1>
-					<p class="light">We’ve opened the doors to our £50m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
+					<h1><span class="colorpick--red">Bye bye </span> buy-to-let</h1>
+					<p class="light">As proven properly investors, we’ve opened the doors to our £54m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
 				</heading>
 
 				<div class="video-prompt" id="videoModalHook">
@@ -170,15 +170,14 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__hard-work">
+<section class="fw-wrap--blue double-padding section-bg__simple-investment">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h2>Investing your money can be hard work</h2>
+					<h2>Why own one property when you can own streetfuls?</h2>
 				</heading>
-				<p class="light">We know you want to invest your money - for your pension, your children and for your future. Your want your money to be safe, but also to work hard. But in today’s unpredictable climate, many investment opportunities aren’t all that rewarding.</p>
-				<p><b>That’s where we come in. Our team of experts will help you say “bye bye” to underperforming investments and “hello” to a smarter way to invest in residential property.</b></p>
+				<p class="light">We know you want to expand your investment portfolio and you may be considering buy-to-let. You want your money to be safe and to be managed intelligently, but also for it to work hard. In today’s unpredictable climate though, many investment opportunities are overly complex  and lacking in rewards. Being a landlord comes with its own complications too.</p>
 			</div>
 			<div class="col-md-6 col-sm-6">
 
@@ -193,9 +192,9 @@
 			<div class="col-md-12">
 				<div class="centered-heading">
 					<heading>
-						<h2>A new home for your money</h2>
+						<h2>A better home for your money</h2>
 					</heading>
-					<p>We know you want to invest your money - for your pension, your children and for your future. Your want your money to be safe, but also to work hard. But in today’s unpredictable climate, many investment opportunities aren’t all that rewarding.</p>
+					<p>The UK buy-to-let market can be a complicated space. Mortgage applications, high deposit demands, tax, dodgy tenants and leaky taps. homeinvestor.fund takes all that hassle out of property investment. From finding the best properties, to maintaining and the eventual re-sale  of them — it’s all managed by our expert team. Adding diversity to your portfolio and leaving with you with more time to spend doing the things you love.</p>
 				</div>
 			</div>
 		</div>
