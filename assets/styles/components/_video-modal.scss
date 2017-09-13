@@ -9,6 +9,10 @@
     opacity: 0;
     @include transition(all .4s ease);
 
+    @media all and (min-width: $screen-sm) {
+        width: calc(100% - 300px);
+    }
+
     @media all and (min-width: $screen-md) {
         width: 700px;
     }
@@ -31,6 +35,33 @@
 
 .video-modal--close {
     @extend .map__overlay--close;
+
+    background-color: $red-1;
+    height: 50px;
+    width: 50px;
+    @include position(absolute, 0 null 0 -50px);
+    @include padding(18px);
+
+    @media all and (min-width: $screen-md){
+        @include position(absolute, 0 null 0 -84px);
+        height: 84px;
+        width: 84px;
+    }
+
+    > span {
+        color: $white;
+        @include transform(rotate(45deg));
+        transform-origin: 50% 50%;
+        @include font-sans(400);
+        display: inline-block;
+        font-size: 50px;
+        @include position(absolute, -1px 9px null null);
+
+        @media all and (min-width: $screen-md){
+            font-size: 85px;
+            @include position(absolute, -2px 15px null null);
+        }
+    }
 }
 
 .video-modal--bg {
