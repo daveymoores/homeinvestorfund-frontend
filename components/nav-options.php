@@ -6,7 +6,7 @@
 					<div class="ghost-panel--content">
 						<h4>Looking to retire?</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-						<a href="">Find out more</a>
+						<a href="index-road-to-retirement.php">Find out more</a>
 					</div>
 					<div class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
@@ -24,7 +24,7 @@
 					<div class="ghost-panel--content">
 						<h4>Saving for your first house?</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-						<a href="">Find out more</a>
+						<a href="index-rising-metropolitan.php">Find out more</a>
 					</div>
 					<div class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
@@ -42,7 +42,7 @@
 					<div class="ghost-panel--content">
 						<h4>Get your child on the property ladder</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-						<a href="">Find out more</a>
+						<a href="index-rich-greys.php">Find out more</a>
 					</div>
 					<div class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
@@ -60,7 +60,7 @@
 					<div class="ghost-panel--content">
 						<h4>Grow your investment portfolio</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-						<a href="">Find out more</a>
+						<a href="index-smart-alec.php">Find out more</a>
 					</div>
 					<div class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
