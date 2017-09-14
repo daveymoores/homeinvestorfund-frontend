@@ -30,7 +30,7 @@
                     <li class="mobile-only"><a href="properties.php">Properties</a></li>
                     <li class="mobile-only"><a href="contact-us.php">Contact us</a></li>
                     <li class="navigation__dropdown">
-                        <a href="">I'm a financial advisor</a>
+                        <a href="index-b2b.php">I'm a financial advisor</a>
                         <ul class="navigation__dropdown--panel">
                             <li><a href="faqs-fa.php">Financial adviser FAQs</a></li>
                             <li><a href="news-content-hub-fa.php">Financial adviser news</a></li>

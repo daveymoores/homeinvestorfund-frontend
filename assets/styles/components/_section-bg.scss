@@ -59,4 +59,49 @@
             background-size: contain;
         }
     }
+
+    &__rich-greys {
+        background: #226bba url(../images/bg/blue-coins-mob.png) bottom center no-repeat;
+        background-size: contain;
+        min-height: 500px;
+
+        @media all and (min-width: $screen-sm) {
+            background: #226bba url(../images/bg/blue-coins.png) center center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__smart-alec {
+        background: #0074bb url(../images/bg/blue-houses-mob.png) bottom center no-repeat;
+        background-size: contain;
+        min-height: 550px;
+
+        @media all and (min-width: $screen-sm) {
+            background: #0074bb url(../images/bg/blue-houses.png) center center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__road-to-retirement {
+        background: #0074bb url(../images/bg/blue-ladder-mob.png) bottom center no-repeat;
+        background-size: contain;
+        min-height: 500px;
+
+        @media all and (min-width: $screen-sm) {
+            background: #0074bb url(../images/bg/blue-ladder.png) bottom center no-repeat;
+            background-size: contain;
+        }
+    }
+
+
+    &__hard-work {
+        background: #0074bb url(../images/bg/blue-piggybank-mob.png) bottom center no-repeat;
+        background-size: contain;
+        min-height: 550px;
+
+        @media all and (min-width: $screen-sm) {
+            background: #0074bb url(../images/bg/blue-piggybank.png) right center no-repeat;
+            background-size: contain;
+        }
+    }
 }

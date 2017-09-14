@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h1><span class="colorpick--red">Bye bye </span> buy-to-let</h1>
+					<h1><span class="colorpick--red" style="display: block;">Bye bye </span> buy-to-let</h1>
 					<p class="light">As proven properly investors, we’ve opened the doors to our £54m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
 				</heading>
 
@@ -170,7 +170,7 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__simple-investment">
+<section class="fw-wrap--blue double-padding section-bg__smart-alec">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -189,7 +189,7 @@
 <section class="fw-wrap">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
 				<div class="centered-heading">
 					<heading>
 						<h2>A better home for your money</h2>
@@ -201,18 +201,18 @@
 
 		<div class="row">
 			<div class="col-md-4">
-				<div class="feature-panel yellow">
-					<svg class="feature-panel--balloons">
-						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
+				<div class="feature-panel teal">
+					<svg class="feature-panel--maze">
+						<use xlink:href="./dist/svg/svg-sprite.svg#maze" />
 					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="feature-panel teal">
+				<div class="feature-panel yellow">
 					<svg class="feature-panel--houses">
-						<use xlink:href="./dist/svg/svg-sprite.svg#houses" />
+						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
 					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

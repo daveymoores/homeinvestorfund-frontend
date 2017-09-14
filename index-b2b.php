@@ -1,13 +1,16 @@
 <?php include 'components/head.php'; ?>
+
 <?php include 'components/navigation.php'; ?>
+
+<?php include 'components/fa-prompt.php'; ?>
 
 <section class="fw-wrap--light-blue calculator--wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h1>Investing for <span class="colorpick--red" style="display: block;">your family's future</span></h1>
-					<p class="light">We’ve opened the doors to a £54m residential property fund to help thousands of customers like you invest and save in a whole new way.</p>
+					<h1><span class="colorpick--red" style="display: block;">A new way</span> for your clients to invest in residential property</h1>
+					<p class="light">At Hearthstone Investments PLC, we manage a range of investment funds — one of which is a UK residential property fund, which we’ve been growing for the past 5 1/2 years. We’re now opening up the homeinvestor.fund, a £54m FCA regulated residential property fund, to retail investors in the UK.</p>
 				</heading>
 
 				<div class="video-prompt" id="videoModalHook">
@@ -170,14 +173,14 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__rich-greys">
+<section class="fw-wrap--blue double-padding section-bg__hard-work">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
 				<heading>
-					<h2>A simple investment choice to save for your first home</h2>
+					<h2>Finding the right home for your clients’ money</h2>
 				</heading>
-				<p class="light">We know you want to start saving for your first home. You want your money to be safe, but also to work hard. But with today’s low interest rates, ISAs offer less of an opportunity to get you closer to owning your first home.</p>
+				<p class="light">In a world of complicated products, volatile stock markets and low interest rates on bank deposits, residential property is, and always will be, a viable and uncomplicated investment.  But what benefits can it add to your clients’ portfolios? Put simply, for over 5 years, homeinvestor.fund has a track record of providing returns with low volatility.</p>
 			</div>
 			<div class="col-md-6 col-sm-6">
 
@@ -201,9 +204,9 @@
 
 		<div class="row">
 			<div class="col-md-4">
-				<div class="feature-panel blue">
+				<div class="feature-panel yellow">
 					<svg class="feature-panel--balloons">
-						<use xlink:href="./dist/svg/svg-sprite.svg#money-bag" />
+						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
 					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -211,17 +214,17 @@
 			</div>
 			<div class="col-md-4">
 				<div class="feature-panel teal">
-					<svg class="feature-panel--tap">
-						<use xlink:href="./dist/svg/svg-sprite.svg#tap" />
+					<svg class="feature-panel--houses">
+						<use xlink:href="./dist/svg/svg-sprite.svg#houses" />
 					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="feature-panel yellow">
-					<svg class="feature-panel--houses">
-						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
+				<div class="feature-panel blue">
+					<svg class="feature-panel--house-safe">
+						<use xlink:href="./dist/svg/svg-sprite.svg#house-safe" />
 					</svg>
 					<h3>The is a title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

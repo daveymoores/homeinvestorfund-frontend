@@ -6,6 +6,22 @@
         display: block;
         width: 60%;
         position: relative;
+
+        &.feature-panel--balloons {}
+
+        &.feature-panel--houses {
+            width: 100%;
+            bottom: -10px;
+        }
+
+        &.feature-panel--house-safe {
+            width: 100%;
+            bottom: -10px;
+        }
+
+        &.feature-panel--maze {
+            width: 75%;
+        }
     }
 
     &.yellow {
@@ -19,16 +35,4 @@
     &.blue {
         background-color: $blue-2;
     }
-}
-
-.feature-panel--balloons {}
-
-.feature-panel--houses {
-    width: 100%;
-    bottom: -10px;
-}
-
-.feature-panel--house-safe {
-    width: 100%;
-    bottom: -10px;
 }
