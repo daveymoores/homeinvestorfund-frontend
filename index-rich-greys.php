@@ -199,9 +199,9 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" data-widget="equal-heights">
 			<div class="col-md-4">
-				<div class="feature-panel blue">
+				<div class="feature-panel blue eq">
 					<svg class="feature-panel--balloons">
 						<use xlink:href="./dist/svg/svg-sprite.svg#money-bag" />
 					</svg>
@@ -210,7 +210,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="feature-panel teal">
+				<div class="feature-panel teal eq">
 					<svg class="feature-panel--tap">
 						<use xlink:href="./dist/svg/svg-sprite.svg#tap" />
 					</svg>
@@ -219,7 +219,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="feature-panel yellow">
+				<div class="feature-panel yellow eq">
 					<svg class="feature-panel--houses">
 						<use xlink:href="./dist/svg/svg-sprite.svg#balloons" />
 					</svg>

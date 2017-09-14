@@ -1,5 +1,5 @@
 <script type="text/javascript" src="./dist/scripts/main.min.js"></script>
-<script>
+<!-- <script>
 	(function () {
 	  equalHeight(false);
 	})();
@@ -25,6 +25,6 @@
 	    elements[i].style.height = Math.max.apply( Math, allHeights) + 'px';
 	  }
 	}
-</script>
+</script> -->
 </body>
 </html>

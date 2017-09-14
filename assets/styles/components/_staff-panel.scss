@@ -15,6 +15,8 @@
 
 .staff-panel--content {
     @include padding(20px);
+    @include display(flex);
+    @include flex-direction(column);
 
     @media all and (min-width: $screen-sm) {
         @include padding(40px);
@@ -29,6 +31,11 @@
         margin-bottom: 10px;
         font-size: $font-size-small;
         line-height: $lineheight-small;
+    }
+
+    a {
+        margin-top: auto;
+        display: table;
     }
 }
 

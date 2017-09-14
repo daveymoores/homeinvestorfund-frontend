@@ -18,7 +18,8 @@
 		"nav-tabs" : require("./widgets/nav-tabs"),
 		"staff-overlay" : require("./widgets/staff-overlay"),
 		"matrix" : require("./widgets/matrix"),
-		"video-modal" : require("./widgets/video-modal")
+		"video-modal" : require("./widgets/video-modal"),
+		"equal-heights" : require("./widgets/equal-heights")
 	};
 
     function initWidgets ($node) {

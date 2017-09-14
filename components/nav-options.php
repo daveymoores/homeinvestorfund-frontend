@@ -1,4 +1,4 @@
-<section class="ghost-panel--section-padding">
+<section class="ghost-panel--section-padding" data-widget="equal-heights">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-6">

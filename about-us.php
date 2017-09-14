@@ -67,14 +67,14 @@
 					<li class=""><a href="#tab-2">Partners</a></li>
 				</ul>
 				<div class="tab-content">
-					<div id="tab-1" class="tab-pane active">
+					<div id="tab-1" class="tab-pane active" data-widget="equal-heights">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="staff-panel" data-widget="staff-overlay">
 									<div class="staff-panel--img-cont red">
 
 									</div>
-									<div class="staff-panel--content">
+									<div class="staff-panel--content eq">
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -90,10 +90,10 @@
 									<div class="staff-panel--img-cont teal">
 
 									</div>
-									<div class="staff-panel--content">
+									<div class="staff-panel--content eq">
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 										<a href="" class="btn__primary--teal" data-target>Read Alan's bio</a>
 									</div>
 									<div class="staff-panel--hidden-content">
@@ -106,7 +106,7 @@
 									<div class="staff-panel--img-cont blue">
 
 									</div>
-									<div class="staff-panel--content">
+									<div class="staff-panel--content eq">
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -122,7 +122,7 @@
 									<div class="staff-panel--img-cont yellow">
 
 									</div>
-									<div class="staff-panel--content">
+									<div class="staff-panel--content eq">
 										<h3>Alan Collett</h3>
 										<h5>Fund Manager</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -135,14 +135,14 @@
 							</div>
 						</div>
 					</div>
-					<div id="tab-2" class="tab-pane">
+					<div id="tab-2" class="tab-pane" data-widget="equal-heights">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="partner-panel">
 									<div class="partner-panel--img-cont">
 
 									</div>
-									<div class="partner-panel--content">
+									<div class="partner-panel--content eq">
 										<h3>Thesis asset management</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</div>
@@ -153,7 +153,7 @@
 									<div class="partner-panel--img-cont">
 
 									</div>
-									<div class="partner-panel--content">
+									<div class="partner-panel--content eq">
 										<h3>Thesis asset management</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</div>
@@ -164,7 +164,7 @@
 									<div class="partner-panel--img-cont">
 
 									</div>
-									<div class="partner-panel--content">
+									<div class="partner-panel--content eq">
 										<h3>Thesis asset management</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</div>
@@ -175,7 +175,7 @@
 									<div class="partner-panel--img-cont">
 
 									</div>
-									<div class="partner-panel--content">
+									<div class="partner-panel--content eq">
 										<h3>Thesis asset management</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</div>
