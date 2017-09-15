@@ -1,5 +1,6 @@
 .quote-panel {
     @extend .panel;
+    height: 100%;
 
     p {
         font-style: italic;

@@ -8,9 +8,9 @@
 		</heading>
 	</div>
 
-	<!-- <div class="section-bg section-bg__hero-contact">
-		<img src="./dist/images/bg/hero-contact.png" alt="" />
-	</div> -->
+	<div class="section-bg section-bg__hero-how-it-works">
+		<img src="./dist/images/bg/hero-how-it-works-2.png" alt="" />
+	</div>
 </section>
 
 <section class="fw-wrap--video" data-widget="plyr-init">

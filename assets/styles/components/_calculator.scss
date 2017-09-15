@@ -63,6 +63,17 @@
     @include clearfix;
     padding-bottom: 20px;
 
+    dl {
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        @include justify-content(space-between);
+
+        @media all and (min-width: $screen-md) {
+            @include flex-direction(row);
+        }
+    }
+
     dt {
         font-size: $font-size-base;
 
@@ -73,16 +84,40 @@
 
     dd {
         font-size: $font-size-h2;
-        display: block;
+        line-height: $lineheight-h2;
+        @include display(flex);
         margin-top: 10px;
+        width: 200px;
+
+        input {
+            border: none;
+            margin-top: 0px;
+            font-size: $font-size-h2;
+            line-height: $lineheight-h2;
+            outline: none;
+            background-color: transparent;
+        }
+
+        span {
+            display: inline-block;
+            font-size: $font-size-h2;
+            //line-height: $lineheight-h2;
+        }
 
         @media all and (min-width: $screen-md) {
             font-size: $font-size-h1;
             float: right;
             margin-top: 0px;
+
+            input, span {
+                font-size: $font-size-h1;
+                //line-height: 50px;
+                margin-top: 0px;
+            }
         }
     }
 }
+
 
 .calculator__total {
     &--title {

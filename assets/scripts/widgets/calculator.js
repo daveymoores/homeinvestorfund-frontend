@@ -20,12 +20,24 @@ Calculator.prototype.setVars = function(){
 }
 
 Calculator.prototype.init = function(){
+    var cxt = this;
     this.calcUnit = this.node.querySelector(this.CLASSES.selectors.calcUnit);
     this.calcSlider = this.node.querySelector(this.CLASSES.selectors.calcSlider);
     this.calcStandardRate = this.node.querySelector(this.CLASSES.selectors.calcStandardRate);
     this.calcFundRate = this.node.querySelector(this.CLASSES.selectors.calcFundRate);
 
+    this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
+    
     this.setSlider();
+}
+
+Calculator.prototype.handleInput = function(e){
+    var value = e.currentTarget.innerText;
+    var plainValue = value.replace(/\,/g,'');
+
+    this.calcSlider.rangeSlider.update({value : plainValue});
+    this.calcStandardRate.innerText = this.calcInterest(plainValue)[0];
+    this.calcFundRate.innerText = this.calcInterest(plainValue)[1];
 }
 
 Calculator.prototype.setSlider = function(){
@@ -57,7 +69,7 @@ Calculator.prototype.setSlider = function(){
         },
         onSlide: function (position, value) {
             console.log('onSlide', 'position: ' + position, 'value: ' + value);
-            cxt.calcUnit.innerText = position.toLocaleString();
+            cxt.calcUnit.innerText = position;
             cxt.calcStandardRate.innerText = cxt.calcInterest(position)[0];
             cxt.calcFundRate.innerText = cxt.calcInterest(position)[1];
         },

@@ -59,6 +59,7 @@
   "dependencies": {
     "accordion": "^2.1.1",
     "browser-sync": "^2.16.0",
+    "cleave.js": "^1.0.1",
     "gulp-imagemin": "^3.0.3",
     "isotope-layout": "^3.0.4",
     "lory.js": "^2.3.3",

@@ -22,7 +22,8 @@
     }
 
     .slides {
-        display: inline-block;
+        @include display(flex);
+        @include flex-direction(row);
     }
 
     .js_dots {
@@ -41,6 +42,7 @@
             opacity: 0.5;
             @include transition(opacity .3s ease);
             margin: 25px 10px 0px;
+            display: inline-block;
 
             &.active {
                 opacity: 1;
@@ -48,21 +50,21 @@
         }
     }
 
-    li {
+    li.js_slide {
         position: relative;
         display: inline-block;
-        width: 320px;
+        min-width: 320px;
 
         @media all and (min-width: $screen-sm) {
-            width: 345px;
+            min-width: 345px;
         }
 
         @media all and (min-width: $screen-md) {
-            width: 293.33px;
+            min-width: 293.33px;
         }
 
         @media all and (min-width: $screen-lg) {
-            width: 370px;
+            min-width: 370px;
         }
         @include margin(0px 15px);
     }
