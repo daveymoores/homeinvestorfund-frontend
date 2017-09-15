@@ -7,7 +7,7 @@
     overflow: hidden;
     @include position(fixed, 0px null null);
     width: 100%;
-    z-index: 9999;
+    z-index: 99;
     overflow-y: scroll;
 
     &.open {}
