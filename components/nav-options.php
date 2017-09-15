@@ -4,11 +4,11 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="ghost-panel eq ghost-panel--nav-options">
 					<div class="ghost-panel--content">
-						<h4>Looking to retire?</h4>
+						<h4><a href="index-road-to-retirement.php">Looking to retire?</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
 						<a href="index-road-to-retirement.php">Find out more</a>
 					</div>
-					<div class="ghost-panel--mobile-chevron">
+					<a href="index-road-to-retirement.php" class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
 						  <g id="Layer_2" data-name="Layer 2">
 							<g id="Layer_2-2" data-name="Layer 2">
@@ -16,17 +16,17 @@
 							</g>
 						  </g>
 						</svg>
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="ghost-panel eq ghost-panel--nav-options">
 					<div class="ghost-panel--content">
-						<h4>Saving for your first house?</h4>
+						<h4><a href="index-rising-metropolitan.php">Saving for your first house?</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
 						<a href="index-rising-metropolitan.php">Find out more</a>
 					</div>
-					<div class="ghost-panel--mobile-chevron">
+					<a href="index-rising-metropolitan.php" class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
 						  <g id="Layer_2" data-name="Layer 2">
 							<g id="Layer_2-2" data-name="Layer 2">
@@ -34,17 +34,17 @@
 							</g>
 						  </g>
 						</svg>
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="ghost-panel eq ghost-panel--nav-options">
 					<div class="ghost-panel--content">
-						<h4>Get your child on the property ladder</h4>
+						<h4><a href="index-rich-greys.php">Get your child on the property ladder</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
 						<a href="index-rich-greys.php">Find out more</a>
 					</div>
-					<div class="ghost-panel--mobile-chevron">
+					<a href="index-rich-greys.php" class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
 						  <g id="Layer_2" data-name="Layer 2">
 							<g id="Layer_2-2" data-name="Layer 2">
@@ -52,17 +52,17 @@
 							</g>
 						  </g>
 						</svg>
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="ghost-panel eq ghost-panel--nav-options">
 					<div class="ghost-panel--content">
-						<h4>Grow your investment portfolio</h4>
+						<h4><a href="index-smart-alec.php">Grow your investment portfolio</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
 						<a href="index-smart-alec.php">Find out more</a>
 					</div>
-					<div class="ghost-panel--mobile-chevron">
+					<a href="index-smart-alec.php" class="ghost-panel--mobile-chevron">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
 						  <g id="Layer_2" data-name="Layer 2">
 							<g id="Layer_2-2" data-name="Layer 2">
@@ -70,7 +70,7 @@
 							</g>
 						  </g>
 						</svg>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>

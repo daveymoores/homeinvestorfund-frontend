@@ -84,7 +84,7 @@
 
 <?php include 'components/guide-sign-up.php'; ?>
 
-<section class="news-story--navigation">
+<section class="news-story--navigation" data-widget="equal-heights">
 	<a href="#_" class="column eq" style="background-image: url(./dist/images/stock/stock-bg-1.png);">
 		<div class="news-story--bg"></div>
 		<div class="news-story--item">

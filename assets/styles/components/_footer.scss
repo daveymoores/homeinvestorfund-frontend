@@ -37,6 +37,7 @@
         @media all and (min-width: $screen-sm) {
             padding: 20px 0px;
             @include clearfix;
+            margin-left: 0px;
         }
 
         li {

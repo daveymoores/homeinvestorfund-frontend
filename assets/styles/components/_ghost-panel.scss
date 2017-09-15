@@ -15,19 +15,18 @@
     h4 {
         text-align: left;
         margin-bottom: 20px;
+
+        a {
+            color: inherit;
+            font-weight: 700;
+            display: block;
+        }
     }
 
     p {
         font-size: $font-size-small;
         text-align: left;
         padding-top: 0px;
-    }
-
-    a {
-        margin-top: auto;
-        @include font-proxima(600);
-        color: $red-1;
-        text-align: left;
     }
 
     ul {
@@ -56,14 +55,6 @@
             display: block;
         }
     }
-
-    a {
-        display: none;
-
-        @media all and (min-width: $screen-sm) {
-            display: block;
-        }
-    }
 }
 
 .ghost-panel--section-padding {
@@ -82,6 +73,18 @@
 
     @media all and (min-width: $screen-sm) {
         @include padding(0px);
+    }
+
+    a {
+        margin-top: auto;
+        @include font-proxima(600);
+        color: $red-1;
+        text-align: left;
+        display: none;
+
+        @media all and (min-width: $screen-sm) {
+            display: block;
+        }
     }
 }
 

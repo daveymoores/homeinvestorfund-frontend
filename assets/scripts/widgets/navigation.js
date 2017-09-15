@@ -33,11 +33,18 @@ Navigation.prototype.init = function(){
 Navigation.prototype.openMenu = function(e){
     var navHeight = this.navigationMain.getBoundingClientRect().height;
     var wrapHeight = this.navigationWrapper.getBoundingClientRect().height;
+    var ww = window.innerHeight;
+    var hh = navHeight+wrapHeight;
+
+    if(ww<hh) {
+        hh = ww;
+    }
+
     e.currentTarget.classList.toggle(this.CLASSES.states.active);
     this.node.classList.toggle(this.CLASSES.states.open);
 
     if(this.node.classList.contains(this.CLASSES.states.open)) {
-        this.node.style.maxHeight = (navHeight+wrapHeight)+'px';
+        this.node.style.maxHeight = hh+'px';
     } else {
         this.node.style.maxHeight = "";
     }

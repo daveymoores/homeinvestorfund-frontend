@@ -50,7 +50,7 @@ VideoModal.prototype.triggerModal = function(e){
     this.node.classList.add('reveal');
 
     setTimeout(function(){
-        //cxt.vidInstance[0].play();
+        cxt.vidInstance[0].play();
         cxt.playBtn.classList.add('remove');
     }, 400);
 }

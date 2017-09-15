@@ -9,6 +9,8 @@
     .column {
         width: 100%;
         @include padding(20px);
+        @include display(flex);
+        @include flex-direction(column);
 
         @media all and (min-width: $screen-sm) {
             @include padding(80px);
@@ -32,6 +34,7 @@
 
     a {
         display: table;
+        margin-top: auto;
     }
 
     h3 {
