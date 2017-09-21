@@ -19,7 +19,8 @@
 		"staff-overlay" : require("./widgets/staff-overlay"),
 		"matrix" : require("./widgets/matrix"),
 		"video-modal" : require("./widgets/video-modal"),
-		"equal-heights" : require("./widgets/equal-heights")
+		"equal-heights" : require("./widgets/equal-heights"),
+		"share-btns" : require("./widgets/share")
 	};
 
     function initWidgets ($node) {

@@ -129,7 +129,6 @@
     border-top: 2px solid $blue-2;
     @include padding(15px 0px);
     margin-top: 20px;
-
     @media all and (min-width: $screen-md) {
         @include padding(30px 0px);
         margin-top: 20px;
@@ -150,6 +149,14 @@
         border-radius: 50%;
         display: block;
         background-color: $blue-2;
+        position: relative;
+
+        svg {
+            width: 40%;
+            height: 40%;
+            @include position(absolute, 50% 50% 0);
+            @include transform(translate3d(-50%, -50%, 0));
+        }
 
         @media all and (min-width: $screen-md) {
             height: 90px;

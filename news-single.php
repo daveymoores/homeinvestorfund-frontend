@@ -48,9 +48,21 @@
 		<div class="row">
 			<div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
 				<div class="news-story--share-btns--wrapper">
-					<ul class="news-story--share-btns">
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
+					<ul class="news-story--share-btns" data-widget="share-btns">
+						<li>
+							<a href="https://twitter.com/home?status=SHAREURL" target="_blank">
+								<svg>
+									<use xlink:href="./dist/svg/svg-sprite.svg#share-twitter" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREURL" target="_blank">
+								<svg>
+									<use xlink:href="./dist/svg/svg-sprite.svg#share-facebook" />
+								</svg>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
