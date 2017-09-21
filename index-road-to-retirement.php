@@ -62,20 +62,17 @@
 							</svg>
 						</div>
 						<div class="attributes__unit--p">
-							<p>We’re authorised by the <br />Financial Conduct Authority</p>
+							<p>homeinvestor.fund is authorised and regulated by the Financial Conduct Authority</p>
 						</div>
 					</div>
 					<div class="attributes__unit">
-						<div class="attributes__unit--icon">
+						<div class="attributes__unit--icon fscs">
 							<svg>
-								<use xlink:href="./dist/svg/svg-sprite.svg#smile-red" />
+								<use xlink:href="./dist/svg/svg-sprite.svg#fscs" />
 							</svg>
 						</div>
 						<div class="attributes__unit--p">
-							<ul>
-								<li class="lrg">10,000+</li>
-								<li>Customers and growing</li>
-							</ul>
+							<p>Covered by the Financial Services Compensation Scheme</p>
 						</div>
 					</div>
 					<div class="attributes__unit">
@@ -86,7 +83,7 @@
 						</div>
 						<div class="attributes__unit--p">
 							<ul>
-								<li>Invest from as little as</li>
+								<li>Start small - invest from as little as</li>
 								<li class="lrg">£100</li>
 							</ul>
 						</div>

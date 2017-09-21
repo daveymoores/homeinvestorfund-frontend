@@ -98,7 +98,7 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__hard-work">
+<section class="fw-wrap--blue double-padding section-bg__rock">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">

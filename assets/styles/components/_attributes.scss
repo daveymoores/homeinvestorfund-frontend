@@ -10,7 +10,7 @@
     &__container {
         @include display(flex);
         @include flex-direction(column);
-        @include justify-content(flex-start);
+        @include justify-content(space-between);
 
         @media all and (min-width: $screen-sm) {
             @include flex-direction(row);
@@ -25,17 +25,19 @@
         border-bottom: 1px solid $grey-6;
         @include padding(15px);
         margin-left: -15px;
+        @include justify-content(flex-start);
 
         @media all and (min-width: $screen-sm) {
             @include padding(0px);
             margin-right: 80px;
             margin-left: 0px;
-            width: auto;
+            min-width: 31%;
+            max-width: 31%;
             border: none;
         }
 
         p, li {
-            @include font-proxima(400);
+            @include font-proxima(600);
             font-size: $font-size-small;
             line-height: $lineheight-small;
             @include padding(0px);
@@ -64,6 +66,17 @@
             @media all and (min-width: $screen-sm) {
                 height: 65px;
                 width: 65px;
+            }
+        }
+
+        &--icon {
+            &.fscs {
+                svg {
+                    @media all and (min-width: $screen-sm) {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
             }
         }
     }
