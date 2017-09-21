@@ -101,7 +101,6 @@
         span {
             display: inline-block;
             font-size: $font-size-h2;
-            //line-height: $lineheight-h2;
         }
 
         @media all and (min-width: $screen-md) {
@@ -111,7 +110,6 @@
 
             input, span {
                 font-size: $font-size-h1;
-                //line-height: 50px;
                 margin-top: 0px;
             }
         }
@@ -189,6 +187,10 @@
             display: block;
             float: left;
             margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
 
             @media all and (min-width: $screen-lg) {
                 float: none;

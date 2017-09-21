@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="navigation__list--wrapper">
-                    <a href="" class="navigation__logo navigation__logo--mob"><img src="./dist/images/logo/logo.svg" alt="" /></a>
+                    <a href="/" class="navigation__logo navigation__logo--mob"><img src="./dist/images/logo/logo.svg" alt="" /></a>
 
                     <ul class="navigation__list navigation__list--mob-option">
                         <li><a href=""><img src="./dist/images/icons/login.svg" alt=""></a></li>
