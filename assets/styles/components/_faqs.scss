@@ -101,3 +101,36 @@
         display: block;
     }
 }
+
+.faqs__breadcrumb {
+    padding: 20px 0!important;
+
+    &--list {
+        @include display(flex);
+        @include justify-content(flex-start);
+        @include align-items(center);
+    }
+
+    &--item {
+        margin-right: 24px;
+        @include font-proxima(700);
+
+        &:first-child {
+            color: $red-1;
+        }
+
+        &:last-child {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -13px;
+                background-color: $grey-2;
+                width: 3px;
+                border-radius: 3px;
+                height: 100%;
+            }
+        }
+    }
+}
