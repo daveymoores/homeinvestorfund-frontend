@@ -4,28 +4,42 @@ function InfoOverlay(node){
 }
 
 InfoOverlay.prototype.init = function(){
-    var lnk = document.querySelectorAll('[data-target]');
-    var bg = document.getElementById('overlayBackgroundHook');
-    var close = this.node.querySelector('.map__overlay--close');
+    this.lnk = document.querySelectorAll('[data-target]');
+    this.bg = document.getElementById('overlayBackgroundHook');
+    this.close = this.node.querySelector('.map__overlay--close');
     var cxt = this;
 
-    close.addEventListener('click', function(e){
-        e.preventDefault();
-        cxt.node.classList.remove('active');
-        bg.classList.remove('active');
-        setTimeout(function(){
-            bg.style.zIndex = -1;
-        }, 300);
+    this.close.addEventListener('click', function(e){
+        cxt.closeModal(e);
     });
 
-    Array.prototype.forEach.call(lnk, function(ele, index, array){
+    this.bg.addEventListener('click', function(e){
+        cxt.closeModal(e);
+    });
+
+    Array.prototype.forEach.call(this.lnk, function(ele, index, array){
         ele.addEventListener('click', function(e){
-            e.preventDefault();
-            bg.classList.add('active');
-            bg.style.zIndex = 998;
-            cxt.node.classList.add('active');
+            cxt.openModal(e);
         });
     });
+}
+
+InfoOverlay.prototype.openModal = function(e){
+    e.preventDefault();
+    this.bg.classList.add('active');
+    this.bg.style.zIndex = 998;
+    this.node.classList.add('active');
+}
+
+InfoOverlay.prototype.closeModal = function(e){
+    e.preventDefault();
+    this.node.classList.remove('active');
+    this.bg.classList.remove('active');
+
+    var cxt = this;
+    setTimeout(function(){
+        cxt.bg.style.zIndex = -1;
+    }, 300);
 }
 
 module.exports = InfoOverlay;
