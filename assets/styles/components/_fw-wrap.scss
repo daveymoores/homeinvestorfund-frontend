@@ -1,6 +1,6 @@
 @mixin  wrap-dims($color){
     background-color: $color;
-    min-height: 600px;
+    //min-height: 600px;
     @include padding(40px 0);
 
     @media all and (min-width: $screen-sm) {

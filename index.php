@@ -10,28 +10,15 @@
 					<h1><span class="colorpick--red">Residential property</span> investment for everyone</h1>
 					<p class="light">We’ve opened the doors to our £50m residential property fund and we’re helping thousands of customers like you invest in a whole new way.</p>
 				</heading>
-
-				<div class="video-prompt" id="videoModalHook">
-					<a href="" class="video-prompt--btn">
-						<span></span>
-					</a>
-					<p>See how it works in 60 seconds</p>
-				</div>
-
-				<div class="video-modal" data-widget="video-modal">
-					<a href="#" class="video-modal--close"><span>+</span></a>
-					<div data-type="vimeo" data-video-id="143418951"></div>
-					<div class="centered-heading">
-						<a href="#" class="video-prompt--btn lrg">
-							<span></span>
-						</a>
-					</div>
-				</div>
-				<div class="video-modal--bg" id="videoModalBgHook"></div>
 			</div>
 			<div class="col-md-6 col-sm-6">
 
-			<?php include 'components/investment-calculator.php'; ?>
+				<div class="video-display" data-widget="video-display">
+					<div class="video-display--player" data-type="vimeo" data-video-id="143418951"></div>
+					<a href="#" class="video-prompt--btn">
+						<span></span>
+					</a>
+				</div>
 
 			</div>
 		</div>
@@ -49,6 +36,18 @@
 		</div>
 	</div>
 	<div class="map__overlay--bg" id="overlayBackgroundHook"></div>
+</section>
+
+<section class="calculator--section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<?php include 'components/investment-calculator.php'; ?>
+
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="container">

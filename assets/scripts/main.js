@@ -20,7 +20,8 @@
 		"matrix" : require("./widgets/matrix"),
 		"video-modal" : require("./widgets/video-modal"),
 		"equal-heights" : require("./widgets/equal-heights"),
-		"share-btns" : require("./widgets/share")
+		"share-btns" : require("./widgets/share"),
+		"video-display" : require("./widgets/video-display")
 	};
 
     function initWidgets ($node) {

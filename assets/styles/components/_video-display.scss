@@ -1,0 +1,13 @@
+.video-display {
+    position: relative;
+    display: block;
+}
+
+.video-display {
+    .video-prompt--btn {
+        @include position(absolute, 50% null null 50%);
+        @include transform(translate3d(-50%, -50%, 0));
+        display: block;
+        z-index: 9;
+    }
+}

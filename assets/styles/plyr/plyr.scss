@@ -21,6 +21,7 @@
     min-width: 200px;
     font-family: $plyr-font-family;
     direction: ltr;
+    z-index: 1;
 
     @if $plyr-border-box == true {
         // border-box everything

@@ -67,6 +67,28 @@
         	</div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="video-prompt" id="videoModalHook">
+                <a href="" class="video-prompt--btn">
+                    <span></span>
+                </a>
+                <p>See how it works in 60 seconds</p>
+            </div>
+
+            <div class="video-modal" data-widget="video-modal">
+                <a href="#" class="video-modal--close"><span>+</span></a>
+                <div data-type="vimeo" data-video-id="143418951"></div>
+                <div class="centered-heading">
+                    <a href="#" class="video-prompt--btn lrg">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="video-modal--bg" id="videoModalBgHook"></div>    
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="./dist/scripts/main.min.js"></script>

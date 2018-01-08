@@ -11,20 +11,70 @@
 }
 
 .calculator--section {
-    @include padding(20px);
+    @include padding(20px 15px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
     border-bottom: 1px solid $grey-2;
+
+    @media all and (min-width: $screen-md) {
+        margin-left: 0px;
+        @include padding(20px 0px);
+        width: 100%;
+    }
+
+    &--cta {
+        border-bottom: none;
+        @include padding(0px 15px 20px);
+
+        @media all and (min-width: $screen-md) {
+            @include padding(20px 0px);
+            border-bottom: 1px solid $grey-2;
+        }
+    }
 
     &:last-child {
         border-bottom: 0px;
     }
 }
 
-.calculator--cta {
-    .btn__primary--red {
-        display: block;
-        text-align: center;
+.calculator--heading {
+    font-size: $font-size-base;
+    @include padding(0px 15px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
 
-        @media all and (min-width: $screen-lg) {
+    @media all and (min-width: $screen-md) {
+        border-bottom: 1px solid $grey-2;
+        font-weight: 600;
+        font-size: $font-size-h2-tablet;
+        margin-left: 0px;
+        @include padding(20px 0px);
+        width: 100%;
+        border-bottom: 1px solid $grey-2;
+    }
+
+}
+
+.calculator--cta {
+    display: table;
+    border-top: 1px solid $grey-2;
+    width: calc(100% + 30px);
+    padding: 20px 15px 0;
+    margin-left: -15px;
+
+    @media all and (min-width: $screen-md) {
+        padding-top: 0px;
+        border-top: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .btn__primary--red {
+        display: table;
+        text-align: center;
+        width: 100%;
+
+        @media all and (min-width: $screen-md) {
             display: inline-block;
         }
     }
@@ -35,7 +85,7 @@
         line-height: $lineheight-small;
         font-weight: 300;
 
-        @media all and (min-width: $screen-lg) {
+        @media all and (min-width: $screen-md) {
             float: right;
         }
     }
@@ -65,7 +115,7 @@
 
     dl {
         @include display(flex);
-        @include flex-direction(column);
+        @include flex-direction(row);
         @include align-items(flex-start);
         @include justify-content(space-between);
 
@@ -75,19 +125,23 @@
     }
 
     dt {
-        font-size: $font-size-base;
+        font-size: $font-size-small;
 
         @media all and (min-width: $screen-md) {
+            font-size: $font-size-base;
             float: left;
         }
     }
 
     dd {
-        font-size: $font-size-h2;
-        line-height: $lineheight-h2;
+        font-size: $font-size-h2-mobile;
+        line-height: $lineheight-h2-mobile;
         @include display(flex);
-        margin-top: 10px;
-        width: 200px;
+
+        @media all and (min-width: $screen-md) {
+            font-size: $font-size-h2;
+            line-height: $lineheight-h2;
+        }
 
         input {
             border: none;
@@ -102,22 +156,19 @@
             display: inline-block;
             font-size: $font-size-h2;
         }
-
-        @media all and (min-width: $screen-md) {
-            font-size: $font-size-h1;
-            float: right;
-            margin-top: 0px;
-
-            input, span {
-                font-size: $font-size-h1;
-                margin-top: 0px;
-            }
-        }
     }
 }
 
 
 .calculator__total {
+    list-style: none;
+    @include padding(15px 0);
+    @include margin(0px);
+
+    @media all and (min-width: $screen-md) {
+        padding: 0px;
+    }
+
     &--title {
         text-align: center;
         @include font-proxima(600);
@@ -125,23 +176,48 @@
         padding-top: 0px;
     }
 
-    list-style: none;
-    @include padding(0px);
-    @include margin(0px);
+    &--border-left {
+        &::before {
+            position: absolute;
+            content: "";
+            border-left: 1px solid $grey-2;
+            height: 100%;
+            margin-left: -15px;
+            margin-top: -15px;
+
+            @media all and (min-width: $screen-md) {
+                margin-top: 0;
+            }
+        }
+    }
 
     li {
-        text-align: center;
+        text-align: left;
+        font-size: $font-size-small;
+        line-height: 20px;
 
-        &:first-child {
-            font-size: $font-size-h2;
-            @include font-proxima(700);
-            padding-bottom: 10px;
+        @media all and (min-width: $screen-md) {
+            font-size: $font-size-base;
+            line-height: $lineheight-base;
         }
 
-        &:last-child {
-            font-size: $font-size-small;
-            line-height: $lineheight-small;
-            @include font-sans(300);
+        &.calculator__total--number {
+            font-size: 30px;
+            @include font-proxima(600);
+            padding: 10px 0 20px;
+
+            @media all and (min-width: $screen-md) {
+                font-size: $font-size-h1;
+            }
+        }
+
+        &.calculator__total--fees {
+            font-size: 12px;
+            line-height: $font-size-small;
+
+            @media all and (min-width: $screen-md) {
+                font-size: $font-size-small;
+            }
         }
     }
 }
@@ -149,7 +225,7 @@
 .calculator--rates {
     @include padding(0px);
     @include margin(0px);
-    @include font-sans(300);
+    @include font-sans(400);
     @include clearfix;
 
     li {
@@ -158,11 +234,32 @@
         border-bottom: 1px solid $grey-2;
         @include margin(5px 0 0px);
 
-        @media all and (min-width: $screen-lg) {
+        @media all and (min-width: $screen-md) {
             width: calc(100% / 7);
             text-align: center;
             border-left: 1px solid $grey-2;
             border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+            padding-left: 15px;
+            position: relative;
+
+            &::before {
+                content: "";
+                border-left: 1px solid $grey-2;
+                height: 80%;
+                position: absolute;
+                left: 0;
+
+                @media all and (min-width: $screen-md) {
+                    display: none;
+                }
+            }
+
+            @media all and (min-width: $screen-md) {
+                padding-left: 0px;
+            }
         }
 
         &:first-child {
@@ -171,11 +268,16 @@
             float: none;
             margin-bottom: 15px;
             border-bottom: none;
+            text-align: left;
+            line-height: $lineheight-small;
+            width: 100%;
+            padding-left: 0px;
 
-            @media all and (min-width: $screen-lg) {
+            @media all and (min-width: $screen-md) {
                 float: left;
                 margin-bottom: 0px;
                 width: calc(100% / 7 * 2);
+                padding-right: 20px;
             }
         }
 
@@ -186,13 +288,13 @@
         span {
             display: block;
             float: left;
-            margin-right: 20px;
+            margin-right: 10px;
 
             &:last-child {
                 margin-right: 0px;
             }
 
-            @media all and (min-width: $screen-lg) {
+            @media all and (min-width: $screen-md) {
                 float: none;
                 margin-right: 0px;
             }
@@ -200,7 +302,22 @@
             &:first-child {
                 font-weight: 600;
                 padding-bottom: 5px;
+                margin-right: 20px;
+
+                @media all and (min-width: $screen-md) {
+                    line-height: $lineheight-small;
+                    margin-right: 0px;
+                }
             }
         }
+    }
+}
+
+.calculator--small-print {
+    p {
+        font-size: $font-size-small;
+        line-height: $lineheight-small;
+        color: $grey-10;
+        padding-bottom: 0px;
     }
 }
