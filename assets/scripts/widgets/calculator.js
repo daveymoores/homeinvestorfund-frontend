@@ -23,11 +23,12 @@ Calculator.prototype.init = function(){
     var cxt = this;
     this.calcUnit = this.node.querySelector(this.CLASSES.selectors.calcUnit);
     this.calcSlider = this.node.querySelector(this.CLASSES.selectors.calcSlider);
+    this.calcInput = this.calcSlider.querySelector('input');
     this.calcStandardRate = this.node.querySelector(this.CLASSES.selectors.calcStandardRate);
     this.calcFundRate = this.node.querySelector(this.CLASSES.selectors.calcFundRate);
 
     this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
-    
+
     this.setSlider();
 }
 
@@ -43,8 +44,8 @@ Calculator.prototype.handleInput = function(e){
 Calculator.prototype.setSlider = function(){
     var cxt = this;
 
-    rangeSlider.create(this.calcSlider, {
-        polyfill: true,     // Boolean, if true, custom markup will be created
+    rangeSlider.create(this.calcInput, {
+        polyfill: true,
         rangeClass: 'rangeSlider',
         disabledClass: 'rangeSlider--disabled',
         fillClass: 'rangeSlider__fill',
@@ -53,28 +54,28 @@ Calculator.prototype.setSlider = function(){
         startEvent: ['mousedown', 'touchstart', 'pointerdown'],
         moveEvent: ['mousemove', 'touchmove', 'pointermove'],
         endEvent: ['mouseup', 'touchend', 'pointerup'],
-        vertical: false,    // Boolean, if true slider will be displayed in vertical orientation
-        min: 100,          // Number , 0
-        max: 150000,          // Number, 100
-        step: 100,         // Number, 1
-        value: 25000,        // Number, center of slider
-        buffer: null,       // Number, in percent, 0 by default
-        stick: null,        // [Number stickTo, Number stickRadius] : use it if handle should stick to stickTo-th value in stickRadius
-        borderRadius: 10,    // Number, if you use buffer + border-radius in css for looks good,
+        vertical: false,
+        min: 100,
+        max: 150000,
+        step: 100,
+        value: 25000,
+        buffer: null,
+        stick: null,
+        borderRadius: 10,
         onInit: function () {
-            console.info('onInit');
+            //console.info('onInit');
         },
         onSlideStart: function (position, value) {
-            console.info('onSlideStart', 'position: ' + position, 'value: ' + value);
+            //console.info('onSlideStart', 'position: ' + position, 'value: ' + value);
         },
         onSlide: function (position, value) {
-            console.log('onSlide', 'position: ' + position, 'value: ' + value);
+            //console.log('onSlide', 'position: ' + position, 'value: ' + value);
             cxt.calcUnit.innerText = position;
             cxt.calcStandardRate.innerText = cxt.calcInterest(position)[0];
             cxt.calcFundRate.innerText = cxt.calcInterest(position)[1];
         },
         onSlideEnd: function (position, value) {
-            console.warn('onSlideEnd', 'position: ' + position, 'value: ' + value);
+            //console.warn('onSlideEnd', 'position: ' + position, 'value: ' + value);
         }
     });
 }

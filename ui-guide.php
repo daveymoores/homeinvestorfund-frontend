@@ -15,6 +15,19 @@
     <?php include 'components/navigation.php'; ?>
 </div>
 
+<div class="calculator--outer-wrapper">
+	<section class="calculator--section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<?php include 'components/investment-calculator.php'; ?>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
 
 <div class="container">
     <div class="row">

@@ -5,6 +5,11 @@
     z-index: 2;
 }
 
+.calculator--outer-wrapper {
+    width: 100vw;
+    overflow: hidden;
+}
+
 .calculator--wrapper {
     @include position(relative);
     overflow: hidden;

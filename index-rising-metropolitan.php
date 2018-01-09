@@ -5,7 +5,7 @@
 	<div class="section-bg section-bg__hero-home">
 		<img src="./dist/images/bg/hero-home.png" alt="" />
 	</div>
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -37,18 +37,19 @@
 	<div class="map__overlay--bg" id="overlayBackgroundHook"></div>
 </section>
 
-<section class="calculator--section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+<div class="calculator--outer-wrapper">
+	<section class="calculator--section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
 
-				<?php include 'components/investment-calculator.php'; ?>
+					<?php include 'components/investment-calculator.php'; ?>
 
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
+	</section>
+</div>
 
 <section class="container">
 	<div class="row">
@@ -159,8 +160,6 @@
 </section>
 
 <?php include 'components/homepage-carousel.php'; ?>
-
-<?php include 'components/homepage-video.php'; ?>
 
 <?php include 'components/homepage-faqs.php'; ?>
 
