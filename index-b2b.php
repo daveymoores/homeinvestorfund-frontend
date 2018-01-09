@@ -107,9 +107,7 @@
 				</heading>
 				<p class="light">In a world of complicated products, volatile stock markets and low interest rates on bank deposits, residential property is, and always will be, a viable and uncomplicated investment.  But what benefits can it add to your clients’ portfolios? Put simply, for over 5 years, homeinvestor.fund has a track record of providing returns with low volatility.</p>
 			</div>
-			<div class="col-md-6 col-sm-6">
-
-			</div>
+			<div class="col-md-6 col-sm-6"></div>
 		</div>
 	</div>
 </section>
@@ -161,8 +159,6 @@
 
 	</div>
 </section>
-
-<?php include 'components/homepage-carousel.php'; ?>
 
 <?php include 'components/homepage-faqs.php'; ?>
 
