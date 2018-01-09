@@ -38,6 +38,10 @@ VideoDisplay.prototype.init = function(){
       cxt.playBtn.classList.remove('remove');
     });
 
+    this.vidInstance[0].on('play', function(event) {
+      cxt.playBtn.classList.add('remove');
+    });
+
     this.vidInstance[0].on('stop', function(event) {
       cxt.playBtn.classList.remove('remove');
     });

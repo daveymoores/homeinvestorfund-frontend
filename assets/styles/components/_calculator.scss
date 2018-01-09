@@ -8,6 +8,11 @@
 .calculator--wrapper {
     @include position(relative);
     overflow: hidden;
+
+    heading {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .calculator--section {

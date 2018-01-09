@@ -1,6 +1,12 @@
 .video-display {
     position: relative;
     display: block;
+    border-radius: $global-radius;
+    overflow: hidden;
+
+    .plyr__controls {
+        border-radius: $global-radius;
+    }
 }
 
 .video-display {

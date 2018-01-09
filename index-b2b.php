@@ -5,6 +5,10 @@
 <?php include 'components/fa-prompt.php'; ?>
 
 <section class="fw-wrap--light-blue calculator--wrapper">
+	<div class="section-bg section-bg__hero-home">
+		<img src="./dist/images/bg/hero-home.png" alt="" />
+	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -24,10 +28,6 @@
 
 			</div>
 		</div>
-	</div>
-
-	<div class="section-bg section-bg__hero-home">
-		<img src="./dist/images/bg/hero-home.png" alt="" />
 	</div>
 
 	<div class="map__overlay map__overlay--home" data-widget="info-overlay">
