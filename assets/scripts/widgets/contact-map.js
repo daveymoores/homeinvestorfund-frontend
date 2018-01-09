@@ -161,7 +161,7 @@ ContactMap.prototype.initMap = function() {
 
 
         var locations = [
-          [51.514809, -0.091095]
+          [51.514839, -0.091090]
         ];
 
         var options = {

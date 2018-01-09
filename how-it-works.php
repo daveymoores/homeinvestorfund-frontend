@@ -40,6 +40,9 @@
 	</div>
 </section>
 
+
+<?php include 'components/option-panel--no-btn.php'; ?>
+
 <section class="fw-wrap--step-1 double-padding">
 	<div class="container">
 		<div class="row">
@@ -51,6 +54,8 @@
 							<h2>Investing your money can be hard work</h2>
 						</heading>
 						<p class="light">Whether you’re looking to invest a lump sum or you’d like to make monthly payments, you can tailor your investment into homeinvestor.fund to suit your requirements. Simply click get started button and you’ll be on your way to creating an account.</p>
+
+						<p><a href="" class="btn__white--blue">Get Started</a></p>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<svg>
@@ -79,6 +84,8 @@
 							<h2>Investing your money can be hard work</h2>
 						</heading>
 						<p class="light">Our online investment portal is powered by our trusted partners, WealthKernel. It's simple and easy to sign-up, just make sure you’ve got your bank details and national insurance number handy.</p>
+
+						<p><a href="" class="btn__primary--blue">Get Started</a></p>
 					</div>
 				</div>
 			</div>
@@ -99,6 +106,8 @@
 						<p class="light">Once you’ve created your account, you’ll go straight through to your dashboard. You’ll need to complete a few simple tasks to set your account up, which includes adding funds to your account.</p>
 
 						<p class="light">You’ll then be able to track and manage your homeinvestor.fund investment safely and securely online.</p>
+
+						<p><a href="" class="btn__primary--teal">Start investing now</a></p>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<svg>
@@ -111,7 +120,25 @@
 	</div>
 </section>
 
-<?php include 'components/option-panel.php'; ?>
+<section class="fw-wrap--step-4 double-padding">
+	<div class="container">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<heading>
+							<h2>Account custodians</h2>
+						</heading>
+						<p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<a href=""><img src="./dist/images/logo/winter-flood-logo.jpg" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <?php include 'components/call-out.php'; ?>
 

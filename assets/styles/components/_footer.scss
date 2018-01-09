@@ -20,7 +20,6 @@
     margin-top: 0px;
     background-color: $grey-3;
     color: $white;
-    margin-top: 20px;
 
     @media all and (min-width: $screen-sm) {
         margin-top: 80px;
@@ -98,6 +97,8 @@
 
     &.mobile-only {
         display: block;
+        margin-bottom: 0px;
+        border-bottom: none;
     }
 
     li {

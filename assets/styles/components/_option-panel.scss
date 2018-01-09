@@ -1,4 +1,4 @@
-.option-panel {
+.option-panel, .option-panel--no-btn {
     width: 100%;
     @include clearfix;
 
@@ -52,4 +52,8 @@
             padding-bottom: 80px;
         }
     }
+}
+
+.option-panel--no-btn {
+    border-top: 1px solid $grey-6;
 }

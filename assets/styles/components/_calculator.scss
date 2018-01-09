@@ -8,6 +8,7 @@
 .calculator--outer-wrapper {
     width: 100vw;
     overflow: hidden;
+    border-bottom: 1px solid $grey-2;
 }
 
 .calculator--wrapper {
@@ -24,7 +25,6 @@
     @include padding(20px 15px);
     width: calc(100% + 30px);
     margin-left: -15px;
-    border-bottom: 1px solid $grey-2;
 
     @media all and (min-width: $screen-sm) {
         margin-left: 0px;

@@ -19,7 +19,7 @@
 
 <section class="ghost-panel--section-padding">
 	<div class="container">
-		<div class="row">
+		<div class="row" data-widget="equal-heights">
 			<div class="col-md-4">
 				<div class="ghost-panel eq">
 					<div class="ghost-panel--content">
@@ -70,15 +70,15 @@
 					<form class="formtype">
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" placeholder="First name" />
+								<input type="text" placeholder="Name" />
 							</div>
 							<div class="col-md-6">
-								<input type="text" placeholder="Last name" />
+								<input type="email" placeholder="Email" />
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<textarea type="text" placeholder="Your email"></textarea>
+								<textarea type="text" placeholder="Message"></textarea>
 								<button class="btn__primary--red right">Send</button>
 							</div>
 						</div>

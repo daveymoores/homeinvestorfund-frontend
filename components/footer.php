@@ -18,15 +18,7 @@
 					<li><a href="news-content-hub-fa.php">Financial advisor news</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4">
-				<div class="ghost-panel">
-					<div class="ghost-panel--content">
-						<h4>Got questions? We're here to help.</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit.</p>
-						<a href="">Get in touch</a>
-					</div>
-				</div>
-			</div>
+			<div class="col-md-4"></div>
 		</div>
 	</div>
 
