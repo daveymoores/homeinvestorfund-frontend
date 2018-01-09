@@ -16,7 +16,7 @@
     margin-left: -15px;
     border-bottom: 1px solid $grey-2;
 
-    @media all and (min-width: $screen-md) {
+    @media all and (min-width: $screen-sm) {
         margin-left: 0px;
         @include padding(20px 0px);
         width: 100%;
@@ -25,6 +25,10 @@
     &--cta {
         border-bottom: none;
         @include padding(0px 15px 20px);
+
+        @media all and (min-width: $screen-sm) {
+            @include padding(0px);
+        }
 
         @media all and (min-width: $screen-md) {
             @include padding(20px 0px);
@@ -62,10 +66,16 @@
     padding: 20px 15px 0;
     margin-left: -15px;
 
+    @media all and (min-width: $screen-sm) {
+        width: 100%;
+        margin-left: 0px;
+        padding: 20px 0 0;
+    }
+
     @media all and (min-width: $screen-md) {
-        padding-top: 0px;
         border-top: none;
         margin-left: 0px;
+        padding: 0px;
         width: 100%;
     }
 
@@ -272,6 +282,10 @@
             line-height: $lineheight-small;
             width: 100%;
             padding-left: 0px;
+
+            &::before {
+                display: none;
+            }
 
             @media all and (min-width: $screen-md) {
                 float: left;

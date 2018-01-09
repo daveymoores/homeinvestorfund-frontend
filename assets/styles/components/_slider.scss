@@ -1,108 +1,37 @@
-.slider--wrapper {
-    overflow: hidden;
-    position: relative;
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $grey-7;
+    height: 40px;
+    width: 40px;
+    padding: 16px;
+    background-image: none;
+    display: none;
+
+    @media all and ($screen-md) {
+        display: block;
+    }
 }
 
-.slider {
-    position: relative;
+.swiper-button-next {
+    right: -70px;
+}
 
-    .frame {
-        margin: auto;
-        width: 290px;
+.swiper-button-prev {
+    left: -70px;
+    @include transform(rotate(180deg));
+}
 
-        @media all and (min-width: 350px) {
-            width: 320px;
-        }
+.swiper-button-next svg, .swiper-button-prev svg {
+    width: 11px;
+    position: absolute;
+    top: 11px;
+}
 
-
-        @media all and (min-width: $screen-sm) {
-            width: 100%;
-        }
-
-        position: relative;
-        font-size: 0;
-        line-height: 0;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .slides {
-        @include display(flex);
-        @include flex-direction(row);
-    }
-
-    .js_dots {
-        text-align: center;
-        display: block;
-        @media all and (min-width: $screen-sm) {
-            display: none;
-        }
-
-
-        li {
-            height: 12px;
-            width: 12px;
-            background-color: $grey-3;
-            border-radius: 50%;
-            opacity: 0.5;
-            @include transition(opacity .3s ease);
-            margin: 25px 10px 0px;
-            display: inline-block;
-
-            &.active {
-                opacity: 1;
-            }
-        }
-    }
-
-    li.js_slide {
-        position: relative;
-        display: inline-block;
-        min-width: 290px;
-
-        @media all and (min-width: 350px) {
-            min-width: 320px;
-        }
-
-        @media all and (min-width: $screen-sm) {
-            min-width: 345px;
-        }
-
-        @media all and (min-width: $screen-md) {
-            min-width: 293.33px;
-        }
-
-        @media all and (min-width: $screen-lg) {
-            min-width: 370px;
-        }
-        @include margin(0px 15px);
-    }
-
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        margin-top: -25px;
-        display: block;
-        cursor: pointer;
-        border-radius: 50%;
-        background-color: $grey-7;
-        height: 40px;
-        width: 40px;
-        padding: 16px;
-    }
-
-    .next {
-        right: -70px;
-    }
-
-    .prev {
-        left: -70px;
-        @include transform(rotate(180deg));
-    }
-
-    .next svg, .prev svg {
-        width: 11px;
-        position: absolute;
-        top: 11px;
-    }
+.swiper-container--overflow {
+    overflow: visible;
 }

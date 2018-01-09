@@ -4,6 +4,7 @@ $output-bourbon-deprecation-warnings: false !default;
 @import 'bootstrap/bootstrap-sass-grid';
 
 @import 'plyr/plyr';
+@import '../../node_modules/swiper/dist/css/swiper.css';
 
 @import "common/reset";
 @import "common/variables";

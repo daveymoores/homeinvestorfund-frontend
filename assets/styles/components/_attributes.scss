@@ -29,7 +29,6 @@
 
         @media all and (min-width: $screen-sm) {
             @include padding(0px);
-            margin-right: 80px;
             margin-left: 0px;
             min-width: 31%;
             max-width: 31%;
@@ -42,7 +41,7 @@
             line-height: $lineheight-small;
             @include padding(0px);
 
-            @media all and (min-width: $screen-sm) {
+            @media all and (min-width: $screen-md) {
                 font-size: $font-size-base;
             }
 
@@ -53,6 +52,10 @@
                 @include padding(5px 0px);
 
                 @media all and (min-width: $screen-sm) {
+                    font-size: 36px;
+                }
+
+                @media all and (min-width: $screen-md) {
                     font-size: 52px;
                 }
             }
