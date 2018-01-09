@@ -33,48 +33,48 @@
 				<div class="col-md-12">
 					<h3>Popular FAQs</h3>
 
-					<div class="swiper-container swiper-container--overflow" data-widget="carousel">
+					<div class="swiper-container swiper-container--overflow" data-widget="faq-carousel">
 			            <div class="swiper-wrapper">
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 			            </div>

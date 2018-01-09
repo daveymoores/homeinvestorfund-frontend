@@ -122,3 +122,34 @@
         display: none;
     }
 }
+
+.swiper-slide {
+    &.ghost-panel {
+        opacity: 0.4;
+        @include transition(opacity 0.3s ease);
+
+        p, a {
+            display: block!important;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        .ghost-panel--read-more {
+            text-align: right;
+        }
+
+        &.swiper-slide-active {
+            opacity: 1;
+
+            + .ghost-panel {
+                opacity: 1;
+
+                + .ghost-panel {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

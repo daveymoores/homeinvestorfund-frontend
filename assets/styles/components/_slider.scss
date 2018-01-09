@@ -12,7 +12,7 @@
     background-image: none;
     display: none;
 
-    @media all and ($screen-md) {
+    @media all and (min-width: $screen-md) {
         display: block;
     }
 }
@@ -34,4 +34,22 @@
 
 .swiper-container--overflow {
     overflow: visible;
+}
+
+.swiper-pagination {
+    position: relative;
+    padding-top: 20px;
+
+    @media all and (min-width: $screen-md) {
+        display: none;
+    }
+
+    &-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    &-bullet-active {
+        background-color: $grey-3;
+    }
 }
