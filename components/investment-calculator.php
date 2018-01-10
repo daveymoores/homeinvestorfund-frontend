@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4">
                 <div class="calculator--cta">
-                    <a href="#" class="btn__primary--red">Get started</a>
+                    <a href="#" class="btn__primary--red" data-widget="trigger-redirect">Get started</a>
                 </div>
             </div>
         </div>

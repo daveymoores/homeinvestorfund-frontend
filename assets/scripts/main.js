@@ -22,7 +22,8 @@
 		"share-btns" : require("./widgets/share"),
 		"video-display" : require("./widgets/video-display"),
 		"faq-carousel" : require("./widgets/faq-carousel"),
-		"faq-more-info" : require("./widgets/faq-more-info")
+		"faq-more-info" : require("./widgets/faq-more-info"),
+		"trigger-redirect" : require("./widgets/trigger-redirect")
 	};
 
     function initWidgets ($node) {
