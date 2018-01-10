@@ -60,7 +60,7 @@ Calculator.prototype.setSlider = function(){
     });
 
     this.calcInput.noUiSlider.on('slide', function(values, handle){
-        cxt.calcUnit.innerText = Math.round(values[1].toLocaleString());
+        cxt.calcUnit.innerText = Math.round(values[1]).toLocaleString();
         cxt.calcStandardRate.innerText = cxt.calcInterest(values[1])[0];
         cxt.calcFundRate.innerText = cxt.calcInterest(values[1])[1];
     });

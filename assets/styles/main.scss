@@ -4,8 +4,8 @@ $output-bourbon-deprecation-warnings: false !default;
 @import 'bootstrap/bootstrap-sass-grid';
 
 @import 'plyr/plyr';
-@import '../../node_modules/swiper/dist/css/swiper.css';
-@import '../../node_modules/nouislider/distribute/nouislider.css';
+@import 'components/swiper';
+@import 'components/nouislider';
 
 @import "common/reset";
 @import "common/variables";
@@ -45,6 +45,7 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "components/news-story";
 @import "components/video-modal";
 @import "components/video-display";
+
 
 @import "components/panel";
 @import "components/feature-panel";
