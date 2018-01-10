@@ -10,7 +10,7 @@
 						<form class="formtype">
 							<input type="text" placeholder="Your Name" />
 							<span class="formtype--email-wrapper">
-								<input type="text" placeholder="Your Name" />
+								<input type="text" placeholder="Your Email" />
 								<button class="btn__primary--red">Get eBook</button>
 							</span>
 						</form>

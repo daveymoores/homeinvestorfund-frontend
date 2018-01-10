@@ -5,6 +5,7 @@ $output-bourbon-deprecation-warnings: false !default;
 
 @import 'plyr/plyr';
 @import '../../node_modules/swiper/dist/css/swiper.css';
+@import '../../node_modules/nouislider/distribute/nouislider.css';
 
 @import "common/reset";
 @import "common/variables";

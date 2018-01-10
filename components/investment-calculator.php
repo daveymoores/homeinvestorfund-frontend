@@ -14,19 +14,14 @@
             </dl>
         </div>
         <div class="calculator--slider">
-            <input
-            type="range"
-            min="100"
-            max="150000"
-            step="1000"
-            data-buffer="60" />
+            <div id="slider"></div>
         </div>
         <ul class="calculator--slider--range">
             <li>£<span>100</span></li>
             <li>£<span>150,000</span></li>
         </ul>
     </div>
-    <div class="calculator--section">
+    <div class="calculator--section calculator--rates--wrapper">
         <ul class="calculator--rates">
             <li>
                 <strong>homeinvestor.fund past performance</strong> 12 months to the end of june...

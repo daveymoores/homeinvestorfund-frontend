@@ -1,5 +1,5 @@
-.rangeSlider,
-.rangeSlider__fill {
+.noUi-base,
+.noUi-target {
     background: $grey-1;
     display: block;
     height: 15px;
@@ -8,10 +8,13 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 15px;
 }
 
-.rangeSlider {
+.noUi-base {
     position: relative;
     margin-bottom: 15px;
 }
@@ -21,21 +24,27 @@
     opacity: 0.4;
 }
 
-.rangeSlider__fill {
+.noUi-connect {
     background: $red-1;
     position: absolute;
     top: 0;
     z-index: 2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: none;
 }
 
-.rangeSlider__handle {
+.noUi-handle {
     background: white;
     cursor: pointer;
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 35px!important;
+    height: 35px!important;
     position: absolute;
-    top: -11px;
+    top: -11px!important;
     z-index: 3;
     background-color: #651d32;
     -webkit-border-radius: 50%;
@@ -43,21 +52,21 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    box-shadow: none;
+    border: none;
+
+    &::before, &::after {
+        display: none;
+    }
 }
 
-.rangeSlider__handle:active {
+.noUi-handle:active {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.12)));
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
     background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
     outline: none;
-}
-
-input[type="range"]:focus + .rangeSlider .rangeSlider__handle {
-    -webkit-box-shadow: 0 0 8px rgba(142, 68, 173, 0.9);
-    -moz-box-shadow: 0 0 8px rgba(142, 68, 173, 0.9);
-    box-shadow: 0 0 8px rgba(142, 68, 173, 0.9);
 }
 
 .rangeSlider__buffer {
@@ -67,4 +76,8 @@ input[type="range"]:focus + .rangeSlider .rangeSlider__handle {
     height: 4px;
     background: transparent;
     border-radius: 2px;
+}
+
+.noUi-handle-lower {
+    display: none;
 }

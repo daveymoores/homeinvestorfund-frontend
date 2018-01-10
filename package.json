@@ -49,6 +49,7 @@
     "minimist": "^1.2.0",
     "node-bourbon": "^4.2.8",
     "node-js-marker-clusterer": "^1.0.0",
+    "nouislider": "^10.1.0",
     "plyr": "^2.0.18",
     "promise": "^8.0.1",
     "run-sequence": "^1.2.2",

@@ -1,4 +1,5 @@
-var rangeSlider = require("rangeslider-pure");
+//var rangeSlider = require("rangeslider-pure");
+var noUiSlider = require("nouislider");
 
 function Calculator(node){
     this.node = node;
@@ -23,7 +24,7 @@ Calculator.prototype.init = function(){
     var cxt = this;
     this.calcUnit = this.node.querySelector(this.CLASSES.selectors.calcUnit);
     this.calcSlider = this.node.querySelector(this.CLASSES.selectors.calcSlider);
-    this.calcInput = this.calcSlider.querySelector('input');
+    this.calcInput = this.calcSlider.querySelector('#slider');
     this.calcStandardRate = this.node.querySelector(this.CLASSES.selectors.calcStandardRate);
     this.calcFundRate = this.node.querySelector(this.CLASSES.selectors.calcFundRate);
 
@@ -44,39 +45,28 @@ Calculator.prototype.handleInput = function(e){
 Calculator.prototype.setSlider = function(){
     var cxt = this;
 
-    rangeSlider.create(this.calcInput, {
-        polyfill: true,
-        rangeClass: 'rangeSlider',
-        disabledClass: 'rangeSlider--disabled',
-        fillClass: 'rangeSlider__fill',
-        bufferClass: 'rangeSlider__buffer',
-        handleClass: 'rangeSlider__handle',
-        startEvent: ['mousedown', 'touchstart', 'pointerdown'],
-        moveEvent: ['mousemove', 'touchmove', 'pointermove'],
-        endEvent: ['mouseup', 'touchend', 'pointerup'],
-        vertical: false,
-        min: 100,
-        max: 150000,
+    noUiSlider.create(this.calcInput, {
+    	start: [ 0, 25000 ],
+        connect: true,
         step: 100,
-        value: 25000,
-        buffer: null,
-        stick: null,
-        borderRadius: 10,
-        onInit: function () {
-            //console.info('onInit');
-        },
-        onSlideStart: function (position, value) {
-            //console.info('onSlideStart', 'position: ' + position, 'value: ' + value);
-        },
-        onSlide: function (position, value) {
-            //console.log('onSlide', 'position: ' + position, 'value: ' + value);
-            cxt.calcUnit.innerText = position;
-            cxt.calcStandardRate.innerText = cxt.calcInterest(position)[0];
-            cxt.calcFundRate.innerText = cxt.calcInterest(position)[1];
-        },
-        onSlideEnd: function (position, value) {
-            //console.warn('onSlideEnd', 'position: ' + position, 'value: ' + value);
-        }
+    	range: {
+    		'min': [  100 ],
+    		'max': [ 150000 ]
+    	}
+    });
+
+    this.calcInput.noUiSlider.on('start', function(values, handle){
+        console.log(values);
+    });
+
+    this.calcInput.noUiSlider.on('slide', function(values, handle){
+        cxt.calcUnit.innerText = Math.round(values[1].toLocaleString());
+        cxt.calcStandardRate.innerText = cxt.calcInterest(values[1])[0];
+        cxt.calcFundRate.innerText = cxt.calcInterest(values[1])[1];
+    });
+
+    this.calcInput.noUiSlider.on('end', function(values, handle){
+        console.log(values);
     });
 }
 
