@@ -5,7 +5,6 @@
     var $body = document.body;
 
 	widgets = {
-		"init-page" : require("./widgets/init-page"),
 		"navigation" : require("./widgets/navigation"),
 		"calculator" : require("./widgets/calculator"),
 		"accordion" : require("./widgets/accordion"),
@@ -22,7 +21,8 @@
 		"equal-heights" : require("./widgets/equal-heights"),
 		"share-btns" : require("./widgets/share"),
 		"video-display" : require("./widgets/video-display"),
-		"faq-carousel" : require("./widgets/faq-carousel")
+		"faq-carousel" : require("./widgets/faq-carousel"),
+		"faq-more-info" : require("./widgets/faq-more-info")
 	};
 
     function initWidgets ($node) {

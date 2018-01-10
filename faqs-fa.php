@@ -12,7 +12,7 @@
 	</div>
 </section>
 
-<div class="faqs--page-wrapper">
+<div class="faqs--page-wrapper" data-widget="faq-more-info">
 	<section class="faqs faqs__categories">
 		<div class="container">
 			<div class="row">
@@ -42,42 +42,42 @@
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="0" href="">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="1" href="">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="2" href="">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="3" href="">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="4" href="">Read more</a>
 								</div>
 							</div>
 							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
 								<div class="ghost-panel--content">
 									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
 									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" href="index-road-to-retirement.php">Read more</a>
+									<a class="ghost-panel--read-more" data-target data-faq-slug="5" href="index-road-to-retirement.php">Read more</a>
 								</div>
 							</div>
 			            </div>
@@ -117,15 +117,15 @@
 						<h3>Getting started</h3>
 
 						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a data-target href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 
 						<a class="faqs__q-list--see-more" href="">See 10 more</a>
@@ -138,60 +138,15 @@
 						<h3>About homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a data-target href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-						</ul>
-
-						<a class="faqs__q-list--see-more" href="">See 10 more</a>
-					</div>
-
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-
-					<div class="faqs__q-list">
-						<h3>About homeinvestor.fund</h3>
-
-						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a data-target href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-						</ul>
-
-						<a class="faqs__q-list--see-more" href="">See 10 more</a>
-					</div>
-
-
-				</div>
-				<div class="col-md-6">
-
-					<div class="faqs__q-list">
-						<h3>About homeinvestor.fund</h3>
-
-						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a data-target href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 
 						<a class="faqs__q-list--see-more" href="">See 10 more</a>
@@ -206,15 +161,60 @@
 						<h3>About homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+						</ul>
+
+						<a class="faqs__q-list--see-more" href="">See 10 more</a>
+					</div>
+
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="faqs__q-list">
+						<h3>About homeinvestor.fund</h3>
+
+						<ul class="faqs__q-list--ul">
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+						</ul>
+
+						<a class="faqs__q-list--see-more" href="">See 10 more</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="faqs__q-list">
+						<h3>About homeinvestor.fund</h3>
+
+						<ul class="faqs__q-list--ul">
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 
 						<a class="faqs__q-list--see-more" href="">See 10 more</a>
@@ -228,7 +228,7 @@
 	</section>
 </div>
 
-<div class="map__overlay map__overlay--home" data-widget="info-overlay">
+<div class="map__overlay map__overlay--home" id="faq-overlay" data-widget="info-overlay">
 	<a href="#" class="map__overlay--close"><span>+</span></a>
 	<div class="map__overlay--title">
 		<h4>How were these figures calculated?</h4>
