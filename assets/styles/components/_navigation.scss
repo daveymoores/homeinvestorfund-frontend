@@ -12,7 +12,7 @@
 
     &.open {}
 
-    @media all and (min-width: $screen-sm) {
+    @media all and (min-width: $screen-md) {
         height: 55px;
         overflow: visible;
     }
@@ -25,7 +25,7 @@
         padding-left: 0px;
         padding-right: 0px;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -35,7 +35,7 @@
 .navigation__list--wrapper {
     height: 55px;
 
-    @media all and (min-width: $screen-sm) {
+    @media all and (min-width: $screen-md) {
         height: auto;
     }
 }
@@ -44,7 +44,7 @@
     text-align: center;
     display: block;
 
-    @media all and (min-width: $screen-sm) {
+    @media all and (min-width: $screen-md) {
         display: inline-block;
     }
 
@@ -55,7 +55,7 @@
         padding-top: 3px;
         border-bottom: 1px solid #e5e9ee;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             border-bottom: none;
             height: 52px;
             @include display(flex);
@@ -71,7 +71,7 @@
         &.mobile-only {
             display: block;
 
-            @media all and (min-width: $screen-sm) {
+            @media all and (min-width: $screen-md) {
                 display: none;
             }
         }
@@ -79,7 +79,7 @@
         &.hide-for-mobile {
             display: none;
 
-            @media all and (min-width: $screen-sm) {
+            @media all and (min-width: $screen-md) {
                 @include display(flex);
             }
         }
@@ -104,7 +104,7 @@
         border-top: 1px solid #e5e9ee;
         border-bottom: 1px solid #e5e9ee;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             @include padding(0px);
             width: auto;
             @include justify-content(space-between);
@@ -117,7 +117,7 @@
             border-bottom: none;
             width: 50%;
 
-            @media all and (min-width: $screen-sm) {
+            @media all and (min-width: $screen-md) {
                 width: auto;
                 @include padding(0px);
             }
@@ -164,6 +164,10 @@
 
             &:last-child > a {
                 @include padding(17px 15px);
+
+                @media all and (min-width: $screen-sm) {
+                    border-right: 1px solid $grey-1;
+                }
             }
 
             img {
@@ -172,7 +176,7 @@
             }
         }
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             display: none;
         }
     }
@@ -187,20 +191,20 @@
             width: 100%;
             @include padding(15px 0);
 
-            @media all and (min-width: $screen-sm) {
+            @media all and (min-width: $screen-md) {
                 padding: 0px;
             }
 
             &:first-child {
                 display: none;
 
-                @media all and (min-width: $screen-sm) {
+                @media all and (min-width: $screen-md) {
                     display: block;
                 }
             }
         }
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             width: 75%;
             float: left;
             @include display(flex);
@@ -216,7 +220,7 @@
     }
 
     .short {
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             max-width: 140px;
         }
     }
@@ -231,7 +235,7 @@
         float: left;
         width: 185px;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             display: none!important;
         }
     }
@@ -239,7 +243,7 @@
     &--dt {
         display: none!important;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             display: block!important;
             width: 210px!important;
         }
@@ -267,7 +271,7 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             background-color: transparent;
             color: black;
             @include padding(0px);
@@ -288,12 +292,12 @@
         display: none;
         @include transform(rotate(90deg));
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             display: block;
         }
     }
 
-    @media all and (min-width: $screen-sm) {
+    @media all and (min-width: $screen-md) {
         @include padding(0px!important);
 
         &:hover {
@@ -318,7 +322,7 @@
         @include transition(max-height .3s ease);
         display: block;
 
-        @media all and (min-width: $screen-sm) {
+        @media all and (min-width: $screen-md) {
             max-height: 0px;
             overflow: hidden;
             position: absolute;
@@ -337,7 +341,7 @@
             &:first-child {
                 display: block!important;
 
-                @media all and (min-width: $screen-sm) {
+                @media all and (min-width: $screen-md) {
                     border-top: 2px solid $blue-2;
                 }
             }
@@ -348,7 +352,7 @@
                 border-bottom-right-radius: 3px;
                 border-bottom-left-radius: 3px;
 
-                @media all and (min-width: $screen-sm) {
+                @media all and (min-width: $screen-md) {
                     border-radius: 0px;
                 }
             }
