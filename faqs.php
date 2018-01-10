@@ -119,10 +119,6 @@
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 
 						<a class="faqs__q-list--see-more" href="">See 10 more</a>
@@ -138,10 +134,6 @@
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
@@ -163,10 +155,6 @@
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 
 						<a class="faqs__q-list--see-more" href="">See 10 more</a>
@@ -183,10 +171,6 @@
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
@@ -206,10 +190,6 @@
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Who is Wealth Kernel</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="what-is-homeinvestor-fund" href="">Lorem ipsum?</a></li>
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>

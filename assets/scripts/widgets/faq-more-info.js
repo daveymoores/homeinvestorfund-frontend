@@ -12,9 +12,14 @@ MoreInfo.prototype.init = function(){
     this.bg = document.getElementById('overlayBackgroundHook');
     this.overlayTitle = this.overlay.querySelector('h4');
     this.overlayDesc = this.overlay.querySelector('p');
+    this.qLists = this.node.querySelectorAll('.faqs__q-list');
 
     [].forEach.call(this.targetAnchors, function(element, index, array){
         element.addEventListener('click', cxt.getData.bind(cxt));
+    });
+
+    [].forEach.call(this.qLists, function(element, index, array){
+        cxt.loadMore(element);
     });
 
     this.getUrl();
@@ -42,7 +47,6 @@ MoreInfo.prototype.checkJson = function(slug){
       console.error("Failed!", error);
     });
 }
-
 
 MoreInfo.prototype.setUrl = function(slug){
     if(history.pushState) {
@@ -92,6 +96,43 @@ MoreInfo.prototype.get = function(url) {
 
     req.send();
   });
+}
+
+MoreInfo.prototype.loadMore = function(element){
+    var cxt = this;
+    var items = element.querySelectorAll('.faqs__q-list--item');
+    var itemsUl = element.querySelector('.faqs__q-list--ul');
+    var loadMore = element.querySelector('.faqs__q-list--see-more');
+    var itemsLength = items.length;
+
+    cxt.get('json/faqs.json').then(function(faqs) {
+        loadMore.innerText = 'See ' + (faqs.length - itemsLength) + ' more';
+
+        loadMore.addEventListener('click', function(e){
+            e.preventDefault();
+            var faqsMax = faqs.length; //max number of locations
+
+            if(itemsLength < faqsMax) {
+                for (var i = itemsLength; i < faqsMax; i++) {
+                    var li = document.createElement("li");
+                    var a = document.createElement("a");
+                    li.appendChild(a);
+                    li.classList.add("faqs__q-list--item");
+                    a.innerText = faqs[i].title;
+                    a.setAttribute('data-faq-slug', faqs[i].slug);
+                    a.setAttribute('href', '#' + faqs[i].slug);
+                    itemsUl.appendChild(li);
+                    a.addEventListener('click', cxt.getData.bind(cxt));
+                }
+
+                loadMore.classList.add('disabled');
+            }
+
+        });
+    }, function(error) {
+        console.error("Failed!", error);
+    });
+
 }
 
 module.exports = MoreInfo;

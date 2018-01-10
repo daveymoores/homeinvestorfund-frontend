@@ -98,6 +98,10 @@
         margin-top: 40px;
         @include font-proxima(700);
         display: block;
+
+        &.disabled {
+            opacity: 0;
+        }
     }
 }
 
