@@ -9,7 +9,7 @@
 	</div>
 </section>
 
-<div class="faqs--page-wrapper">
+<div class="faqs--page-wrapper" data-widget="faq-more-info">
 	<section class="faqs faqs__breadcrumb">
 		<div class="container">
 			<div class="row">
@@ -32,15 +32,15 @@
 						<h3>Getting started</h3>
 
 						<ul class="faqs__q-list--ul">
-							<li class="faqs__q-list--item"><a data-target href="">What is homeinvestor.fund?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Wealth Kernel</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Who is Thesis?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
-							<li class="faqs__q-list--item"><a data-target href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Wealth Kernel</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Who is Thesis?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
+							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">Lorem ipsum?</a></li>
 						</ul>
 					</div>
 
@@ -52,7 +52,7 @@
 	</section>
 </div>
 
-<div class="map__overlay map__overlay--home" data-widget="info-overlay">
+<div class="map__overlay map__overlay--home" id="faq-overlay" data-widget="info-overlay">
 	<a href="#" class="map__overlay--close"><span>+</span></a>
 	<div class="map__overlay--title">
 		<h4>How were these figures calculated?</h4>
