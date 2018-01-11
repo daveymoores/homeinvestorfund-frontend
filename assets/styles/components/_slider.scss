@@ -34,7 +34,7 @@
 
 .swiper-pagination {
     position: relative;
-    padding-top: 20px;
+    padding-top: 40px;
 
     @media all and (min-width: $screen-md) {
         display: none;
@@ -56,6 +56,29 @@
 
         @media all and (max-width: $screen-md) {
             display: none;
+        }
+    }
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .swiper-slide {
+        width: 350px;
+        margin: 0 20px;
+    }
+}
+
+.swiper-initialised  {
+    .swiper-wrapper {
+        align-items: initial;
+        justify-content: initial;
+
+        .swiper-slide {
+            width: auto;
+            margin: auto;
         }
     }
 }
