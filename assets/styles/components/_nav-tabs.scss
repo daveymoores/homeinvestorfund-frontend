@@ -52,7 +52,7 @@
 		width: 100%;
 
 		> .tab-pane {
-			display: none;
+			display: block;
 
 			&.active {
 				display: block;
@@ -66,6 +66,21 @@
 
 }
 
+.initialised {
+	.tab-content {
+		> .tab-pane {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+		
+		> .active {
+			display: block;
+		}
+	}
+}
 
 .nav-tabs--border {
 	width: 100%;

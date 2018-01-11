@@ -4,8 +4,12 @@ function NavTabs(node){
 }
 
 NavTabs.prototype.init = function(){
-	// store tabs variable
+    var cxt = this;
 	var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+
+    setTimeout(function(){
+        cxt.node.classList.add('initialised');
+    }, 300);
 
 	function myTabClicks(tabClickEvent) {
 
