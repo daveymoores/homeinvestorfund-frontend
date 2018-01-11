@@ -7,7 +7,6 @@
 					<li><a href="news-content-hub.php">Latest News</a></li>
 					<li><a href="about-us.php">About Us</a></li>
 					<li><a href="properties.php">Properties</a></li>
-					<li class="mobile-only"><a href="">White label partnerships</a></li>
 				</ul>
 			</div>
 			<div class="col-md-5">
