@@ -9,7 +9,7 @@
 					<p>It’s simple to start a tax-efficient propery ISA that outperforms the banks. Start today and make those savings goals a reality.</p>
 				</div>
 
-				<a href="" class="btn__white--red btn--centered">Get Started</a>
+				<a href="" data-widget="trigger-redirect" class="btn__white--red btn--centered">Get Started</a>
 			</div>
 		</div>
 	</div>

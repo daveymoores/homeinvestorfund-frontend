@@ -48,9 +48,7 @@ Carousel.prototype.buildCarousel = function(ww){
     ww = typeof ww !== 'undefined' ? ww : this.ww;
 
     var carouselSwiper = this.node.swiper;
-
     var ll = this.slides.length;
-    console.log(ll);
 
     if(ww < 998) {
         if(ll > 2) {

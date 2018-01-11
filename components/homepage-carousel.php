@@ -87,7 +87,7 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<a href="" class="btn__primary--teal btn--centered">Get Started</a>
+				<a href="" data-widget="trigger-redirect" class="btn__primary--teal btn--centered">Get Started</a>
 			</div>
 		</div>
 	</div>

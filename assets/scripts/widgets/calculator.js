@@ -1,4 +1,4 @@
-//var rangeSlider = require("rangeslider-pure");
+var Promise = require('promise');
 var noUiSlider = require("nouislider");
 
 function Calculator(node){
@@ -31,15 +31,107 @@ Calculator.prototype.init = function(){
     this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
 
     this.setSlider();
+    //this.getRate();
 }
 
 Calculator.prototype.handleInput = function(e){
-    var value = e.currentTarget.innerText;
-    var plainValue = value.replace(/\,/g,'');
+    var plainValue = e.currentTarget.innerText;
+    //var plainValue = value.replace(/\,/g,'');
+    var plainValueLength = plainValue.length;
 
-    this.calcSlider.rangeSlider.update({value : plainValue});
+    if(parseInt(plainValue) > 150000) {
+        plainValue = 150000;
+        this.calcUnit.innerText = '150000';
+    }
+
+    if(plainValueLength > 6) {
+        plainValue = 150000;
+        this.calcUnit.innerText = '150000';
+    }
+
+    this.calcInput.noUiSlider.set([0, plainValue]);
     this.calcStandardRate.innerText = this.calcInterest(plainValue)[0];
     this.calcFundRate.innerText = this.calcInterest(plainValue)[1];
+}
+
+Calculator.prototype.getRate = function(){
+    var cxt = this;
+
+    this.get('https://staging-datafeeds.feprecisionplus.com/api/SeriesData/hearthstone/a123f344-408c-e904-615d-49d0df97bfea/yearly/dayend?InstrumentTypes=B&span=70&seriestypes=2&benchmarkcodes=BM5G&basevalue=raw').then(function(fund) {
+
+        var data = fund.HistoryData[0].Instrument[0].SeriesList[0].SeriesData;
+        var data = data.slice(Math.max(data.length - 5, 1));
+        cxt.fundRate = cxt.calculateRate(data);
+        console.log(cxt.fundRate);
+
+    }, function(error) {
+      console.error("Failed!", error);
+    });
+
+    this.get('https://staging-datafeeds.feprecisionplus.com/api/SeriesData/hearthstone/a123f344-408c-e904-615d-49d0df97bfea/yearly/dayend?InstrumentTypes=F&span=70&seriestypes=2&citicodes=112G&basevalue=raw').then(function(fe_proxy) {
+
+        var data = fe_proxy.HistoryData[0].Instrument[0].SeriesList[0].SeriesData;
+        var data = data.slice(Math.max(data.length - 5, 1));
+        cxt.feproxyRate = cxt.calculateRate(data);
+        console.log(cxt.feproxyRate);
+
+    }, function(error) {
+      console.error("Failed!", error);
+    });
+
+}
+
+Calculator.prototype.calculateRate = function(values){
+    var storeArray = [];
+    var diffs = [];
+    var previousYearVal;
+
+    for(var i=0; i<5; i++) {
+        storeArray.push(values[i].Value);
+    }
+
+    console.log(storeArray);
+    storeArray.map(function(yearVal) {
+        if(previousYearVal){
+            diffs.push( ((yearVal - previousYearVal) / yearVal) * 100 );
+        }
+
+        previousYearVal = yearVal;
+    });
+
+    var sum = diffs.reduce(add, 0);
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    return sum;
+}
+
+Calculator.prototype.get = function(url) {
+
+  return new Promise(function(resolve, reject) {
+
+    var req = new XMLHttpRequest();
+    req.open('GET', url);
+
+    req.onload = function() {
+
+      if (req.status == 200) {
+        resolve(JSON.parse(req.response));
+      }
+      else {
+        reject(Error(req.statusText));
+      }
+    };
+
+    // Handle network errors
+    req.onerror = function() {
+      reject(Error("Network Error"));
+    };
+
+    req.send();
+  });
 }
 
 Calculator.prototype.setSlider = function(){
@@ -55,23 +147,14 @@ Calculator.prototype.setSlider = function(){
     	}
     });
 
-    // this.calcInput.noUiSlider.set([0, 25000]);
-    //
-    // this.calcInput.noUiSlider.on('set', function(values, handle){
-    //     cxt.calcUnit.innerText = Math.round(values[1]).toLocaleString();
-    //     cxt.calcStandardRate.innerText = cxt.calcInterest(values[1])[0];
-    //     cxt.calcFundRate.innerText = cxt.calcInterest(values[1])[1];
-    // });
-
     this.calcInput.noUiSlider.on('slide', function(values, handle){
-        cxt.calcUnit.innerText = Math.round(values[1]).toLocaleString();
+        cxt.calcUnit.innerText = Math.round(values[1]);
         cxt.calcStandardRate.innerText = cxt.calcInterest(values[1])[0];
         cxt.calcFundRate.innerText = cxt.calcInterest(values[1])[1];
     });
 
-    // this.calcInput.noUiSlider.on('end', function(values, handle){
-    //     console.log(values);
-    // });
+    cxt.calcStandardRate.innerText = cxt.calcInterest(25000)[0];
+    cxt.calcFundRate.innerText = cxt.calcInterest(25000)[1];
 }
 
 Calculator.prototype.calcInterest = function(amount){

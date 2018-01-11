@@ -55,7 +55,7 @@
 						</heading>
 						<p class="light">Whether you’re looking to invest a lump sum or you’d like to make monthly payments, you can tailor your investment into homeinvestor.fund to suit your requirements. Simply click get started button and you’ll be on your way to creating an account.</p>
 
-						<p><a href="" class="btn__white--blue">Get Started</a></p>
+						<p><a href="" data-widget="trigger-redirect" class="btn__white--blue">Get Started</a></p>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<svg>
@@ -85,7 +85,7 @@
 						</heading>
 						<p class="light">Our online investment portal is powered by our trusted partners, WealthKernel. It's simple and easy to sign-up, just make sure you’ve got your bank details and national insurance number handy.</p>
 
-						<p><a href="" class="btn__primary--blue">Get Started</a></p>
+						<p><a href="" data-widget="trigger-redirect" class="btn__primary--blue">Get Started</a></p>
 					</div>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 
 						<p class="light">You’ll then be able to track and manage your homeinvestor.fund investment safely and securely online.</p>
 
-						<p><a href="" class="btn__primary--teal">Start investing now</a></p>
+						<p><a href="" data-widget="trigger-redirect" class="btn__primary--teal">Start investing now</a></p>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<svg>

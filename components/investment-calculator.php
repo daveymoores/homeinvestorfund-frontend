@@ -10,7 +10,6 @@
             <dl>
               <dt>An Investment 5<br /> Years ago of...</dt>
               <dd>£<span contentEditable=true class="calculator__amount--unit">25000</span></dd>
-              <!-- <dd class="calculator__amount--unit"><span>£</span><input type="text" value="25,000"></dd> -->
             </dl>
         </div>
         <div class="calculator--slider">

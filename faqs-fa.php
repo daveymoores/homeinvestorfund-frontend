@@ -19,11 +19,11 @@
 				<div class="col-md-12">
 					<h3>FAQ categories</h3>
 					<ul class="faqs__categories--list">
-						<li class="faqs__categories--item"><a href="">Getting started</a></li>
-						<li class="faqs__categories--item"><a href="">Getting started</a></li>
-						<li class="faqs__categories--item"><a href="">Lorem ipsum</a></li>
-						<li class="faqs__categories--item"><a href="">Lorem ipsum</a></li>
-						<li class="faqs__categories--item"><a href="">Lorem ipsum</a></li>
+						<li class="faqs__categories--item"><a href="faqs-single.php">Getting started</a></li>
+						<li class="faqs__categories--item"><a href="faqs-single.php">Getting started</a></li>
+						<li class="faqs__categories--item"><a href="faqs-single.php">Lorem ipsum</a></li>
+						<li class="faqs__categories--item"><a href="faqs-single.php">Lorem ipsum</a></li>
+						<li class="faqs__categories--item"><a href="faqs-single.php">Lorem ipsum</a></li>
 					</ul>
 				</div>
 			</div>
