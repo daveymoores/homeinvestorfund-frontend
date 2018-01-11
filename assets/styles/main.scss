@@ -15,6 +15,7 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "common/centered-heading";
 @import "common/text-wrapper";
 
+@import "components/article";
 @import "components/btn";
 @import "components/styleguide";
 @import "components/offcanvas";

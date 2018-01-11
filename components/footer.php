@@ -40,3 +40,9 @@
 		</div>
 	</div>
 </footer>
+
+
+<div id="throbber-bg" class="map__overlay--bg"></div>
+<object id="throbber" class="throbber" type="image/svg+xml" data="./dist/images/icons/throbber-3.svg"></object>
+
+</article>

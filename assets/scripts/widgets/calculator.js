@@ -31,7 +31,7 @@ Calculator.prototype.init = function(){
     this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
 
     this.setSlider();
-    //this.getRate();
+    this.getRate();
 }
 
 Calculator.prototype.handleInput = function(e){

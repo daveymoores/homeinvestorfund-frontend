@@ -4,14 +4,8 @@ function TriggerRedirect(node){
 }
 
 TriggerRedirect.prototype.init = function(){
-    var bg = document.createElement('div');
-    var object = document.createElement('object');
-    object.setAttribute('data', './dist/images/icons/throbber-3.svg');
-    object.setAttribute('type', 'image/svg+xml');
-    object.classList.add('throbber');
-    bg.classList.add('map__overlay--bg');
-    document.body.appendChild(bg);
-    document.body.appendChild(object);
+    var bg = document.getElementById('throbber-bg');
+    var object = document.getElementById('throbber');
 
     var red = '#EE1358';
 
