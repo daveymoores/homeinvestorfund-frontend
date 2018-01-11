@@ -18,35 +18,51 @@
 	 <style>
     /* <![CDATA[ */
 	.circle {
-		transition: all 0.3s ease;
-		-webkit-transition: all 0.3s ease;
+		transition: transform 0.3s ease;
+		-webkit-transition: transform 0.3s ease;
 		transform-origin: 50% 50% 0;
 		-webkit-transform-origin: 50% 50% 0;
-		fill:#FFFFFF;
+		fill:transparent;
 	}
 
-	.active {
+	.circle > * {
+	}
+
+	.circle.active {
+		animation: scale 0.6s ease-in-out;
+	}
+
+	.active > * {
 		animation: fill 0.6s ease-in-out;
 	}
 
 	@keyframes fill {
 		0% {
-			transform: scale(1);
-			-webkit-transform: scale(1);
 			fill:#FFFFFF;
 			fill-opacity:1;
 		}
 		50% {
-			transform: scale(1.2);
-			-webkit-transform: scale(1.2);
 			fill-opacity:1;
 			fill:#EE1358;
 		}
 		100% {
-			transform: scale(1);
-			-webkit-transform: scale(1);
 			fill:#FFFFFF;
 			fill-opacity:1;
+		}
+	}
+
+	@keyframes scale {
+		0% {
+			transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+		50% {
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+		}
+		100% {
+			transform: scale(1);
+			-webkit-transform: scale(1);
 		}
 	}
     /* ]]> */
@@ -58,20 +74,36 @@
 	</foreignObject>
 	<g i:extraneous="self">
 		<g id="wA">
-			<g>
-				<g>
-					<circle class="circle" cx="88.786" cy="39.723" r="5.155"/>
-				</g>
+			<g class="circle">
+				<circle fill="#FFFFFF" cx="88.786" cy="39.723" r="5.155"/>
+				<circle cx="88.786" cy="39.723" r="5.155"/>
 			</g>
-			<path fill-rule="evenodd" fill="#FFFFFF" class="circle" clip-rule="evenodd" d="M107.687,34.568c2.847,0,5.155,2.308,5.155,5.155
+			<path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M107.687,34.568c2.847,0,5.155,2.308,5.155,5.155
 				c0,2.847-2.308,5.155-5.155,5.155c-2.847,0-5.155-2.308-5.155-5.155C102.532,36.876,104.84,34.568,107.687,34.568z"/>
-			<path fill-rule="evenodd" fill="#FFFFFF" class="circle" clip-rule="evenodd" d="M126.587,34.568c2.847,0,5.155,2.308,5.155,5.155
+			<g class="circle">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M107.687,34.568c2.847,0,5.155,2.308,5.155,5.155
+					c0,2.847-2.308,5.155-5.155,5.155c-2.847,0-5.155-2.308-5.155-5.155C102.532,36.876,104.84,34.568,107.687,34.568z"/>
+			</g>
+			<path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M126.587,34.568c2.847,0,5.155,2.308,5.155,5.155
 				c0,2.847-2.308,5.155-5.155,5.155s-5.155-2.308-5.155-5.155C121.433,36.876,123.74,34.568,126.587,34.568z"/>
-			<path fill-rule="evenodd" fill="#FFFFFF" class="circle" clip-rule="evenodd" d="M145.488,34.568c2.847,0,5.155,2.308,5.155,5.155
+			<g class="circle">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M126.587,34.568c2.847,0,5.155,2.308,5.155,5.155
+					c0,2.847-2.308,5.155-5.155,5.155s-5.155-2.308-5.155-5.155C121.433,36.876,123.74,34.568,126.587,34.568z"/>
+			</g>
+			<path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M145.488,34.568c2.847,0,5.155,2.308,5.155,5.155
 				c0,2.847-2.308,5.155-5.155,5.155c-2.847,0-5.155-2.308-5.155-5.155C140.333,36.876,142.641,34.568,145.488,34.568z"/>
-			<path class="circle" fill="#FFFFFF" d="M160.655,54.608c-0.95,0-1.9-0.363-2.625-1.088c-1.45-1.45-1.45-3.801,0-5.252L166.295,40l-8.264-8.268
+			<g class="circle">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M145.488,34.568c2.847,0,5.155,2.308,5.155,5.155
+					c0,2.847-2.308,5.155-5.155,5.155c-2.847,0-5.155-2.308-5.155-5.155C140.333,36.876,142.641,34.568,145.488,34.568z"/>
+			</g>
+			<path fill="#FFFFFF" d="M160.655,54.608c-0.95,0-1.9-0.363-2.625-1.088c-1.45-1.45-1.45-3.801,0-5.252L166.295,40l-8.264-8.268
 				c-1.45-1.451-1.45-3.802,0-5.252c1.45-1.45,3.8-1.45,5.25,0l10.889,10.894c1.45,1.451,1.45,3.802,0,5.252L163.28,53.52
 				C162.556,54.245,161.606,54.608,160.655,54.608z"/>
+			<g class="circle">
+				<path d="M160.655,54.608c-0.95,0-1.9-0.363-2.625-1.088c-1.45-1.45-1.45-3.801,0-5.252L166.295,40l-8.264-8.268
+					c-1.45-1.451-1.45-3.802,0-5.252c1.45-1.45,3.8-1.45,5.25,0l10.889,10.894c1.45,1.451,1.45,3.802,0,5.252L163.28,53.52
+					C162.556,54.245,161.606,54.608,160.655,54.608z"/>
+			</g>
 		</g>
 		<g id="WK">
 			<g>

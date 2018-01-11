@@ -23,7 +23,7 @@ TriggerRedirect.prototype.init = function(){
         var svgDoc = object.contentDocument;
         var circles = svgDoc.querySelectorAll('.circle');
 
-        setInterval(function(){
+        function glowCircles(){
             [].forEach.call(circles, function(element, index, array){
                 setTimeout(function(){
                     element.classList.add('active');
@@ -32,7 +32,12 @@ TriggerRedirect.prototype.init = function(){
                     }, 600);
                 }, 50*index);
             });
-        }, 1200);
+        }
+
+        glowCircles();
+        setInterval(function(){
+            glowCircles();
+        }, 1000);
 
         setTimeout(function(){
             object.style.opacity = 1;

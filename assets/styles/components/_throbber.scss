@@ -6,5 +6,9 @@
     z-index: -99;
     top: 50%;
     left: 50%;
-    width: 500px;
+    width: 70vw;
+
+    @media all and (min-width: $mobile-only) {
+        width: 450px;
+    }
 }
