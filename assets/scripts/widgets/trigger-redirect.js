@@ -18,6 +18,7 @@ TriggerRedirect.prototype.init = function(){
     this.node.addEventListener('click', function(e){
         e.preventDefault();
         bg.style.zIndex = 99;
+        object.style.zIndex = 99;
 
         var svgDoc = object.contentDocument;
         var circles = svgDoc.querySelectorAll('.circle');

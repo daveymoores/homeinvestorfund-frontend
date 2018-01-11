@@ -8,6 +8,9 @@
 }
 
 .faqs--page-wrapper {
+    width: 100%;
+    overflow: hidden;
+
     .faqs {
         @include padding(30px 0 30px);
         margin-bottom: 0px;

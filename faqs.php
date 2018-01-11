@@ -33,72 +33,75 @@
 				<div class="col-md-12">
 					<h3>Popular FAQs</h3>
 
-					<div class="swiper-container swiper-container--overflow" data-widget="faq-carousel">
-			            <div class="swiper-wrapper">
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+					<div>
+						<div class="swiper-container swiper-container--overflow" data-widget="faq-carousel">
+				            <div class="swiper-wrapper">
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="">Read more</a>
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="">Read more</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="">Read more</a>
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="">Read more</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="who-is-wealth-kernel" href="">Read more</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
-								<div class="ghost-panel--content">
-									<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
-									<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
-									<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="index-road-to-retirement.php">Read more</a>
+								<div class="swiper-slide ghost-panel eq ghost-panel--nav-options">
+									<div class="ghost-panel--content">
+										<h4><a href="index-road-to-retirement.php">What is homeinvestor.fund</a></h4>
+										<p>We’re a team who’re passionate about residential property investment. Most of us have been working in residential property or financial services for many years, so we have a lot of experience...</p>
+										<a class="ghost-panel--read-more" data-target data-faq-slug="what-is-homeinvestor-fund" href="index-road-to-retirement.php">Read more</a>
+									</div>
 								</div>
-							</div>
-			            </div>
+				            </div>
 
-						<div class="swiper-pagination"></div>
-	        		</div>
-					<span class="swiper-button-prev">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
-						  <g id="Layer_2" data-name="Layer 2">
-							<g id="Layer_2-2" data-name="Layer 2">
-							  <path class="cls-1" fill="#ffffff" d="M.11,1.29,1.29.11a.38.38,0,0,1,.53,0l8.41,8.16a.38.38,0,0,1,0,.54L1.82,17a.38.38,0,0,1-.53,0L.11,15.8a.38.38,0,0,1,0-.54L6.76,8.81a.38.38,0,0,0,0-.54L.12,1.83A.38.38,0,0,1,.11,1.29Z"/>
-							</g>
-						  </g>
-						</svg>
-					</span>
-					<span class="swiper-button-next">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
-						  <g id="Layer_2" data-name="Layer 2">
-							<g id="Layer_2-2" data-name="Layer 2">
-							  <path class="cls-1" fill="#ffffff" d="M.11,1.29,1.29.11a.38.38,0,0,1,.53,0l8.41,8.16a.38.38,0,0,1,0,.54L1.82,17a.38.38,0,0,1-.53,0L.11,15.8a.38.38,0,0,1,0-.54L6.76,8.81a.38.38,0,0,0,0-.54L.12,1.83A.38.38,0,0,1,.11,1.29Z"/>
-							</g>
-						  </g>
-						</svg>
-					</span>
+							<div class="swiper-pagination"></div>
+		        		</div>
+						<span class="swiper-button-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
+							  <g id="Layer_2" data-name="Layer 2">
+								<g id="Layer_2-2" data-name="Layer 2">
+								  <path class="cls-1" fill="#ffffff" d="M.11,1.29,1.29.11a.38.38,0,0,1,.53,0l8.41,8.16a.38.38,0,0,1,0,.54L1.82,17a.38.38,0,0,1-.53,0L.11,15.8a.38.38,0,0,1,0-.54L6.76,8.81a.38.38,0,0,0,0-.54L.12,1.83A.38.38,0,0,1,.11,1.29Z"/>
+								</g>
+							  </g>
+							</svg>
+						</span>
+						<span class="swiper-button-next">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.35 17.08">
+							  <g id="Layer_2" data-name="Layer 2">
+								<g id="Layer_2-2" data-name="Layer 2">
+								  <path class="cls-1" fill="#ffffff" d="M.11,1.29,1.29.11a.38.38,0,0,1,.53,0l8.41,8.16a.38.38,0,0,1,0,.54L1.82,17a.38.38,0,0,1-.53,0L.11,15.8a.38.38,0,0,1,0-.54L6.76,8.81a.38.38,0,0,0,0-.54L.12,1.83A.38.38,0,0,1,.11,1.29Z"/>
+								</g>
+							  </g>
+							</svg>
+						</span>
+					</div>
+
 				</div>
 			</div>
 

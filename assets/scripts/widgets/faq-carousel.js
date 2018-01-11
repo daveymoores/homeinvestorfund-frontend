@@ -9,9 +9,9 @@ FaqCarousel.prototype.init = function(){
 
     var ww = window.innerWidth;
     var slider = this.node;
-    var dot_count         = slider.querySelectorAll('.js_slide').length;
-    var dot_container     = slider.querySelector('.js_dots');
-    var dot_list_item     = document.createElement('li');
+    this.slider = this.node;
+    this.parent = this.slider.parentNode;
+    this.parent.classList.add('swiper-initialised');
 
     var swiper = new Swiper(slider, {
       slidesPerView: 3,

@@ -6,14 +6,14 @@ function Carousel(node){
 }
 
 Carousel.prototype.init = function(){
+    var cxt = this;
+    this.ww = window.innerWidth;
+    this.slider = this.node;
+    this.parent = this.slider.parentNode;
+    this.parent.classList.add('swiper-initialised');
+    this.slides = this.node.querySelectorAll('.swiper-slide');
 
-    var ww = window.innerWidth;
-    var slider = this.node;
-    var dot_count         = slider.querySelectorAll('.js_slide').length;
-    var dot_container     = slider.querySelector('.js_dots');
-    var dot_list_item     = document.createElement('li');
-
-    var swiper = new Swiper(slider, {
+    this.swiper = new Swiper(this.slider, {
       slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
@@ -35,6 +35,34 @@ Carousel.prototype.init = function(){
         }
       }
     });
+
+    this.buildCarousel();
+
+    window.addEventListener('resize', function(){
+        var w = window.innerWidth;
+        cxt.buildCarousel(w);
+    });
+}
+
+Carousel.prototype.buildCarousel = function(ww){
+    ww = typeof ww !== 'undefined' ? ww : this.ww;
+
+    var ll = this.slides.length;
+    console.log(ll);
+
+    if(ww < 998) {
+        if(ll > 2) {
+            this.swiper.init();
+        }
+    } else if(ww < 500) {
+        if(ll > 1) {
+            this.swiper.init();
+        }
+    } else {
+        if(ll > 3) {
+            this.swiper.init();
+        }
+    }
 
 }
 

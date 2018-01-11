@@ -11,10 +11,6 @@
     padding: 16px;
     background-image: none;
     display: none;
-
-    @media all and (min-width: $screen-md) {
-        display: block;
-    }
 }
 
 .swiper-button-next {
@@ -51,5 +47,15 @@
 
     &-bullet-active {
         background-color: $grey-3;
+    }
+}
+
+.swiper-initialised {
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+
+        @media all and (max-width: $screen-md) {
+            display: none;
+        }
     }
 }

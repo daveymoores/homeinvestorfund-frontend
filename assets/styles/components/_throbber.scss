@@ -3,7 +3,7 @@
     @include transition(opacity 0.3s ease);
     position: fixed;
     @include transform(translate3d(-50%, -50%, 0));
-    z-index: 99;
+    z-index: -99;
     top: 50%;
     left: 50%;
     width: 500px;
