@@ -25,7 +25,8 @@
 .swiper-button-next svg, .swiper-button-prev svg {
     width: 11px;
     position: absolute;
-    top: 11px;
+    top: 50%;
+    @include transform(translate3d(0,-50%,0));
 }
 
 .swiper-container--overflow {
