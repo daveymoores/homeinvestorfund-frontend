@@ -15,7 +15,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="faqs__breadcrumb--list">
-						<li class="faqs__breadcrumb--item">FAQs</li>
+						<li class="faqs__breadcrumb--item"><a href="faqs.php">FAQs</a></li>
 						<li class="faqs__breadcrumb--item">Getting started</li>
 					</ul>
 				</div>

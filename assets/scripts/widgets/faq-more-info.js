@@ -18,9 +18,9 @@ MoreInfo.prototype.init = function(){
         element.addEventListener('click', cxt.getData.bind(cxt));
     });
 
-    [].forEach.call(this.qLists, function(element, index, array){
-        cxt.loadMore(element);
-    });
+    // [].forEach.call(this.qLists, function(element, index, array){
+    //     cxt.loadMore(element);
+    // });
 
     this.getUrl();
 }

@@ -1,33 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="105px" height="135px" viewBox="0 0 105 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0 134 103.838 134 103.838 0.133 0 0.133"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(0.738281, -0.843750)">
-            <polygon id="Fill-1" fill="#106FAE" points="51.9189 6.867 9.6689 43.867 9.6689 63.996 56.4439 23.034 94.1689 56.071 94.1689 43.867"></polygon>
-            <polygon id="Fill-2" fill="#08ACA6" points="9.6687 63.9956 9.6687 134.8666 94.1687 134.8666 94.1687 56.0716 56.4437 23.0336"></polygon>
-            <g id="Group-17" transform="translate(0.000000, 0.867000)">
-                <path d="M4.393,51.5396 C5.14,52.3926 6.435,52.4776 7.288,51.7316 L51.919,12.6466 L96.55,51.7316 C97.402,52.4776 98.698,52.3926 99.445,51.5396 L103.33,47.1026 C104.076,46.2506 103.99,44.9546 103.138,44.2076 L53.478,0.7196 C52.586,-0.0624 51.252,-0.0624 50.359,0.7196 L0.7,44.2076 C-0.152,44.9546 -0.238,46.2506 0.508,47.1026 L4.393,51.5396 Z" id="Fill-3" fill="#D30B50"></path>
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-6"></g>
-                <polygon id="Fill-5" fill="#106FAE" mask="url(#mask-2)" points="39.311 134 64.528 134 64.528 89.5 39.311 89.5"></polygon>
-                <path d="M51.9189,95.5625 C48.5019,95.5625 45.7319,98.3335 45.7319,101.7495 C45.7319,105.1665 48.5019,107.9375 51.9189,107.9375 C55.3359,107.9375 58.1059,105.1665 58.1059,101.7495 C58.1059,98.3335 55.3359,95.5625 51.9189,95.5625" id="Fill-7" fill="#FFFFFF" mask="url(#mask-2)"></path>
-                <path d="M33.2524,67.7134 C29.8354,67.7134 27.0654,70.4834 27.0654,73.9014 C27.0654,77.3184 29.8354,80.0884 33.2524,80.0884 C36.6694,80.0884 39.4394,77.3184 39.4394,73.9014 C39.4394,70.4834 36.6694,67.7134 33.2524,67.7134 Z" id="Stroke-8" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M70.5854,67.7134 C67.1684,67.7134 64.3984,70.4834 64.3984,73.9014 C64.3984,77.3184 67.1684,80.0884 70.5854,80.0884 C74.0024,80.0884 76.7724,77.3184 76.7724,73.9014 C76.7724,70.4834 74.0024,67.7134 70.5854,67.7134 Z" id="Stroke-9" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M51.9189,44.8647 C48.5019,44.8647 45.7319,47.6347 45.7319,51.0517 C45.7319,54.4687 48.5019,57.2397 51.9189,57.2397 C55.3359,57.2397 58.1059,54.4687 58.1059,51.0517 C58.1059,47.6347 55.3359,44.8647 51.9189,44.8647 Z" id="Stroke-10" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M51.9189,44.8647 L51.9189,57.2397" id="Stroke-11" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M58.1064,51.0522 L45.7314,51.0522" id="Stroke-12" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M33.2524,67.7134 L33.2524,80.0884" id="Stroke-13" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M39.4399,73.9014 L27.0649,73.9014" id="Stroke-14" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M70.5854,67.7134 L70.5854,80.0884" id="Stroke-15" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-                <path d="M76.7729,73.9014 L64.3979,73.9014" id="Stroke-16" stroke="#106FAE" stroke-width="3" mask="url(#mask-2)"></path>
-            </g>
+<svg id="4749757d-a527-46fb-9b6b-bded1064657e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103.84 133.87">
+  <defs>
+    <mask id="33769100-cf4b-45df-acd8-15470f4c7abe" x="0" y="0" width="103.84" height="133.87" maskUnits="userSpaceOnUse">
+      <g transform="translate(-0.74 -0.16)">
+        <g id="347ec7cb-593c-4cd0-aec7-550e90d6b26b" data-name="mask-2">
+          <polygon id="dc3fc488-782b-43c3-b227-c21efd50cabd" data-name="path-1" points="0.74 134.02 104.58 134.02 104.58 0.16 0.74 0.16 0.74 134.02" style="fill: #fff"/>
         </g>
+      </g>
+    </mask>
+  </defs>
+  <title>hero-house-1</title>
+  <g id="50c2bcaf-4e12-4525-9e3c-9b06a5ea91b4" data-name="Page-1">
+    <g id="ad0b932f-ccb3-4b34-a14b-f8847f19479a" data-name="hero-house-1">
+      <polygon id="ca578258-86ec-4c5c-8718-a0c903b3cf9f" data-name="Fill-1" points="51.92 5.87 9.67 42.87 9.67 63 56.44 22.03 94.17 55.07 94.17 42.87 51.92 5.87" style="fill: #106fae"/>
+      <polygon id="e0bb3bc8-a16b-4d81-bce6-dad1e8600390" data-name="Fill-2" points="9.67 63 9.67 133.87 94.17 133.87 94.17 55.07 56.44 22.03 9.67 63" style="fill: #08aca6"/>
+      <g id="15c0c300-ba48-4fe1-9f35-059c78c6fc26" data-name="Group-17">
+        <path id="0d8302c8-9f54-4a28-8bf4-38fe7448cb75" data-name="Fill-3" d="M5.13,51.56A2.05,2.05,0,0,0,8,51.75L52.66,12.67,97.29,51.75a2.05,2.05,0,0,0,2.89-.19l3.89-4.44a2.05,2.05,0,0,0-.19-2.9L54.22.74a2.37,2.37,0,0,0-3.12,0L1.44,44.23a2.05,2.05,0,0,0-.19,2.9Z" transform="translate(-0.74 -0.16)" style="fill: #d30b50"/>
+        <g id="a12c86c7-fb64-4549-a7e2-1198b9078e9c" data-name="Fill-5-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <polygon id="f93f8fb9-80fa-463e-b9cf-22842f6ae8f3" data-name="Fill-5" points="39.31 133.87 64.53 133.87 64.53 89.37 39.31 89.37 39.31 133.87" style="fill: #106fae"/>
+          </g>
+        </g>
+        <g id="c302f906-a0c3-499b-ab41-8c856626320c" data-name="Fill-7-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="15e3c5c1-a980-47ff-b38f-fe30b5bfec9a" data-name="Fill-7" d="M52.66,95.59a6.19,6.19,0,1,0,6.19,6.19,6.19,6.19,0,0,0-6.19-6.19" transform="translate(-0.74 -0.16)" style="fill: #fff"/>
+          </g>
+        </g>
+        <g id="e0317f37-4af2-4df0-9974-a99fcf7e3074" data-name="Stroke-8-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="f1e30e1b-42cb-4228-82cd-6ba8aae28f56" data-name="Stroke-8" d="M34,67.74a6.19,6.19,0,1,0,6.19,6.19A6.19,6.19,0,0,0,34,67.74Z" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="b8fee09d-fe0a-4ff3-a963-cbd831350cb1" data-name="Stroke-9-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="2c0cca27-9587-41e5-b36a-4bee83f921d6" data-name="Stroke-9" d="M71.32,67.74a6.19,6.19,0,1,0,6.19,6.19A6.19,6.19,0,0,0,71.32,67.74Z" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="dfa73cfa-7163-4387-88fa-bb626273e318" data-name="Stroke-10-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="737169a5-d1f6-4ec3-9947-cf4f677034b1" data-name="Stroke-10" d="M52.66,44.89a6.19,6.19,0,1,0,6.19,6.19A6.19,6.19,0,0,0,52.66,44.89Z" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="5785eada-0838-40a2-9849-cd7787818af5" data-name="Stroke-11-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="5fd802a5-b8b0-4829-a527-9310944b5665" data-name="Stroke-11" d="M52.66,44.89V57.26" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="8181a3af-6176-47e8-a3e7-cd5824d5d88b" data-name="Stroke-12-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="2bb4ca23-e960-4e2c-9c66-ef8028d9c7b6" data-name="Stroke-12" d="M58.84,51.08H46.47" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="f6590b84-5fc5-4636-8177-fe5dcbe665bc" data-name="Stroke-13-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="55df33b4-11be-41bf-a042-d16d74986cb5" data-name="Stroke-13" d="M34,67.74V80.11" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="dff88d82-0a9b-4d0a-8c6c-7c57fa1c748f" data-name="Stroke-14-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="8191e488-544c-45ba-81d4-cc6eebe6f2f4" data-name="Stroke-14" d="M40.18,73.92H27.8" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="fb8c540f-97a8-4195-9c24-221d31b2fdb9" data-name="Stroke-15-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="c7c80a03-d994-428e-8374-31d38783f3c0" data-name="Stroke-15" d="M71.32,67.74V80.11" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+        <g id="7390760f-3c15-421d-8d38-3dfea219a721" data-name="Stroke-16-Clipped">
+          <g style="mask: url(#33769100-cf4b-45df-acd8-15470f4c7abe)">
+            <path id="51855796-1f6d-4cda-a8f8-6cf4e114503c" data-name="Stroke-16" d="M77.51,73.92H65.14" transform="translate(-0.74 -0.16)" style="fill: none;stroke: #106fae;stroke-width: 3px"/>
+          </g>
+        </g>
+      </g>
     </g>
+  </g>
 </svg>
