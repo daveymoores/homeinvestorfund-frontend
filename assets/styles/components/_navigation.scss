@@ -340,6 +340,7 @@
 
             &:first-child {
                 display: block!important;
+                max-width: inherit;
 
                 @media all and (min-width: $screen-md) {
                     border-top: 2px solid $blue-2;

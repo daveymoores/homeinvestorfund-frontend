@@ -1,56 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 171 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0.5284 94 107.3324 94 107.3324 0.2442 0.5284 0.2442"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g>
-            <path d="M157.6234,113.2464 L152.6124,113.2464 C151.9714,113.2464 151.4514,112.7264 151.4514,112.0844 L151.4514,79.5794 L158.7844,79.5794 L158.7844,112.0844 C158.7844,112.7264 158.2654,113.2464 157.6234,113.2464" id="Fill-1" fill="#106FAE"></path>
-            <path d="M170.1009,85.5428 C170.1009,91.5458 166.1509,96.4128 161.2769,96.4128 C156.4029,96.4128 152.4519,91.5458 152.4519,85.5428 C152.4519,79.5398 156.4029,74.6728 161.2769,74.6728 C166.1509,74.6728 170.1009,79.5398 170.1009,85.5428" id="Fill-3" fill="#ED1458"></path>
-            <path d="M158.7845,82.454 C158.7845,88.457 154.8335,93.324 149.9595,93.324 C145.0865,93.324 141.1355,88.457 141.1355,82.454 C141.1355,76.451 145.0865,71.584 149.9595,71.584 C154.8335,71.584 158.7845,76.451 158.7845,82.454" id="Fill-5" fill="#ED1458"></path>
-            <path d="M166.1185,73.2416 C166.1185,79.6476 161.9015,84.8396 156.7015,84.8396 C151.5005,84.8396 147.2845,79.6476 147.2845,73.2416 C147.2845,66.8356 151.5005,61.6426 156.7015,61.6426 C161.9015,61.6426 166.1185,66.8356 166.1185,73.2416" id="Fill-7" fill="#ED1458"></path>
-            <path d="M157.5042,70.2464 C157.5042,71.1034 156.8092,71.7984 155.9512,71.7984 C155.0942,71.7984 154.3992,71.1034 154.3992,70.2464 C154.3992,69.3884 155.0942,68.6934 155.9512,68.6934 C156.8092,68.6934 157.5042,69.3884 157.5042,70.2464" id="Fill-9" fill="#630F33"></path>
-            <path d="M148.473,75.9764 C148.72,75.1554 149.585,74.6894 150.407,74.9364 C151.228,75.1834 151.694,76.0494 151.447,76.8704 C151.2,77.6914 150.334,78.1574 149.513,77.9104 C148.692,77.6634 148.226,76.7974 148.473,75.9764" id="Fill-11" fill="#630F33"></path>
-            <path d="M159.7894,81.1844 C160.0364,80.3634 160.9024,79.8974 161.7234,80.1444 C162.5444,80.3914 163.0104,81.2574 162.7634,82.0784 C162.5164,82.8994 161.6504,83.3654 160.8294,83.1184 C160.0084,82.8714 159.5424,82.0054 159.7894,81.1844" id="Fill-13" fill="#630F33"></path>
-            <path d="M155.1751,84.5292 C154.4331,84.9582 153.4831,84.7032 153.0541,83.9612 C152.6251,83.2182 152.8801,82.2692 153.6221,81.8402 C154.3651,81.4112 155.3151,81.6662 155.7431,82.4082 C156.1721,83.1512 155.9171,84.1002 155.1751,84.5292" id="Fill-15" fill="#630F33"></path>
-            <path d="M148.0609,87.7372 C147.3189,88.1662 146.3689,87.9112 145.9399,87.1692 C145.5109,86.4262 145.7659,85.4772 146.5079,85.0482 C147.2509,84.6192 148.2009,84.8742 148.6289,85.6162 C149.0579,86.3592 148.8039,87.3082 148.0609,87.7372" id="Fill-17" fill="#630F33"></path>
-            <path d="M161.1136,93.1156 C160.3716,93.5446 159.4226,93.2896 158.9936,92.5476 C158.5636,91.8046 158.8186,90.8556 159.5606,90.4266 C160.3036,89.9976 161.2536,90.2526 161.6816,90.9946 C162.1106,91.7376 161.8566,92.6866 161.1136,93.1156" id="Fill-19" fill="#630F33"></path>
-            <polygon id="Fill-21" fill="#E50647" points="117.3324 35.242 117.3324 23.006 63.9314 6.291 10.5284 23.006 10.5284 40.026 71.5714 20.919"></polygon>
-            <g id="Group-25" transform="translate(10.000000, 20.675000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-24"></g>
-                <polygon id="Fill-23" fill="#106FAE" mask="url(#mask-2)" points="107.3324 94.0002 107.3324 14.5672 61.5714 0.2442 0.5284 19.3512 0.5284 94.0002"></polygon>
-            </g>
-            <path d="M2.722,30.0697 C3.037,31.0767 4.109,31.6377 5.117,31.3227 L63.931,12.9137 L122.744,31.3227 C123.752,31.6377 124.824,31.0767 125.139,30.0697 L127.774,21.6557 C128.088,20.6487 127.528,19.5757 126.521,19.2607 L65.999,0.3167 C64.653,-0.1053 63.209,-0.1053 61.863,0.3167 L1.34,19.2607 C0.333,19.5757 -0.227,20.6487 0.088,21.6557 L2.722,30.0697 Z" id="Fill-26" fill="#106FAE"></path>
-            <path d="M82.5804,67.7967 C82.5804,78.0967 74.2304,86.4467 63.9314,86.4467 C53.6304,86.4467 45.2804,78.0967 45.2804,67.7967 C45.2804,57.4967 53.6304,49.1467 63.9314,49.1467 C74.2304,49.1467 82.5804,57.4967 82.5804,67.7967 Z" id="Stroke-28" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M102.4203,84.7665 C102.4203,86.2455 101.2213,87.4445 99.7423,87.4445 C98.2643,87.4445 97.0653,86.2455 97.0653,84.7665 C97.0653,83.2875 98.2643,82.0885 99.7423,82.0885 C101.2213,82.0885 102.4203,83.2875 102.4203,84.7665" id="Fill-30" fill="#E3DB7C"></path>
-            <path d="M107.0169,67.7967 C107.0169,71.8147 103.7599,75.0707 99.7429,75.0707 C95.7249,75.0707 92.4679,71.8147 92.4679,67.7967 C92.4679,63.7797 95.7249,60.5227 99.7429,60.5227 C103.7599,60.5227 107.0169,63.7797 107.0169,67.7967" id="Fill-32" fill="#0074BB"></path>
-            <path d="M104.4886,67.7967 C104.4886,70.4187 102.3636,72.5437 99.7426,72.5437 C97.1216,72.5437 94.9966,70.4187 94.9966,67.7967 C94.9966,65.1757 97.1216,63.0507 99.7426,63.0507 C102.3636,63.0507 104.4886,65.1757 104.4886,67.7967" id="Fill-34" fill="#E3DB7C"></path>
-            <polygon id="Fill-36" fill="#E3DB7C" points="94.9964 67.7967 97.0644 84.7667 102.4204 84.7667 104.4884 67.7967"></polygon>
-            <path d="M71.2044,67.7967 C71.2044,71.8147 67.9474,75.0707 63.9314,75.0707 C59.9134,75.0707 56.6564,71.8147 56.6564,67.7967 C56.6564,63.7797 59.9134,60.5227 63.9314,60.5227 C67.9474,60.5227 71.2044,63.7797 71.2044,67.7967" id="Fill-38" fill="#8FBBDE"></path>
-            <path d="M63.931,56.4803 L63.931,53.3203" id="Stroke-40" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M67.8011,57.1629 L68.8821,54.1939" id="Stroke-42" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M71.2044,59.1283 L73.2354,56.7073" id="Stroke-44" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M73.7308,62.1385 L76.4668,60.5585" id="Stroke-46" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M75.0746,65.8319 L78.1866,65.2829" id="Stroke-48" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M75.0746,69.7621 L78.1866,70.3101" id="Stroke-50" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M73.7308,73.4549 L76.4668,75.0349" id="Stroke-52" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M71.2044,76.4657 L73.2354,78.8857" id="Stroke-54" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M67.8011,78.4305 L68.8821,81.3995" id="Stroke-56" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M63.931,79.1131 L63.931,82.2731" id="Stroke-58" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M60.0599,78.4305 L58.9799,81.3995" id="Stroke-60" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M56.6566,76.4657 L54.6256,78.8857" id="Stroke-62" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M54.1302,73.4549 L51.3942,75.0349" id="Stroke-64" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M52.7865,69.7621 L49.6745,70.3101" id="Stroke-66" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M52.7865,65.8319 L49.6745,65.2829" id="Stroke-68" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M54.1302,62.1385 L51.3942,60.5585" id="Stroke-70" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M56.6566,59.1283 L54.6256,56.7073" id="Stroke-72" stroke="#8FBBDE" stroke-width="3"></path>
-            <path d="M60.0599,57.1629 L58.9799,54.1939" id="Stroke-74" stroke="#8FBBDE" stroke-width="3"></path>
+<svg id="78828f78-802a-4ae0-91a6-a226489009e4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 170.1 114.67">
+  <defs>
+    <mask id="6d6005e4-9937-4140-be11-a3687e6dfdf0" x="10.53" y="20.92" width="106.8" height="93.76" maskUnits="userSpaceOnUse">
+      <g transform="translate(0 0)">
+        <g id="e5006620-04b0-48ef-9a86-403e054380fb" data-name="mask-2">
+          <polygon id="0d933a93-9259-4124-b0d3-a9bd3f0ab58f" data-name="path-1" points="10.53 114.67 117.33 114.67 117.33 20.92 10.53 20.92 10.53 114.67" style="fill: #fff"/>
         </g>
+      </g>
+    </mask>
+  </defs>
+  <title>house-safe</title>
+  <g id="6218b090-4edf-46d8-8502-e07378b78667" data-name="Page-1">
+    <g>
+      <path id="d235aeec-8b35-4794-9fe0-432734a256c7" data-name="Fill-1" d="M157.62,113.25h-5a1.16,1.16,0,0,1-1.16-1.16V79.58h7.33v32.5a1.16,1.16,0,0,1-1.16,1.16" transform="translate(0 0)" style="fill: #106fae"/>
+      <path id="32546a89-f979-4b6a-ae27-7f90cba406d8" data-name="Fill-3" d="M170.1,85.54c0,6-4,10.87-8.82,10.87s-8.82-4.87-8.82-10.87,4-10.87,8.82-10.87,8.82,4.87,8.82,10.87" transform="translate(0 0)" style="fill: #ed1458"/>
+      <path id="3748f5c9-6162-46c3-8d00-1f75f63f4991" data-name="Fill-5" d="M158.78,82.45c0,6-4,10.87-8.82,10.87s-8.82-4.87-8.82-10.87,4-10.87,8.82-10.87,8.82,4.87,8.82,10.87" transform="translate(0 0)" style="fill: #ed1458"/>
+      <path id="e6cd3810-d685-4ff6-b261-96d8a9b106b8" data-name="Fill-7" d="M166.12,73.24c0,6.41-4.22,11.6-9.42,11.6s-9.42-5.19-9.42-11.6,4.22-11.6,9.42-11.6,9.42,5.19,9.42,11.6" transform="translate(0 0)" style="fill: #ed1458"/>
+      <path id="2730f7a7-24cf-484a-8429-f9402464caf7" data-name="Fill-9" d="M157.5,70.25A1.55,1.55,0,1,1,156,68.69a1.55,1.55,0,0,1,1.55,1.55" transform="translate(0 0)" style="fill: #630f33"/>
+      <path id="2b1dc526-764d-4cdd-a357-620ea7eba18e" data-name="Fill-11" d="M148.47,76a1.55,1.55,0,1,1,1,1.93,1.55,1.55,0,0,1-1-1.93" transform="translate(0 0)" style="fill: #630f33"/>
+      <path id="a3745b5c-be51-462e-89e8-37368dd00475" data-name="Fill-13" d="M159.79,81.18a1.55,1.55,0,1,1,1,1.93,1.55,1.55,0,0,1-1-1.93" transform="translate(0 0)" style="fill: #630f33"/>
+      <path id="d6d98818-9d2d-4878-b202-f5742426aefb" data-name="Fill-15" d="M155.18,84.53a1.55,1.55,0,1,1,.57-2.12,1.55,1.55,0,0,1-.57,2.12" transform="translate(0 0)" style="fill: #630f33"/>
+      <path id="09335847-6224-43e6-9956-e828592f82aa" data-name="Fill-17" d="M148.06,87.74a1.55,1.55,0,1,1,.57-2.12,1.55,1.55,0,0,1-.57,2.12" transform="translate(0 0)" style="fill: #630f33"/>
+      <path id="902f964c-e060-4a31-a786-0c2788766b9a" data-name="Fill-19" d="M161.11,93.12a1.55,1.55,0,1,1,.57-2.12,1.55,1.55,0,0,1-.57,2.12" transform="translate(0 0)" style="fill: #630f33"/>
+      <polygon id="1e0d87eb-8eb9-43bc-8b80-5d0bcbccfbf3" data-name="Fill-21" points="117.33 35.24 117.33 23.01 63.93 6.29 10.53 23.01 10.53 40.03 71.57 20.92 117.33 35.24" style="fill: #e50647"/>
+      <g id="94dc91fc-3df1-4f78-8682-76e4b07e176f" data-name="Group-25">
+        <g style="mask: url(#6d6005e4-9937-4140-be11-a3687e6dfdf0)">
+          <polygon id="f26e4fd1-b8c3-4f53-859b-18376512e4b5" data-name="Fill-23" points="117.33 114.67 117.33 35.24 71.57 20.92 10.53 40.03 10.53 114.67 117.33 114.67" style="fill: #106fae"/>
+        </g>
+      </g>
+      <path id="f4366f03-29e7-4d01-9622-addc7be7be90" data-name="Fill-26" d="M2.72,30.07a1.91,1.91,0,0,0,2.4,1.25L63.93,12.91l58.81,18.41a1.91,1.91,0,0,0,2.39-1.25l2.64-8.41a1.91,1.91,0,0,0-1.25-2.4L66,.32a6.91,6.91,0,0,0-4.14,0L1.34,19.26a1.91,1.91,0,0,0-1.25,2.4Z" transform="translate(0 0)" style="fill: #106fae"/>
+      <path id="7e98794f-778f-4483-92bd-8868f5894fdf" data-name="Stroke-28" d="M82.58,67.8A18.65,18.65,0,1,1,63.93,49.15,18.65,18.65,0,0,1,82.58,67.8Z" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="7e91b9b9-ac93-4638-822c-e4c642bbe1c7" data-name="Fill-30" d="M102.42,84.77a2.68,2.68,0,1,1-2.68-2.68,2.68,2.68,0,0,1,2.68,2.68" transform="translate(0 0)" style="fill: #e3db7c"/>
+      <path id="740043b8-c7cc-4aba-8bdc-59099fff8af6" data-name="Fill-32" d="M107,67.8a7.27,7.27,0,1,1-7.27-7.27A7.27,7.27,0,0,1,107,67.8" transform="translate(0 0)" style="fill: #0074bb"/>
+      <path id="cd749f1c-e809-4a09-a905-33cdbc3cb040" data-name="Fill-34" d="M104.49,67.8a4.75,4.75,0,1,1-4.75-4.75,4.75,4.75,0,0,1,4.75,4.75" transform="translate(0 0)" style="fill: #e3db7c"/>
+      <polygon id="b1301435-fc83-427e-b877-835e16fbee56" data-name="Fill-36" points="95 67.8 97.06 84.77 102.42 84.77 104.49 67.8 95 67.8" style="fill: #e3db7c"/>
+      <path id="5bc34bd5-f517-4ecb-921f-ab131db30f4e" data-name="Fill-38" d="M71.2,67.8a7.27,7.27,0,1,1-7.27-7.27A7.27,7.27,0,0,1,71.2,67.8" transform="translate(0 0)" style="fill: #8fbbde"/>
+      <path id="b7a82b32-3f87-42e6-8712-db661203fa11" data-name="Stroke-40" d="M63.93,56.48V53.32" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="47d12ee9-4a17-4c49-a2d3-36de57ecfbb4" data-name="Stroke-42" d="M67.8,57.16l1.08-3" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="766f06ff-4e43-4acf-8116-3a957afcd75e" data-name="Stroke-44" d="M71.2,59.13l2-2.42" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="24d90ecc-114f-462e-a709-500d6b3b23b8" data-name="Stroke-46" d="M73.73,62.14l2.74-1.58" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="cfd97216-9033-460e-95bd-e9c23c2055d8" data-name="Stroke-48" d="M75.07,65.83l3.11-.55" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="c01e1a9c-5dbf-4d50-98b9-9d1bf72e57a1" data-name="Stroke-50" d="M75.07,69.76l3.11.55" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="c7c8c999-87fe-4cce-b362-1c7284e41f3e" data-name="Stroke-52" d="M73.73,73.45,76.47,75" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="1edfe0ac-a25c-4431-b741-bd0abc44ae4f" data-name="Stroke-54" d="M71.2,76.47l2,2.42" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="2bf26655-4875-4686-b336-449a476a7f89" data-name="Stroke-56" d="M67.8,78.43l1.08,3" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="f15c58f2-2e4f-4a8b-8f94-820a0f9e6a2b" data-name="Stroke-58" d="M63.93,79.11v3.16" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="6ebdd31d-7df1-4712-af47-ba80c0a5cf36" data-name="Stroke-60" d="M60.06,78.43,59,81.4" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="8fac1859-774d-47ef-9197-e27e99232d5d" data-name="Stroke-62" d="M56.66,76.47l-2,2.42" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="47fff55d-a894-4c16-b7cc-d530b6f50ed5" data-name="Stroke-64" d="M54.13,73.45,51.39,75" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="6c481b7a-29e6-43a4-93b2-a966380eea75" data-name="Stroke-66" d="M52.79,69.76l-3.11.55" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="c72334ce-a4c7-4618-a723-b9bc9d452f1b" data-name="Stroke-68" d="M52.79,65.83l-3.11-.55" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="10934889-3120-4b97-8757-90af42eea4f9" data-name="Stroke-70" d="M54.13,62.14l-2.74-1.58" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="62bd1ccf-5021-4632-a967-03102d551c61" data-name="Stroke-72" d="M56.66,59.13l-2-2.42" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
+      <path id="03dc4221-eb3e-405f-8e03-ae08499355f2" data-name="Stroke-74" d="M60.06,57.16l-1.08-3" transform="translate(0 0)" style="fill: none;stroke: #8fbbde;stroke-width: 3px"/>
     </g>
+  </g>
 </svg>
