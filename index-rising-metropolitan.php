@@ -95,20 +95,22 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__simple-investment">
+<section class="fw-wrap--blue double-padding index-bg--rising-metro">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-12">
 				<heading>
 					<h2>A simple investment choice to save for your first home</h2>
 				</heading>
 				<p class="light">We know you want to start saving for your first home. You want your money to be safe, but also to work hard. But with today’s low interest rates, ISAs offer less of an opportunity to get you closer to owning your first home.</p>
 			</div>
-			<div class="col-md-6 col-sm-6">
-
-			</div>
+			<div class="col-md-6 col-sm-12"></div>
 		</div>
 	</div>
+
+	<img src="./dist/images/index-blue-bg/index-rising-metropolitan/rising-metro-mob.png" class="index-bg--mob" />
+	<img src="./dist/images/index-blue-bg/index-rising-metropolitan/rising-metro-tablet.png" class="index-bg--tablet" />
+	<img src="./dist/images/index-blue-bg/index-rising-metropolitan/rising-metro.png" class="index-bg--desktop" />
 </section>
 
 <section class="fw-wrap">

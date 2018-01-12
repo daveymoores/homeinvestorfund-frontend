@@ -92,20 +92,22 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__smart-alec">
+<section class="fw-wrap--blue double-padding index-bg--smart-alec">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-12">
 				<heading>
 					<h2>Why own one property when you can own streetfuls?</h2>
 				</heading>
 				<p class="light">We know you want to expand your investment portfolio and you may be considering buy-to-let. You want your money to be safe and to be managed intelligently, but also for it to work hard. In today’s unpredictable climate though, many investment opportunities are overly complex  and lacking in rewards. Being a landlord comes with its own complications too.</p>
 			</div>
-			<div class="col-md-6 col-sm-6">
-
-			</div>
+			<div class="col-md-6 col-sm-12"></div>
 		</div>
 	</div>
+
+	<img src="./dist/images/index-blue-bg/index-smart-alec/row-houses-mob.png" class="index-bg--mob" />
+	<img src="./dist/images/index-blue-bg/index-smart-alec/row-houses-tablet.png" class="index-bg--tablet" />
+	<img src="./dist/images/index-blue-bg/index-smart-alec/row-houses.png" class="index-bg--desktop" />
 </section>
 
 <section class="fw-wrap">

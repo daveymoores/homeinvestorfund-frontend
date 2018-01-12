@@ -98,18 +98,22 @@
 	</div>
 </section>
 
-<section class="fw-wrap--blue double-padding section-bg__hard-work">
+<section class="fw-wrap--blue double-padding index-bg--b2b">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-12">
 				<heading>
 					<h2>Finding the right home for your clients’ money</h2>
 				</heading>
 				<p class="light">In a world of complicated products, volatile stock markets and low interest rates on bank deposits, residential property is, and always will be, a viable and uncomplicated investment.  But what benefits can it add to your clients’ portfolios? Put simply, for over 5 years, homeinvestor.fund has a track record of providing returns with low volatility.</p>
 			</div>
-			<div class="col-md-6 col-sm-6"></div>
+			<div class="col-md-6 col-sm-12"></div>
 		</div>
 	</div>
+
+	<img src="./dist/images/index-blue-bg/index-b2b/houses-mob.png" class="index-bg--mob" />
+	<img src="./dist/images/index-blue-bg/index-b2b/houses-tablet.png" class="index-bg--tablet" />
+	<img src="./dist/images/index-blue-bg/index-b2b/houses.png" class="index-bg--desktop" />
 </section>
 
 <section class="fw-wrap">
