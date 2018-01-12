@@ -52,6 +52,7 @@ $map-height: 760px;
     @media all and (min-width: $screen-sm){
         height: $map-height;
         @include position(absolute, 0 0 null null);
+        @include transform(translate3d(120%, 0, 0));
         width: 550px;
     }
 
