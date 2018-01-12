@@ -3,6 +3,11 @@
     display: block;
     border-radius: $global-radius;
     overflow: hidden;
+    margin: 40px auto;
+
+    @media all and (min-width: $screen-sm) {
+        margin: auto;
+    }
 
     .plyr__controls {
         border-radius: $global-radius;
