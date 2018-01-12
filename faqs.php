@@ -113,7 +113,7 @@
 			<div class="row">
 				<div class="col-md-6">
 
-					<div class="faqs__q-list">
+					<div class="faqs__q-list" data-topic-id="started">
 						<h3>Getting started</h3>
 
 						<ul class="faqs__q-list--ul">
@@ -130,7 +130,7 @@
 				</div>
 				<div class="col-md-6">
 
-					<div class="faqs__q-list">
+					<div class="faqs__q-list" data-topic-id="about">
 						<h3>About homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
@@ -149,8 +149,8 @@
 			<div class="row">
 				<div class="col-md-6">
 
-					<div class="faqs__q-list">
-						<h3>About homeinvestor.fund</h3>
+					<div class="faqs__q-list" data-topic-id="who">
+						<h3>Who is homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
@@ -167,8 +167,8 @@
 				</div>
 				<div class="col-md-6">
 
-					<div class="faqs__q-list">
-						<h3>About homeinvestor.fund</h3>
+					<div class="faqs__q-list" data-topic-id="what">
+						<h3>What is homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
@@ -186,8 +186,8 @@
 			<div class="row">
 				<div class="col-md-6">
 
-					<div class="faqs__q-list">
-						<h3>About homeinvestor.fund</h3>
+					<div class="faqs__q-list" data-topic-id="where">
+						<h3>Where is homeinvestor.fund</h3>
 
 						<ul class="faqs__q-list--ul">
 							<li class="faqs__q-list--item"><a data-target data-faq-slug="who-is-wealth-kernel" href="">What is homeinvestor.fund?</a></li>
