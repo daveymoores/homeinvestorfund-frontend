@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 35.33365 0 70.6666 70.667 70.6666 70.667 35.33365 70.667 0.0007 0 0.0007 0 35.33365"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M53.939,27.6087 L30.661,50.8867 C29.88,51.6687 28.856,52.0587 27.833,52.0587 C26.809,52.0587 25.785,51.6687 25.004,50.8867 L16.728,42.6107 C15.166,41.0487 15.166,38.5157 16.728,36.9547 C18.289,35.3917 20.824,35.3917 22.384,36.9547 L27.833,42.4017 L48.283,21.9527 C49.843,20.3897 52.378,20.3897 53.939,21.9527 C55.501,23.5137 55.501,26.0467 53.939,27.6087 M35.334,0.0007 C15.819,0.0007 0,15.8187 0,35.3337 C0,54.8467 15.819,70.6667 35.334,70.6667 C54.847,70.6667 70.667,54.8467 70.667,35.3337 C70.667,15.8187 54.847,0.0007 35.334,0.0007" id="Fill-1" fill="#E0004D" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -200,6 +200,7 @@
 
                 @media all and (min-width: $screen-md) {
                     display: block;
+                    max-width: 210px;
                 }
             }
         }
@@ -245,7 +246,6 @@
 
         @media all and (min-width: $screen-md) {
             display: block!important;
-            width: 210px!important;
         }
     }
 }

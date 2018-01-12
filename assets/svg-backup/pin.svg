@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="161px" viewBox="0 0 144 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0001 0.949 143.454 0.949 143.454 144.4036 0.0001 144.4036 0.0001 0.949"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1.000000)">
+            <g id="Group-3" transform="translate(0.000000, 0.051000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M143.4541,72.6766 C143.4541,112.2896 111.3411,144.4036 71.7271,144.4036 C32.1131,144.4036 0.0001,112.2896 0.0001,72.6766 C0.0001,33.0626 32.1131,0.9486 71.7271,0.9486 C111.3411,0.9486 143.4541,33.0626 143.4541,72.6766" id="Fill-1" fill="#ED1458" mask="url(#mask-2)"></path>
+            </g>
+            <polygon id="Fill-4" fill="#ED1458" points="71.7271 15.5977 29.4771 52.5977 29.4771 72.7277 76.2521 31.7647 113.9771 64.8017 113.9771 52.5977"></polygon>
+            <polygon id="Fill-6" fill="#FFFFFF" points="29.4771 72.7276 29.4771 105.5976 113.9771 105.5976 113.9771 64.8016 76.2521 31.7646"></polygon>
+            <path d="M24.2012,61.1378 C24.9482,61.9908 26.2432,62.0758 27.0962,61.3288 L71.7272,22.2438 L116.3582,61.3288 C117.2102,62.0758 118.5062,61.9908 119.2532,61.1378 L123.1382,56.7008 C123.8842,55.8488 123.7982,54.5528 122.9462,53.8058 L73.2862,10.3178 C72.3942,9.5348 71.0602,9.5348 70.1672,10.3178 L20.5082,53.8058 C19.6562,54.5528 19.5702,55.8488 20.3162,56.7008 L24.2012,61.1378 Z" id="Fill-8" fill="#FFFFFF"></path>
+            <polygon id="Fill-10" fill="#ED1458" points="71.7271 162.0509 83.4661 141.7179 59.9881 141.7179"></polygon>
+        </g>
+    </g>
+</svg>
