@@ -56,15 +56,10 @@
 			<div class="map__overlay--spotlight">
 				<div class="map__overlay--carousel-track"></div>
 			</div>
-			<div class="map__overlay--thumbnails"></div>
 		</div>
 		<div class="map__overlay--contents">
+			<h5></h5>
 			<p></p>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 
 			<a href="#" class="btn__primary--red">Invest in the fund now</a>
 		</div>

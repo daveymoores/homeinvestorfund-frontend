@@ -3,388 +3,154 @@
 	"lng": -0.130443,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location one, Area one",
 	"area": "Area one",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 53.386278,
 	"lng": -1.469588,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location two, Area one",
 	"area": "Area one",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 53.406135,
 	"lng": -1.457062,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location three, Area one",
 	"area": "Area one",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 55.869120,
 	"lng": -4.251686,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location four, Area two",
 	"area": "Area two",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 55.879810,
 	"lng": -4.261299,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location five, Area two",
 	"area": "Area two",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 55.890637,
 	"lng": -4.248434,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location six, Area three",
 	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.461624,
 	"lng": -2.588994,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location seven, Area three",
 	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.459298,
 	"lng": -2.600994,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location eight, Area three",
 	"area": "Area three",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.537584,
 	"lng": -0.138843,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location nine, Area four",
 	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.584594,
 	"lng": -0.109231,
 	"pics": [{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location ten, Area four",
 	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.584594,
 	"lng": -0.109231,
 	"pics": [{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
 			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location eleven, Area four",
 	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.584594,
 	"lng": -0.109231,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder.jpg"
 		}
 	],
 	"location": "Location twelve, Area four",
 	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 },
 {
 	"lat": 51.597818,
 	"lng": -0.106313,
 	"pics": [{
 			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
-		},
-		{
-			"url": "./dist/images/house-pics/placeholder-2.jpg"
 		}
 	],
 	"location": "Location fourteen, Area four",
 	"area": "Area four",
 	"intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	"points": [{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		},
-		{
-			"txt": "Lorem ipsum dolor sit amet"
-		}
-	]
+	"type": "3 - 4 bed"
 }]

@@ -484,48 +484,20 @@ PropertyMap.prototype.get = function(url) {
 
 PropertyMap.prototype.scrap = function(){
     var h4 = this.mapOverlayTitle.querySelector('h4');
+    var h5 = this.mapOverlayContents.querySelector('h5');
     var p = this.mapOverlayContents.querySelector('p');
-    var li = this.mapOverlayContents.querySelectorAll('li');
 
+    h5.innerHTML = '';
     h4.innerHTML = '';
     p.innerHTML = '';
-    [].forEach.call(li, function(el, index, array){
-        el.innerHTML = '';
-    });
+
     this.mapCarouselTrack.innerHTML = '';
-    this.mapCarouselThumbnails.innerHTML = '';
 }
 
-PropertyMap.prototype.initCarousel = function(){
+PropertyMap.prototype.openModal = function(){
     var cxt = this;
-    var thumbs = this.mapCarouselThumbnails.querySelectorAll('a');
-    var imgs = this.mapCarouselTrack.querySelectorAll('img');
-    var imgsNum = imgs.length;
-    var imgWidth = this.mapOverlaySpotlight.getBoundingClientRect().width;
-
-    [].forEach.call(imgs, function(el, index, array){
-        el.setAttribute('data-imgindex', index);
-        el.style.width = imgWidth + 'px';
-    });
-
-    [].forEach.call(thumbs, function(el, index, array){
-        el.setAttribute('data-thumbindex', index);
-
-        el.addEventListener('click', function(e){
-            e.preventDefault();
-            var active = cxt.mapCarouselThumbnails.querySelector('.'+cxt.css.states.active);
-            active.classList.toggle(cxt.css.states.active);
-            e.currentTarget.classList.toggle(cxt.css.states.active);
-
-            var i = parseInt(e.currentTarget.getAttribute('data-thumbindex'));
-            cxt.mapCarouselTrack.style.webkitTransform = 'translateX('+ -(i*imgWidth) + 'px)';
-            cxt.mapCarouselTrack.style.transform = 'translateX('+ -(i*imgWidth) + 'px)';
-        });
-    });
-
     this.mapOverlay.classList.add(cxt.css.states.active);
-    this.mapCarouselTrack.style.width = imgWidth*imgsNum + 'px';
-    cxt.mapOverlayLoading.classList.remove(cxt.css.states.active);
+    this.mapOverlayLoading.classList.remove(cxt.css.states.active);
     setTimeout(function(){
         cxt.mapOverlayLoading.style.zIndex = -1;
     }, 300);
@@ -536,34 +508,25 @@ PropertyMap.prototype.buildOverlay = function(data){
 
     //title
     var h4 = this.mapOverlayTitle.querySelector('h4');
+    var h5 = this.mapOverlayContents.querySelector('h5');
     h4.innerHTML = data.location;
+    h5.innerHTML = data.type;
 
     //intro and bullets
     var p = this.mapOverlayContents.querySelector('p');
-    var li = this.mapOverlayContents.querySelectorAll('li');
-
-    [].forEach.call(li, function(el, index, array){
-        el.innerHTML = '<span class="check"></span>' + data.points[index].txt;
-    });
-
     p.innerHTML = data.intro;
 
     //fill thumbnails
     //fill gallery
-    console.log(data.pics.length);
     data.pics.forEach(function(i){
         var img = document.createElement('img');
         var a = document.createElement('a');
         img.setAttribute('src', i.url);
         a.innerHTML = "<img src="+ i.url +" alt=''>";
         cxt.mapCarouselTrack.appendChild(img);
-        cxt.mapCarouselThumbnails.appendChild(a);
     });
 
-    var firstAnchor = cxt.mapCarouselThumbnails.querySelectorAll('a')[0];
-    firstAnchor.classList.add(this.css.states.active);
-
-    cxt.initCarousel();
+    cxt.openModal();
 }
 
 module.exports = PropertyMap;

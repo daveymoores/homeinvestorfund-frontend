@@ -110,7 +110,7 @@ $map-height: 760px;
     }
 
     &--spotlight {
-        width: 80%;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -120,6 +120,12 @@ $map-height: 760px;
         > p {
             padding-top: 0px;
             font-weight: 300;
+        }
+
+        h5 {
+            border-bottom: 1px solid $grey-6;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         ul {
@@ -229,7 +235,7 @@ $map-height: 760px;
         float: left;
 
         @media all and (min-width: $screen-sm){
-            width: 440px;
+            width: 100%;
         }
     }
 }
