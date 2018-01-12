@@ -6,6 +6,11 @@
         display: block;
         width: 60%;
         position: relative;
+        max-height: 150px;
+
+        @media all and (min-height: $screen-md) {
+            
+        }
 
         &.feature-panel--balloons {}
 

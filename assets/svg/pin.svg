@@ -1,24 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="144px" height="161px" viewBox="0 0 144 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0.0001 0.949 143.454 0.949 143.454 144.4036 0.0001 144.4036 0.0001 0.949"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(0.000000, -1.000000)">
-            <g id="Group-3" transform="translate(0.000000, 0.051000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-2"></g>
-                <path d="M143.4541,72.6766 C143.4541,112.2896 111.3411,144.4036 71.7271,144.4036 C32.1131,144.4036 0.0001,112.2896 0.0001,72.6766 C0.0001,33.0626 32.1131,0.9486 71.7271,0.9486 C111.3411,0.9486 143.4541,33.0626 143.4541,72.6766" id="Fill-1" fill="#ED1458" mask="url(#mask-2)"></path>
-            </g>
-            <polygon id="Fill-4" fill="#ED1458" points="71.7271 15.5977 29.4771 52.5977 29.4771 72.7277 76.2521 31.7647 113.9771 64.8017 113.9771 52.5977"></polygon>
-            <polygon id="Fill-6" fill="#FFFFFF" points="29.4771 72.7276 29.4771 105.5976 113.9771 105.5976 113.9771 64.8016 76.2521 31.7646"></polygon>
-            <path d="M24.2012,61.1378 C24.9482,61.9908 26.2432,62.0758 27.0962,61.3288 L71.7272,22.2438 L116.3582,61.3288 C117.2102,62.0758 118.5062,61.9908 119.2532,61.1378 L123.1382,56.7008 C123.8842,55.8488 123.7982,54.5528 122.9462,53.8058 L73.2862,10.3178 C72.3942,9.5348 71.0602,9.5348 70.1672,10.3178 L20.5082,53.8058 C19.6562,54.5528 19.5702,55.8488 20.3162,56.7008 L24.2012,61.1378 Z" id="Fill-8" fill="#FFFFFF"></path>
-            <polygon id="Fill-10" fill="#ED1458" points="71.7271 162.0509 83.4661 141.7179 59.9881 141.7179"></polygon>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 143.45 161.05">
+  <defs>
+    <mask id="mask" x="0" y="0" width="143.45" height="143.45" maskUnits="userSpaceOnUse">
+      <g transform="translate(0 0)">
+        <g id="mask-2">
+          <polygon id="path-1" points="0 0 143.45 0 143.45 143.46 0 143.46 0 0" style="fill: #fff"/>
         </g>
+      </g>
+    </mask>
+  </defs>
+  <title>pin</title>
+  <g id="Page-1">
+    <g>
+      <g id="Group-3">
+        <g style="mask: url(#mask)">
+          <path id="Fill-1" d="M143.45,71.73A71.73,71.73,0,1,1,71.73,0a71.73,71.73,0,0,1,71.73,71.73" transform="translate(0 0)" style="fill: #ed1458"/>
+        </g>
+      </g>
+      <polygon id="Fill-4" points="71.73 14.6 29.48 51.6 29.48 71.73 76.25 30.77 113.98 63.8 113.98 51.6 71.73 14.6" style="fill: #ed1458"/>
+      <polygon id="Fill-6" points="29.48 71.73 29.48 104.6 113.98 104.6 113.98 63.8 76.25 30.77 29.48 71.73" style="fill: #fff"/>
+      <path id="Fill-8" d="M24.2,60.14a2.05,2.05,0,0,0,2.9.19L71.73,21.24l44.63,39.09a2.05,2.05,0,0,0,2.89-.19l3.89-4.44a2.05,2.05,0,0,0-.19-2.9L73.29,9.32a2.36,2.36,0,0,0-3.12,0L20.51,52.81a2.05,2.05,0,0,0-.19,2.9Z" transform="translate(0 0)" style="fill: #fff"/>
+      <polygon id="Fill-10" points="71.73 161.05 83.47 140.72 59.99 140.72 71.73 161.05" style="fill: #ed1458"/>
     </g>
+  </g>
 </svg>
