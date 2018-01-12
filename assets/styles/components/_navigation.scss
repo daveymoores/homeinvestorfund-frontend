@@ -223,6 +223,11 @@
 
     .short {
         @media all and (min-width: $screen-md) {
+            max-width: 110px;
+            min-width: 110px;
+        }
+
+        @media all and (min-width: $screen-lg) {
             max-width: 140px;
             min-width: 140px;
         }
