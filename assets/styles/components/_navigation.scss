@@ -201,6 +201,7 @@
                 @media all and (min-width: $screen-md) {
                     display: block;
                     max-width: 210px;
+                    min-width: 210px;
                 }
             }
         }
@@ -223,6 +224,7 @@
     .short {
         @media all and (min-width: $screen-md) {
             max-width: 140px;
+            min-width: 140px;
         }
     }
 }
@@ -302,10 +304,6 @@
 
         &:hover {
             background-color: $blue-2;
-            // &::after {
-            //     @include transform(rotate(90deg));
-            //     @include transition(all .3s ease);
-            // }
 
             .navigation__dropdown--panel {
                 max-height: 300px;
