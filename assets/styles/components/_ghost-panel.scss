@@ -92,7 +92,6 @@
     width: 100%;
 
     @media all and (min-width: $screen-sm) {
-        @include justify-content(space-between);
         @include padding(0px);
     }
 
@@ -103,9 +102,16 @@
 
         @media all and (min-width: $screen-sm) {
             display: block;
-            margin-top: auto;
         }
     }
+}
+
+.ghost-panel--twitter-icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
 }
 
 .ghost-panel--mobile-chevron {

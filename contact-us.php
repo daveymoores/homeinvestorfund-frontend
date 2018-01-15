@@ -45,6 +45,9 @@
 					<div class="ghost-panel--content">
 						<h4>Find us on Twitter</h4>
 						<a href="">Find out more</a>
+						<svg class="ghost-panel--twitter-icon">
+							<use xlink:href="./dist/svg/svg-sprite.svg#twitter-logo" />
+						</svg>
 					</div>
 				</div>
 			</div>
