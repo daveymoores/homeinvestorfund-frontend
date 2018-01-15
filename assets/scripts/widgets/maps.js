@@ -78,7 +78,6 @@ InitGoogleMaps.prototype.loadData = function(e){
 }
 
 InitGoogleMaps.prototype.initMap = function(e) {
-    console.log('>>>>>>>');
 
     var cxt = this;
     var ww = window.innerWidth;
