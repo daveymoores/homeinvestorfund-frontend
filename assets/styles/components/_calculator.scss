@@ -189,6 +189,13 @@
         padding: 0px;
     }
 
+    &--lrg-rate {
+        @media all and (min-width: $screen-md) {
+            font-size: 22px;
+        }
+    }
+
+
     &--title {
         text-align: center;
         @include font-proxima(600);

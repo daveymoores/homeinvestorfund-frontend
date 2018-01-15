@@ -59,7 +59,7 @@
                 <ul class="calculator__total calculator__total--border-left">
                     <li>homeinvestor.fund <span class="calculator__total--lrg-rate"><strong>35.73%</strong></span> total return</li>
                     <li class="colorpick--red calculator__total--number">£<span class="calculator__fund-rate">34,056</span></li>
-                    <li class="calculator__total--fees">homeinvestor.fund fees of <strong>1.72%</strong></li>
+                    <li class="calculator__total--fees">homeinvestor.fund fees of <span class="calculator__total--lrg-rate"><strong>1.72%</strong></span></li>
                 </ul>
             </div>
             <div class="col-md-4">

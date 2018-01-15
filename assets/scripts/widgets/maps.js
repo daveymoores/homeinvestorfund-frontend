@@ -78,6 +78,7 @@ InitGoogleMaps.prototype.loadData = function(e){
 }
 
 InitGoogleMaps.prototype.initMap = function(e) {
+    console.log('>>>>>>>');
 
     var cxt = this;
     var ww = window.innerWidth;
@@ -246,7 +247,7 @@ InitGoogleMaps.prototype.initMap = function(e) {
        };
 
 
-      if(ww > 768) {
+      if(ww > 767) {
           map = new google.maps.Map(cxt.$node, options);
           map.setOptions({styles: styles['silver']});
 

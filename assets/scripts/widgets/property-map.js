@@ -144,7 +144,6 @@ PropertyMap.prototype.selectLocations = function(e) {
 }
 
 PropertyMap.prototype.initMap = function() {
-
     var cxt = this;
     var ww = window.innerWidth;
 
@@ -305,7 +304,7 @@ PropertyMap.prototype.initMap = function() {
        };
 
 
-       if(ww > 768) {
+       if(ww > 767) {
            map = new google.maps.Map(cxt.$node, options);
            map.setOptions({styles: styles['silver']});
 

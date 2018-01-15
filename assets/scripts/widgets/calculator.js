@@ -90,7 +90,6 @@ Calculator.prototype.calculateRate = function(values){
         storeArray.push(values[i].Value);
     }
 
-    console.log(storeArray);
     storeArray.map(function(yearVal) {
         if(previousYearVal){
             diffs.push( ((yearVal - previousYearVal) / yearVal) * 100 );

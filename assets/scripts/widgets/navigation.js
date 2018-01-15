@@ -35,6 +35,7 @@ Navigation.prototype.openMenu = function(e){
     var wrapHeight = this.navigationWrapper.getBoundingClientRect().height;
     var ww = window.innerHeight;
     var hh = navHeight+wrapHeight;
+    var bb = document.body;
 
     if(ww<hh) {
         hh = ww;
@@ -42,6 +43,7 @@ Navigation.prototype.openMenu = function(e){
 
     e.currentTarget.classList.toggle(this.CLASSES.states.active);
     this.node.classList.toggle(this.CLASSES.states.open);
+    bb.classList.toggle('menu-open');
 
     if(this.node.classList.contains(this.CLASSES.states.open)) {
         this.node.style.maxHeight = hh+'px';

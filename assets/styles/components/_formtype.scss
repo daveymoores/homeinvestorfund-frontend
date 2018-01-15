@@ -85,13 +85,17 @@
    @include padding(5px 5px 5px 10px);
    @include font-proxima(600);
    font-size: $font-size-base;
-   width: 240px;
+   width: 100%;
    display: block;
    margin: auto;
    background-color: $white;
    border-radius: $global-radius;
    background-size: 20px;
    margin-top: 30px;
+
+   @media all and (min-width: $mobile-only) {
+       width: 240px;
+   }
 
    @media all and (min-width: $screen-sm) {
        display: none;

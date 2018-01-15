@@ -25,7 +25,7 @@
 <section class="fw-wrap--about-us">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-9">
 				<heading>
 					<h2>About us copy</h2>
 				</heading>
