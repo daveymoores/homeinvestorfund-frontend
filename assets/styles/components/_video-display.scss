@@ -4,9 +4,12 @@
     border-radius: $global-radius;
     overflow: hidden;
     margin: 40px auto;
+    max-width: 400px;
 
-    @media all and (min-width: $screen-sm) {
+    @media all and (min-width: $screen-lg) {
         margin: auto;
+        padding: 0 80px;
+        max-width: initial;
     }
 
     .plyr__controls {

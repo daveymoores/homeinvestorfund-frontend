@@ -212,6 +212,7 @@
             @include flex-direction(row);
             @include align-items(center);
             @include justify-content(space-between);
+            height: 100%;
 
             li {
                 width: 100%;

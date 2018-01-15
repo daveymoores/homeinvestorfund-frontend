@@ -166,4 +166,10 @@
 .btn--centered {
     display: table;
     @include margin(40px auto 0px);
+    width: 100%;
+    text-align: center;
+
+    @media all and (min-width: $mobile-only) {
+        width: auto;
+    }
 }

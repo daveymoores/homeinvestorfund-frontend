@@ -22,6 +22,7 @@
     font-family: $plyr-font-family;
     direction: ltr;
     z-index: 1;
+    border-radius: 5px;
 
     @if $plyr-border-box == true {
         // border-box everything
