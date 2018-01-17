@@ -102,12 +102,12 @@ $map-height: 760px;
     &--gallery {
         @include display(flex);
         @include flex-direction(row);
-        height: auto;
+        height: 240px;
         overflow: hidden;
 
-        @media all and (min-width: $screen-sm){
-            height: 300px;
-        }
+        // @media all and (min-width: $screen-sm){
+        //     height: 240px;
+        // }
     }
 
     &--spotlight {
@@ -117,10 +117,14 @@ $map-height: 760px;
 
     &--contents {
         padding: 30px;
+        height: 55%;
+        padding-bottom: 100px;
 
         > p {
             padding-top: 0px;
             font-weight: 300;
+            height: 80%;
+            overflow: scroll;
         }
 
         h5 {

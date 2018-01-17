@@ -110,6 +110,7 @@
     li {
         padding-bottom: 25px;
         display: none;
+        @include font-proxima(600);
 
         @media all and (min-width: $screen-sm) {
             padding-bottom: 15px;

@@ -11,7 +11,7 @@
 			</div>
 			<div class="col-md-5">
 				<ul class="footer--list">
-					<li><a href="">Are you a financial advisor?</a></li>
+					<li>Are you a financial advisor?</li>
 					<li><a href="index-b2b.php">I'm a financial advisor</a></li>
 					<li><a href="faqs-fa.php">Financial advisor FAQs</a></li>
 					<li><a href="news-content-hub-fa.php">Financial advisor news</a></li>
