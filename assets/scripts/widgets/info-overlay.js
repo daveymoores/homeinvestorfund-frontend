@@ -27,7 +27,7 @@ InfoOverlay.prototype.init = function(){
 InfoOverlay.prototype.openModal = function(e){
     e.preventDefault();
     this.bg.classList.add('active');
-    this.bg.style.zIndex = 97;
+    this.bg.style.zIndex = 100;
     this.node.classList.add('active');
 }
 

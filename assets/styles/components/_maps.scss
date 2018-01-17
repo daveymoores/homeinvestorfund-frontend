@@ -43,17 +43,18 @@ $map-height: 760px;
 .map__overlay {
     width: calc(100% - 50px);
     height: 100%;
-    @include position(fixed, 55px 0 null null);
+    @include position(fixed, 0 0 null null);
     background-color: white;
     @include transition(all .25s ease-in-out);
     @include transform(translate3d(calc(100% + 90px), 0, 0));
-    z-index: 98;
+    z-index: 101;
 
     @media all and (min-width: $screen-sm){
         height: $map-height;
         @include position(absolute, 0 0 null null);
         @include transform(translate3d(120%, 0, 0));
         width: 550px;
+        z-index: 97;
     }
 
     &.active {
@@ -221,8 +222,9 @@ $map-height: 760px;
 
 
 .map__overlay--home {
-    @include position(fixed, 55px 0px null null);
+    @include position(fixed, 0 0 null null);
     height: 100%;
+    z-index: 101;
 }
 
 

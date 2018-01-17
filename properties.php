@@ -64,6 +64,7 @@
 			<a href="#" class="btn__primary--red">Invest in the fund now</a>
 		</div>
 	</div>
+	<div class="map__overlay--bg properties" id="overlayBackgroundHook"></div>
 </section>
 
 <section class="fw-wrap">

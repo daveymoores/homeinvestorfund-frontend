@@ -29,7 +29,8 @@ PropertyMap.prototype.setVars = function(){
             'locationMobSelect' : 'locationMobSelectHook',
             'propertiesPanel' : '.properties__panel',
             'propertiesContainer' : '.properties__container',
-            'properties' : 'propertiesHook'
+            'properties' : 'propertiesHook',
+            'mapBg' : 'overlayBackgroundHook'
         }
     }
 }
@@ -45,6 +46,7 @@ PropertyMap.prototype.init = function(){
     this.mapOverlayContents = this.mapOverlay.querySelector(this.css.selectors.mapOverlayContents);
     this.mapOverlaySpotlight = this.mapOverlay.querySelector(this.css.selectors.mapOverlaySpotlight);
     this.mapOverlayLoading = this.mapOverlay.querySelector(this.css.selectors.mapOverlayLoading);
+    this.mapBg = document.getElementById(this.css.selectors.mapBg);
 
     //mobile selectors
     this.locationMobSelect = document.getElementById(this.css.selectors.locationMobSelect);
@@ -59,6 +61,10 @@ PropertyMap.prototype.init = function(){
     this.mapOverlayClose.addEventListener('click', function(e){
         e.preventDefault();
         cxt.mapOverlay.classList.remove(cxt.css.states.active);
+        cxt.mapBg.classList.remove('active');
+        setTimeout(function(){
+            cxt.mapBg.style.zIndex = -1;
+        }, 300);
     });
 
     this.loadMore.addEventListener('click', this.loadData.bind(this));
@@ -497,6 +503,8 @@ PropertyMap.prototype.openModal = function(){
     var cxt = this;
     this.mapOverlay.classList.add(cxt.css.states.active);
     this.mapOverlayLoading.classList.remove(cxt.css.states.active);
+    this.mapBg.classList.add(cxt.css.states.active);
+    this.mapBg.style.zIndex = 100;
     setTimeout(function(){
         cxt.mapOverlayLoading.style.zIndex = -1;
     }, 300);
