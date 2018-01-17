@@ -61,7 +61,7 @@
 			<h5></h5>
 			<p></p>
 
-			<a href="#" class="btn__primary--red">Invest in the fund now</a>
+			<a href="#" class="btn__primary--red" data-widget="trigger-redirect">Invest in the fund now</a>
 		</div>
 	</div>
 	<div class="map__overlay--bg properties" id="overlayBackgroundHook"></div>
