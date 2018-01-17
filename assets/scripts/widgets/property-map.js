@@ -94,7 +94,7 @@ PropertyMap.prototype.selectLocations = function(e) {
         var target = cxt.locationMobSelect.childNodes[1];                 //select menu
         var value = target.options[ target.selectedIndex ].text;    //value of select
 
-        cxt.get('json/locations.json').then(function(locations) {
+        cxt.get('http://homeinvestor.wearefury.com/json/locations.json').then(function(locations) {
 
             var locationsMax = locations.length;
             var areaArr = [];

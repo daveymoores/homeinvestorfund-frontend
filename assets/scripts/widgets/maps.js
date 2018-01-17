@@ -55,7 +55,7 @@ InitGoogleMaps.prototype.loadData = function(e){
         var panels = cxt.propertiesPanels.length;
         var panelsMax = panels+3;
 
-        cxt.get('json/locations.json').then(function(locations) {
+        cxt.get('http://homeinvestor.wearefury.com/json/locations.json').then(function(locations) {
 
             var locationsMax = locations.length; //max number of locations
 

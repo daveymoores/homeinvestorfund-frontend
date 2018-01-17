@@ -68,7 +68,7 @@ MoreInfo.prototype.getUrl = function(e){
 
 MoreInfo.prototype.showModal = function(){
     this.bg.classList.add('active');
-    this.bg.style.zIndex = 998;
+    this.bg.style.zIndex = 97;
     this.overlay.classList.add('active');
 }
 
