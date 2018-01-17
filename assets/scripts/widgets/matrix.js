@@ -84,7 +84,7 @@ Matrix.prototype.loadData = function(e){
 
     if(!e.currentTarget.classList.contains(cxt.css.states.disabled)) {
 
-        cxt.get('json/news.json').then(function(news) {
+        cxt.get('http://homeinvestor.fund/json/news.json').then(function(news) {
 
             var newsMax = news.length; //max number of locations
             var panelsMax = cxt.gridItem.length;

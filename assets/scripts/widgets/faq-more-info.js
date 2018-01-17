@@ -40,7 +40,7 @@ MoreInfo.prototype.getData = function(e){
 MoreInfo.prototype.checkJson = function(slug, topicType){
     var cxt = this;
 
-    this.get('http://homeinvestor.wearefury.com/json/faqs.json').then(function(faqs) {
+    this.get('http://homeinvestor.fund/json/faqs.json').then(function(faqs) {
         for(var i = 0; i < faqs[0][topicType].length; i++) {
             if(faqs[0][topicType][i].slug == slug) {
                 cxt.buildFaqItem(faqs[0][topicType][i].title, faqs[0][topicType][i].description);
