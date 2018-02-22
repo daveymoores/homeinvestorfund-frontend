@@ -62,8 +62,12 @@ Calculator.prototype.getRate = function(){
     var feesDomElement = document.getElementById('fees-rate');
     var rateLi = this.calcAnnualisedRates.querySelectorAll('li');
 
+    //create loader
+    var loader = document.createElement('span');
+    loader.classList.add('spinner');
+    this.node.appendChild(loader);
+
     this.get('https://staging-datafeeds.feprecisionplus.com/api/funddata/Hearthstone/a123f344-408c-e904-615d-49d0df97bfea?citicodes=I3HM').then(function(fund) {
-        console.log(fund);
 
         var fundRate = fund[0].Cumulative5y_DE;
         var feesRate = fund[0].OngoingCharge;
@@ -88,6 +92,11 @@ Calculator.prototype.getRate = function(){
                     e.innerText = data[i]+'%';
                 }
             });
+
+            if(i==4){
+                cxt.node.classList.add('loaded');
+                loader.style.display = 'none';
+            }
         }
 
     }, function(error) {
