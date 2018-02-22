@@ -15,7 +15,8 @@ Calculator.prototype.setVars = function(){
             'calcUnit' : '.calculator__amount--unit',
             'calcSlider' : '.calculator--slider',
             'calcStandardRate' : '.calculator__standard-rate',
-            'calcFundRate' : '.calculator__fund-rate'
+            'calcFundRate' : '.calculator__fund-rate',
+            'calcAnnualisedRates' : '.calculator--rates'
         }
     }
 }
@@ -27,6 +28,7 @@ Calculator.prototype.init = function(){
     this.calcInput = this.calcSlider.querySelector('#slider');
     this.calcStandardRate = this.node.querySelector(this.CLASSES.selectors.calcStandardRate);
     this.calcFundRate = this.node.querySelector(this.CLASSES.selectors.calcFundRate);
+    this.calcAnnualisedRates = this.node.querySelector(this.CLASSES.selectors.calcAnnualisedRates);
 
     this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
 
@@ -36,7 +38,6 @@ Calculator.prototype.init = function(){
 
 Calculator.prototype.handleInput = function(e){
     var plainValue = e.currentTarget.innerText;
-    //var plainValue = value.replace(/\,/g,'');
     var plainValueLength = plainValue.length;
 
     if(parseInt(plainValue) > 150000) {
@@ -56,24 +57,47 @@ Calculator.prototype.handleInput = function(e){
 
 Calculator.prototype.getRate = function(){
     var cxt = this;
+    var fundDomElement = document.getElementById('fund-rate');
+    var feProxyDomElement = document.getElementById('fe_proxy-rate');
+    var feesDomElement = document.getElementById('fees-rate');
+    var rateLi = this.calcAnnualisedRates.querySelectorAll('li');
 
-    this.get('https://staging-datafeeds.feprecisionplus.com/api/SeriesData/hearthstone/a123f344-408c-e904-615d-49d0df97bfea/yearly/dayend?InstrumentTypes=B&span=70&seriestypes=2&benchmarkcodes=BM5G&basevalue=raw').then(function(fund) {
+    this.get('https://staging-datafeeds.feprecisionplus.com/api/funddata/Hearthstone/a123f344-408c-e904-615d-49d0df97bfea?citicodes=I3HM').then(function(fund) {
+        console.log(fund);
 
-        var data = fund.HistoryData[0].Instrument[0].SeriesList[0].SeriesData;
-        var data = data.slice(Math.max(data.length - 5, 1));
-        cxt.fundRate = cxt.calculateRate(data);
-        console.log(cxt.fundRate);
+        var fundRate = fund[0].Cumulative5y_DE;
+        var feesRate = fund[0].OngoingCharge;
+        fundDomElement.innerText = fundRate+'%'; //set fund cumulative rate
+        feesDomElement.innerText = feesRate+'%';
+
+        var fundRate,
+            year,
+            data,
+            i;
+
+        for(i=0; i<5; i++) {
+            year = new Date().getFullYear() - i;
+            fundRate = fund[0]['Annualised'+(5-i)+'y_DE'];
+            data = [year, fundRate];
+
+            var spans = rateLi[i+1].querySelectorAll('span');
+            [].forEach.call(spans, function(e, i, a){
+                if(i==0){
+                    e.innerText = data[i];
+                } else {
+                    e.innerText = data[i]+'%';
+                }
+            });
+        }
 
     }, function(error) {
       console.error("Failed!", error);
     });
 
-    this.get('https://staging-datafeeds.feprecisionplus.com/api/SeriesData/hearthstone/a123f344-408c-e904-615d-49d0df97bfea/yearly/dayend?InstrumentTypes=F&span=70&seriestypes=2&citicodes=112G&basevalue=raw').then(function(fe_proxy) {
+    this.get('https://staging-datafeeds.feprecisionplus.com/api/instrumentdata/Hearthstone/a123f344-408c-e904-615d-49d0df97bfea?indexcodes=BM5G').then(function(fe_proxy) {
 
-        var data = fe_proxy.HistoryData[0].Instrument[0].SeriesList[0].SeriesData;
-        var data = data.slice(Math.max(data.length - 5, 1));
-        cxt.feproxyRate = cxt.calculateRate(data);
-        console.log(cxt.feproxyRate);
+        var feProxyRate = fe_proxy[0].Cumulative5y_DE;
+        feProxyDomElement.innerText = feProxyRate+'%';
 
     }, function(error) {
       console.error("Failed!", error);

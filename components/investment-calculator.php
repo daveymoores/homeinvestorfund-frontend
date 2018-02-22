@@ -26,24 +26,24 @@
                 <strong>homeinvestor.fund past performance</strong> 12 months to the end of june...
             </li>
             <li>
-                <span>2016</span>
-                <span>3.40%</span>
+                <span></span>
+                <span></span>
             </li>
             <li>
-                <span>2015</span>
-                <span>3.11%</span>
+                <span></span>
+                <span></span>
             </li>
             <li>
-                <span>2014</span>
-                <span>14.19%</span>
+                <span></span>
+                <span></span>
             </li>
             <li>
-                <span>2013</span>
-                <span>7.96%</span>
+                <span></span>
+                <span></span>
             </li>
             <li>
-                <span>2012</span>
-                <span>n/a</span>
+                <span></span>
+                <span></span>
             </li>
         </ul>
     </div>
@@ -51,15 +51,15 @@
         <div class="row">
             <div class="col-md-4 col-xs-6">
                 <ul class="calculator__total">
-                    <li>Highstreet ISA <span class="calculator__total--lrg-rate"><strong>1.8%</strong> / year</span></li>
-                    <li class="calculator__total--number">£<span class="calculator__standard-rate">27,290</span></li>
+                    <li>Highstreet ISA <span class="calculator__total--lrg-rate"><strong id="fe_proxy-rate"></strong> / year</span></li>
+                    <li class="calculator__total--number">£<span class="calculator__standard-rate"></span></li>
                 </ul>
             </div>
             <div class="col-md-4 col-xs-6">
                 <ul class="calculator__total calculator__total--border-left">
-                    <li>homeinvestor.fund <span class="calculator__total--lrg-rate"><strong>35.73%</strong></span> total return</li>
-                    <li class="colorpick--red calculator__total--number">£<span class="calculator__fund-rate">34,056</span></li>
-                    <li class="calculator__total--fees">homeinvestor.fund fees of <span class="calculator__total--lrg-rate"><strong>1.72%</strong></span></li>
+                    <li>homeinvestor.fund <span class="calculator__total--lrg-rate"><strong id="fund-rate"></strong></span> total return</li>
+                    <li class="colorpick--red calculator__total--number">£<span class="calculator__fund-rate"></span></li>
+                    <li class="calculator__total--fees">homeinvestor.fund fees of <span class="calculator__total--lrg-rate"><strong id="fees-rate"></strong></span></li>
                 </ul>
             </div>
             <div class="col-md-4">
