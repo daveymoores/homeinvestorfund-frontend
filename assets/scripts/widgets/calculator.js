@@ -32,7 +32,6 @@ Calculator.prototype.init = function(){
 
     this.calcUnit.addEventListener('keyup', this.handleInput.bind(this));
 
-    this.setSlider();
     this.getRate();
 }
 
@@ -61,6 +60,8 @@ Calculator.prototype.getRate = function(){
     var feProxyDomElement = document.getElementById('fe_proxy-rate');
     var feesDomElement = document.getElementById('fees-rate');
     var rateLi = this.calcAnnualisedRates.querySelectorAll('li');
+    this.fundRate;
+    this.feProxyRate;
 
     //create loader
     var loader = document.createElement('span');
@@ -69,20 +70,20 @@ Calculator.prototype.getRate = function(){
 
     this.get('https://staging-datafeeds.feprecisionplus.com/api/funddata/Hearthstone/a123f344-408c-e904-615d-49d0df97bfea?citicodes=I3HM').then(function(fund) {
 
-        var fundRate = fund[0].Cumulative5y_DE;
+        cxt.fundRate = fund[0].Cumulative5y_DE;
         var feesRate = fund[0].OngoingCharge;
-        fundDomElement.innerText = fundRate+'%'; //set fund cumulative rate
+        fundDomElement.innerText = cxt.fundRate+'%'; //set fund cumulative rate
         feesDomElement.innerText = feesRate+'%';
 
-        var fundRate,
+        var rate,
             year,
             data,
             i;
 
         for(i=0; i<5; i++) {
             year = new Date().getFullYear() - i;
-            fundRate = fund[0]['Annualised'+(5-i)+'y_DE'];
-            data = [year, fundRate];
+            rate = fund[0]['Annualised'+(5-i)+'y_DE'];
+            data = [year, rate];
 
             var spans = rateLi[i+1].querySelectorAll('span');
             [].forEach.call(spans, function(e, i, a){
@@ -99,14 +100,16 @@ Calculator.prototype.getRate = function(){
             }
         }
 
+        cxt.setSlider();
+
     }, function(error) {
       console.error("Failed!", error);
     });
 
     this.get('https://staging-datafeeds.feprecisionplus.com/api/instrumentdata/Hearthstone/a123f344-408c-e904-615d-49d0df97bfea?indexcodes=BM5G').then(function(fe_proxy) {
 
-        var feProxyRate = fe_proxy[0].Cumulative5y_DE;
-        feProxyDomElement.innerText = feProxyRate+'%';
+        cxt.feProxyRate = fe_proxy[0].Cumulative5y_DE;
+        feProxyDomElement.innerText = cxt.feProxyRate+'%';
 
     }, function(error) {
       console.error("Failed!", error);
@@ -190,8 +193,8 @@ Calculator.prototype.setSlider = function(){
 }
 
 Calculator.prototype.calcInterest = function(amount){
-    var r = 1.8/100;
-    var R = 35.73/100;
+    var r = this.feProxyRate/100;
+    var R = this.fundRate/100;
     var standardRate = Math.round(amount*(1 + (r * 5)));
     var fundRate = Math.round(amount*(1 + (R * 5)));
     return [standardRate.toLocaleString(), fundRate.toLocaleString()];
