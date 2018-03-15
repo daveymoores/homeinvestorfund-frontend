@@ -80,10 +80,81 @@ Calculator.prototype.getRate = function(){
             data,
             i;
 
+        //get Date
+        var todaysDate = new Date(),
+            todaysDateFormatted = todaysDate.toISOString().substring(0, 10),
+            dateWindows = [
+                {
+                    "dateStart" : "01-01",
+                    "dateEnd"   : "03-31"
+                },
+                {
+                    "dateStart" : "04-01",
+                    "dateEnd"   : "06-30"
+                },
+                {
+                    "dateStart" : "07-01",
+                    "dateEnd"   : "09-30"
+                },
+                {
+                    "dateStart" : "10-01",
+                    "dateEnd"   : "12-31"
+                }
+            ];
+
+        function dateCheck(tdf, dw){
+            var startDateFormat,
+                EndDateFormat,
+                todaysDateFormatted,
+                from,
+                to,
+                today,
+                year = new Date().getFullYear(),
+                yearFormat = year.toString().slice(-2);
+
+            for(var i=0; i<4; i++) {
+                //split them for parsing
+                startDateFormat = dw[i].dateStart.split("-");
+                EndDateFormat = dw[i].dateEnd.split("-");
+                todaysDateFormatted = tdf.split("-")
+                //parse dates
+
+                from = new Date(year, parseInt(startDateFormat[0])-1, startDateFormat[1]);
+                to   = new Date(year, parseInt(EndDateFormat[0])-1, EndDateFormat[1]);
+                today = new Date(todaysDateFormatted[0], parseInt(todaysDateFormatted[1])-1, todaysDateFormatted[2]);
+
+                if(today >= from && today < to){
+                    switch (i) {
+                        case 0:
+                            return ['Dec', yearFormat];
+                            break;
+                        case 1:
+                            return ['Mar', yearFormat];
+                            break;
+                        case 2:
+                            return ['Jun', yearFormat];
+                            break;
+                        case 3:
+                            return ['Sep', yearFormat];
+                            break;
+                    }
+                }
+            }
+        }
+
+        var dateVars = dateCheck(todaysDateFormatted, dateWindows);
+
+
         for(i=0; i<5; i++) {
-            year = new Date().getFullYear() - i;
+            if(dateVars[0] == 'Dec') {
+                year = new Date().getFullYear() - (i+1);
+            } else {
+                year = new Date().getFullYear() - i;
+            }
+
+            yearMonth = dateVars[0] + ' ' + year.toString().slice(-2);
             rate = fund[0]['Annualised'+(5-i)+'y_DE'];
-            data = [year, rate];
+            data = [yearMonth, rate];
 
             var spans = rateLi[i+1].querySelectorAll('span');
             [].forEach.call(spans, function(e, i, a){
@@ -175,6 +246,7 @@ Calculator.prototype.setSlider = function(){
     noUiSlider.create(this.calcInput, {
     	start: [ 0, 25000 ],
         connect: true,
+        behaviour: 'drag',
         step: 100,
     	range: {
     		'min': [  100 ],
